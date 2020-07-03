@@ -197,6 +197,7 @@ void CameraObjectReset2(void);
 u8 ObjectEventGetBerryTreeId(u8 objectEventId);
 void sub_8092EF0(u8 mapId, u8 mapNumber, u8 mapGroup);
 bool8 IsBerryTreeSparkling(u8, u8, u8);
+u16 GetObjectEventTrainerSightFlagByObjectEventId(u8 objEventId);
 
 void MovementType_None(struct Sprite *);
 void MovementType_LookAround(struct Sprite *);

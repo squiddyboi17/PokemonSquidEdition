@@ -2,6 +2,7 @@
 #include "battle_setup.h"
 #include "event_data.h"
 #include "event_object_movement.h"
+#include "event_scripts.h"
 #include "field_effect.h"
 #include "field_player_avatar.h"
 #include "pokemon.h"

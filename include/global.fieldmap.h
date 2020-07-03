@@ -65,7 +65,6 @@ struct ObjectEventTemplate
     /*0x0E*/ u16 trainerRange_berryTreeId;
     /*0x10*/ const u8 *script;
     /*0x14*/ u16 flagId;
-    ///*0x16*/ u16 scriptFlag;    //for npc sight
 }; /* size = 0x18 */
 
 struct WarpEvent

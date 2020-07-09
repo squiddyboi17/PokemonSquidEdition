@@ -322,7 +322,7 @@ static u8 GetTrainerApproachDistance(struct ObjectEvent *trainerObj)
     u8 approachDistance;
 
     PlayerGetDestCoords(&x, &y);
-    if (trainerObj->trainerType == TRAINER_TYPE_NORMAL)  // can only see in one direction
+    if (trainerObj->trainerType == TRAINER_TYPE_NORMAL || trainerObj->trainerType >= TRAINER_TYPE_RUN_SCRIPT)  // can only see in one direction
     {
         approachDistance = sDirectionalApproachDistanceFuncs[trainerObj->facingDirection - 1](trainerObj, trainerObj->trainerRange_berryTreeId, x, y);
         return CheckPathBetweenTrainerAndPlayer(trainerObj, approachDistance, trainerObj->facingDirection);

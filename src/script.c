@@ -436,5 +436,6 @@ void InitRamScript_NoObjectEvent(u8 *script, u16 scriptSize)
 bool8 LoadTrainerObjectScript(void)
 {
     sScriptContext1.scriptPtr = gApproachingTrainers[gNoOfApproachingTrainers - 1].trainerScriptPtr;
+    return TRUE;
 }
 

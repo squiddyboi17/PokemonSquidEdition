@@ -282,7 +282,7 @@ static u8 CheckTrainer(u8 objectEventId)
         if (GetHillTrainerFlag(objectEventId))
             return 0;
     }
-    else
+    else if (scriptFlag < TRAINER_TYPE_RUN_SCRIPT)
     {
         if (GetTrainerFlagFromScriptPointer(scriptPtr))
             return 0;

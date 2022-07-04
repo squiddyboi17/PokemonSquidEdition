@@ -319,7 +319,7 @@
 #define B_WIN_TYPE_NORMAL 0
 #define B_WIN_TYPE_ARENA  1
 
-// Window Ids for gStandardBattleWindowTemplates / gBattleArenaWindowTemplates
+// Window Ids for sStandardBattleWindowTemplates / sBattleArenaWindowTemplates
 #define B_WIN_MSG                 0
 #define B_WIN_ACTION_PROMPT       1 // "What will {x} do?"
 #define B_WIN_ACTION_MENU         2 // "Fight/Pokémon/Bag/Run" menu
@@ -357,5 +357,8 @@
 
 // Flag for BattlePutTextOnWindow. Never set
 #define B_WIN_COPYTOVRAM (1 << 7)
+
+// Indicator for the party summary bar to display an empty slot.
+#define HP_EMPTY_SLOT 0xFFFF
 
 #endif // GUARD_CONSTANTS_BATTLE_H

@@ -227,8 +227,8 @@ bool8 CheckForTrainersWantingBattle(void)
         
         gSelectedObjectEvent = objectEventId;
         gSpecialVar_LastTalked = gObjectEvents[objectEventId].localId;
-        ScriptContext1_SetupScript(EventScript_ObjectApproachPlayer);
-        ScriptContext2_Enable();
+        ScriptContext_SetupScript(EventScript_ObjectApproachPlayer);
+        LockPlayerFieldControls();
         return TRUE;
     }
     

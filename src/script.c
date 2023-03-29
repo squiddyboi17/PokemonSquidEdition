@@ -474,7 +474,7 @@ void InitRamScript_NoObjectEvent(u8 *script, u16 scriptSize)
 // trainer sight scripts
 bool8 LoadTrainerObjectScript(void)
 {
-    sScriptContext1.scriptPtr = gApproachingTrainers[gNoOfApproachingTrainers - 1].trainerScriptPtr;
+    sGlobalScriptContext.scriptPtr = gApproachingTrainers[gNoOfApproachingTrainers - 1].trainerScriptPtr;
     return TRUE;
 }
 

@@ -2996,7 +2996,7 @@
       "name": "LilycoveCity_CoveLilyMotel_2F_Layout",
       "width": 12,
       "height": 9,
-      "primary_tileset": "gTileset_Building",
+      "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_GenericBuilding",
       "border_filepath": "data/layouts/LilycoveCity_CoveLilyMotel_2F/border.bin",
       "blockdata_filepath": "data/layouts/LilycoveCity_CoveLilyMotel_2F/map.bin"
@@ -4410,6 +4410,186 @@
       "secondary_tileset": "gTileset_MysteryEventsHouse",
       "border_filepath": "data/layouts/SootopolisCity_MysteryEventsHouse_1F_StairsUnblocked/border.bin",
       "blockdata_filepath": "data/layouts/SootopolisCity_MysteryEventsHouse_1F_StairsUnblocked/map.bin"
+    },
+    {
+      "id": "LAYOUT_PALLET_TOWN",
+      "name": "PalletTown_Layout",
+      "width": 36,
+      "height": 24,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/PalletTown/border.bin",
+      "blockdata_filepath": "data/layouts/PalletTown/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE1",
+      "name": "Route1_Layout",
+      "width": 24,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/Route1/border.bin",
+      "blockdata_filepath": "data/layouts/Route1/map.bin"
+    },
+    {
+      "id": "LAYOUT_VIRIDIAN_CITY",
+      "name": "ViridianCity_Layout",
+      "width": 48,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/ViridianCity/border.bin",
+      "blockdata_filepath": "data/layouts/ViridianCity/map.bin"
+    },
+    {
+      "id": "LAYOUT_REDS_HOUSE",
+      "name": "RedsHouse_Layout",
+      "width": 11,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BrendansMaysHouse",
+      "border_filepath": "data/layouts/RedsHouse/border.bin",
+      "blockdata_filepath": "data/layouts/RedsHouse/map.bin"
+    },
+    {
+      "id": "LAYOUT_BLUES_HOUSE",
+      "name": "BluesHouse_Layout",
+      "width": 11,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BrendansMaysHouse",
+      "border_filepath": "data/layouts/BluesHouse/border.bin",
+      "blockdata_filepath": "data/layouts/BluesHouse/map.bin"
+    },
+    {
+      "id": "LAYOUT_PALLET_DAYCARE",
+      "name": "PalletDaycare_Layout",
+      "width": 14,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonDayCare",
+      "border_filepath": "data/layouts/PalletDaycare/border.bin",
+      "blockdata_filepath": "data/layouts/PalletDaycare/map.bin"
+    },
+    {
+      "id": "LAYOUT_OAKSLAB",
+      "name": "oakslab_Layout",
+      "width": 15,
+      "height": 13,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Lab",
+      "border_filepath": "data/layouts/oakslab/border.bin",
+      "blockdata_filepath": "data/layouts/oakslab/map.bin"
+    },
+    {
+      "id": "LAYOUT_POKESUPERCENTER",
+      "name": "pokesupercenter_Layout",
+      "width": 12,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonCenter",
+      "border_filepath": "data/layouts/pokesupercenter/border.bin",
+      "blockdata_filepath": "data/layouts/pokesupercenter/map.bin"
+    },
+    {
+      "id": "LAYOUT_POKESUPERCENTER2",
+      "name": "pokesupercenter2_Layout",
+      "width": 12,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Shop",
+      "border_filepath": "data/layouts/pokesupercenter2/border.bin",
+      "blockdata_filepath": "data/layouts/pokesupercenter2/map.bin"
+    },
+    {
+      "id": "LAYOUT_PALLETTOWNHOUSE1",
+      "name": "pallettownhouse1_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/pallettownhouse1/border.bin",
+      "blockdata_filepath": "data/layouts/pallettownhouse1/map.bin"
+    },
+    {
+      "id": "LAYOUT_STARTMAP",
+      "name": "Startmap_Layout",
+      "width": 14,
+      "height": 11,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_CableClub",
+      "border_filepath": "data/layouts/Startmap/border.bin",
+      "blockdata_filepath": "data/layouts/Startmap/map.bin"
+    },
+    {
+      "id": "LAYOUT_POKEMON_LEAGUE_RECEPTION_GATE",
+      "name": "PokemonLeagueReceptionGate_Layout",
+      "width": 30,
+      "height": 20,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BattleFrontier",
+      "border_filepath": "data/layouts/PokemonLeagueReceptionGate/border.bin",
+      "blockdata_filepath": "data/layouts/PokemonLeagueReceptionGate/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE22",
+      "name": "Route22_Layout",
+      "width": 48,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Rustboro",
+      "border_filepath": "data/layouts/Route22/border.bin",
+      "blockdata_filepath": "data/layouts/Route22/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE2",
+      "name": "Route2_Layout",
+      "width": 24,
+      "height": 80,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Lavaridge",
+      "border_filepath": "data/layouts/Route2/border.bin",
+      "blockdata_filepath": "data/layouts/Route2/map.bin"
+    },
+    {
+      "id": "LAYOUT_PEWTER_CITY",
+      "name": "PewterCity_Layout",
+      "width": 48,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Slateport",
+      "border_filepath": "data/layouts/PewterCity/border.bin",
+      "blockdata_filepath": "data/layouts/PewterCity/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE3",
+      "name": "Route3_Layout",
+      "width": 84,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/Route3/border.bin",
+      "blockdata_filepath": "data/layouts/Route3/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE4",
+      "name": "Route4_Layout",
+      "width": 108,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/Route4/border.bin",
+      "blockdata_filepath": "data/layouts/Route4/map.bin"
+    },
+    {
+      "id": "LAYOUT_CERULEAN_CITY",
+      "name": "CeruleanCity_Layout",
+      "width": 108,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/CeruleanCity/border.bin",
+      "blockdata_filepath": "data/layouts/CeruleanCity/map.bin"
     }
   ]
 }

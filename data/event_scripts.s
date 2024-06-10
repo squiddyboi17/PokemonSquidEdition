@@ -1072,3 +1072,40 @@ EventScript_VsSeekerChargingDone::
 	.include "data/text/frontier_brain.inc"
 	.include "data/text/save.inc"
 	.include "data/text/birch_speech.inc"
+
+	.include "data/maps/PalletTown/scripts.inc"
+
+	.include "data/maps/Route1/scripts.inc"
+
+	.include "data/maps/ViridianCity/scripts.inc"
+
+	.include "data/maps/RedsHouse/scripts.inc"
+
+	.include "data/maps/BluesHouse/scripts.inc"
+
+	.include "data/maps/PalletDaycare/scripts.inc"
+
+	.include "data/maps/oakslab/scripts.inc"
+
+	.include "data/maps/pokesupercenter/scripts.inc"
+
+	.include "data/maps/pokesupercenter2/scripts.inc"
+
+	.include "data/maps/pallettownhouse1/scripts.inc"
+
+	.include "data/maps/Startmap/scripts.inc"
+
+	.include "data/maps/PokemonLeagueReceptionGate/scripts.inc"
+
+	.include "data/maps/Route22/scripts.inc"
+
+	.include "data/maps/Route2/scripts.inc"
+
+	.include "data/maps/PewterCity/scripts.inc"
+
+	.include "data/maps/Route3/scripts.inc"
+
+	.include "data/maps/Route4/scripts.inc"
+
+	.include "data/maps/CeruleanCity/scripts.inc"
+

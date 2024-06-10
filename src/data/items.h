@@ -199,7 +199,7 @@ const struct Item gItemsInfo[] =
     [ITEM_MASTER_BALL] =
     {
         .name = _("Master Ball"),
-        .price = 0,
+        .price = 1000,
         .description = COMPOUND_STRING(
             "The best Ball that\n"
             "catches a Pokémon\n"
@@ -1698,7 +1698,7 @@ const struct Item gItemsInfo[] =
     {
         .name = _("Rare Candy"),
         .pluralName = _("Rare Candies"),
-        .price = (I_PRICE >= GEN_7) ? 10000 : 4800,
+        .price = (I_PRICE >= GEN_7) ? 10 : 4800,
         .description = COMPOUND_STRING(
             "Raises the level\n"
             "of a Pokémon by\n"
@@ -7272,7 +7272,7 @@ const struct Item gItemsInfo[] =
         .name = _("Exp. Share"),
         .holdEffect = HOLD_EFFECT_EXP_SHARE,
         #if I_EXP_SHARE_ITEM >= GEN_6
-            .price = 0,
+            .price = 100,
             .description = COMPOUND_STRING(
                 "This device gives\n"
                 "exp. to other\n"
@@ -10900,7 +10900,7 @@ const struct Item gItemsInfo[] =
     [ITEM_MEGA_RING] =
     {
         .name = _("Mega Ring"),
-        .price = 0,
+        .price = 10,
         .importance = 1,
         .description = COMPOUND_STRING(
             "Enables {PKMN} holding\n"
@@ -10957,7 +10957,7 @@ const struct Item gItemsInfo[] =
     [ITEM_MACH_BIKE] =
     {
         .name = _("Mach Bike"),
-        .price = 0,
+        .price = 1500,
         .description = COMPOUND_STRING(
             "A folding bicycle\n"
             "that doubles your\n"
@@ -10972,7 +10972,7 @@ const struct Item gItemsInfo[] =
     [ITEM_ACRO_BIKE] =
     {
         .name = _("Acro Bike"),
-        .price = 0,
+        .price = 1500,
         .description = COMPOUND_STRING(
             "A folding bicycle\n"
             "capable of jumps\n"

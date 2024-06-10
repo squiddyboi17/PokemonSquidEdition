@@ -1,0 +1,44 @@
+mapscripts pokesupercenter_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: pokesupercenter_OnTransition
+    MAP_SCRIPT_ON_RESUME: CableClub_OnResume
+
+}
+   
+ script pokesupercenter_OnTransition {
+    setrespawn(HEAL_LOCATION_PALLET_TOWN)
+}
+
+
+script pokecenternursesimple {
+    setvar(VAR_0x800B, 1)
+    call(Common_EventScript_PkmnCenterNurse)
+    waitmessage
+    waitbuttonpress
+    release
+    end
+
+}
+
+script pokecenternurse {
+    lock
+    faceplayer
+    msgbox("Would you like me to heal your party?", MSGBOX_YESNO)
+    if(var(VAR_RESULT) == YES){
+        incrementgamestat(GAME_STAT_USED_POKECENTER)
+        #applymovement(2, Common_Movement_WalkInPlaceFasterLeft)
+        #waitmovement(0)
+        #dofieldeffect(FLDEFF_POKECENTER_HEAL)
+        #waitfieldeffect(FLDEFF_POKECENTER_HEAL)
+        #applymovement(2, Common_Movment_Walk_In_PlaceFasterDown)
+        #waitmovement(0)
+        special(HealPlayerParty)
+        msgbox("Come again soon.")
+        waitmessage
+        release
+        end
+    }
+    else{
+        msgbox("Have a nice day", MSGBOX_NPC)
+    }
+}
+

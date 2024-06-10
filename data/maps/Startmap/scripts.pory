@@ -1,0 +1,249 @@
+mapscripts Startmap_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: Startmap_EventScript_BallDefault
+}
+
+script Startmap_EventScript_BallDefault{
+    setvar(regionstarters, 0)
+}
+ 
+script activate_choosestarter_sequence{
+    lock
+    applymovement(OBJ_EVENT_ID_PLAYER, MeetBirch)
+    waitmovement(0)
+    msgbox(BeginAdventureText)
+    waitmessage
+    closemessage
+    applymovement(6, ProfMove)
+    waitmovement(0)
+    setvar(indigoplatue_STATE, 1)
+    release
+}
+ 
+script activate_choosestarter_sequence2{
+    lock
+    applymovement(OBJ_EVENT_ID_PLAYER, MeetBirch2)
+    waitmovement(0)
+    goto(activate_choosestarter_sequence)
+}
+ 
+movement MeetBirch{
+    walk_up * 4
+    face_up
+} 
+movement MeetBirch2{
+    walk_right
+    face_up
+} 
+movement ProfMove{
+    walk_left * 5
+    face_down
+}
+ 
+ 
+ 
+text BeginAdventureText{
+    "{COLOR RED}{SHADOW LIGHT_RED}Birch:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} Hello {PLAYER}, my name is Prof Birch\n"
+    "This is my lab.\p"
+    "Today is the day that you will be\n"
+    "receiving a Pokemon.\p"
+    "{COLOR GREEN}{SHADOW LIGHT_GREEN}Now Choose Wisely,\n"
+    "{COLOR BLUE}{SHADOW LIGHT_BLUE}If you would like to see more options\l"
+    "come and talk to me.\n"
+}
+ 
+ 
+script triggerstopleaving{
+	lockall
+	msgbox("You Need To Choose a Pokemon")
+	applymovement(OBJ_EVENT_ID_PLAYER, DoNotLeave)
+	waitmovement(0)
+	releaseall
+}
+ 
+movement DoNotLeave{
+    walk_up
+}
+ 
+script pkmnlgintro_EventScript_receptionist{
+    if(!(flag(FLAG_SYS_POKEMON_GET))){
+        lock
+        faceplayer
+        message("Would you like to see more?")
+        multichoice(25, 5, MULTI_STARTER_CHOICE, 0)
+        closemessage
+        if (var(VAR_RESULT) == 0){
+            call(StarterFade)
+            setvar(regionstarters, 2)
+        }
+        elif (var(VAR_RESULT) == 1){
+            call(StarterFade)
+            setvar(regionstarters, 1)
+        }
+        elif (var(VAR_RESULT) == 2){
+            call(StarterFade)
+            setvar(regionstarters, 0)
+        }
+        msgbox("Choose wisely...")
+        waitmessage
+        release
+    }
+    else{
+        msgbox("Take care of your Pokemon", MSGBOX_NPC)
+    }
+    end
+}
+ 
+ 
+script Startmap_EventScript_PokeballOne{
+    lockall
+    setvar(VAR_TEMP_0, 1)
+    if(!(flag(FLAG_SYS_POKEMON_GET))){
+        if(var(regionstarters) == 0){
+            bufferspeciesname(STR_VAR_1, SPECIES_MUDKIP)
+            setvar(STARTER_CHOICE, SPECIES_MUDKIP)
+            call(Startmap_EventScript_GiveStarter)
+        }
+        elif(var(regionstarters) == 1){
+            bufferspeciesname(STR_VAR_1, SPECIES_TOTODILE)
+            setvar(STARTER_CHOICE, SPECIES_TOTODILE)
+            call(Startmap_EventScript_GiveStarter)
+        }
+        elif(var(regionstarters) == 2){
+            bufferspeciesname(STR_VAR_1, SPECIES_SQUIRTLE)
+            setvar(STARTER_CHOICE, SPECIES_SQUIRTLE)
+            call(Startmap_EventScript_GiveStarter)
+        }
+    }
+    else{
+        msgbox("Don't Take Another")
+    }
+    waitmessage
+    releaseall
+    end
+}
+ 
+script Startmap_EventScript_PokeballTwo{
+    lockall
+    setvar(VAR_TEMP_0, 2)
+    if(!(flag(FLAG_SYS_POKEMON_GET))){
+        if(var(regionstarters) == 0){
+            bufferspeciesname(STR_VAR_1, SPECIES_TREECKO)
+            setvar(STARTER_CHOICE, SPECIES_TREECKO)
+            call(Startmap_EventScript_GiveStarter)
+        }
+        elif(var(regionstarters) == 1){
+            bufferspeciesname(STR_VAR_1, SPECIES_CHIKORITA)
+            setvar(STARTER_CHOICE, SPECIES_CHIKORITA)
+            call(Startmap_EventScript_GiveStarter)
+        }
+        elif(var(regionstarters) == 2){
+            bufferspeciesname(STR_VAR_1, SPECIES_BULBASAUR)
+            setvar(STARTER_CHOICE, SPECIES_BULBASAUR)
+            call(Startmap_EventScript_GiveStarter)
+        }
+    }
+    else{
+        msgbox("Don't Take Another")
+    }
+    waitmessage
+    releaseall
+    end
+}
+ 
+script Startmap_EventScript_PokeballThree{
+    lockall
+    setvar(VAR_TEMP_0, 3)
+    if(!(flag(FLAG_SYS_POKEMON_GET))){
+        if(var(regionstarters) == 0){
+            bufferspeciesname(STR_VAR_1, SPECIES_TORCHIC)
+            setvar(STARTER_CHOICE, SPECIES_TORCHIC)
+            call(Startmap_EventScript_GiveStarter)
+        }
+        elif(var(regionstarters) == 1){
+            bufferspeciesname(STR_VAR_1, SPECIES_CYNDAQUIL)
+            setvar(STARTER_CHOICE, SPECIES_CYNDAQUIL)
+            call(Startmap_EventScript_GiveStarter)
+        }
+        elif(var(regionstarters) == 2){
+            bufferspeciesname(STR_VAR_1, SPECIES_CHARMANDER)
+            setvar(STARTER_CHOICE, SPECIES_CHARMANDER)
+            call(Startmap_EventScript_GiveStarter)
+        }
+    }
+    else{
+        msgbox("Don't Take Another")
+    }
+    waitmessage
+    releaseall
+    end
+}
+ 
+ 
+script Startmap_EventScript_GiveStarter{
+    showmonpic(STARTER_CHOICE, 10, 3)
+    playmoncry(STARTER_CHOICE, CRY_MODE_NORMAL)
+    msgbox("Do you want to choose {STR_VAR_1}?", MSGBOX_YESNO)
+    if(var(VAR_RESULT) == YES){
+        setflag(FLAG_SYS_POKEMON_GET)
+        setvar(indigoplatue_STATE, 2)
+        givemon(STARTER_CHOICE, 10, ITEM_EXP_SHARE)
+        if(var(VAR_RESULT) == MON_GIVEN_TO_PARTY){
+            playfanfare(MUS_OBTAIN_ITEM)
+            msgbox("Recieved {STR_VAR_1}")
+            removeobject(VAR_TEMP_0)
+            call(SetBallFlag)
+            call(NicknamePartyMon)
+        }
+        elif(var(VAR_RESULT) == MON_GIVEN_TO_PC){
+            playfanfare(MUS_OBTAIN_ITEM)
+            msgbox("Recieved {STR_VAR_1}")
+            removeobject(VAR_TEMP_0)
+            call(SetBallFlag)
+            call(NicknameBoxMon)
+            msgbox("Transferred {STR_VAR_1} to PC")
+        }
+        else{
+            hidemonpic
+            msgbox("No More Room For Pokemon")
+        }
+    }
+    else{
+        hidemonpic
+        msgbox(NewProfessor_NotChosen)
+    }
+ 
+}
+ 
+ 
+script SetBallFlag{
+    if (var(VAR_TEMP_0) == 1){
+        setflag(STARTER_BALL_ONE)
+        return
+    }
+    if (var(VAR_TEMP_0) == 2){
+        setflag(STARTER_BALL_TWO)
+        return
+    }
+    if (var(VAR_TEMP_0) == 3){
+        setflag(STARTER_BALL_THREE)
+        return
+    }
+}
+ 
+
+text NewProfessor_NotChosen{
+    "You did not choose {STR_VAR_1}"
+}
+ 
+ 
+script DontTouchThat{
+	lockall
+	msgbox("DONT TOUCH THAT")
+	applymovement(OBJ_EVENT_ID_PLAYER, MoveAwayFromThere)
+	waitmovement(0)
+	releaseall
+}
+ 
+movement MoveAwayFromThere{
+    walk_left * 2
+}

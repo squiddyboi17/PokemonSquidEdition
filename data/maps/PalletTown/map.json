@@ -1,0 +1,152 @@
+{
+  "id": "MAP_PALLET_TOWN",
+  "name": "PalletTown",
+  "layout": "LAYOUT_PALLET_TOWN",
+  "music": "MUS_RG_PALLET",
+  "region_map_section": "MAPSEC_PALLET_TOWN",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_TOWN",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_ROUTE1",
+      "offset": 12,
+      "direction": "up"
+    },
+    {
+      "map": "MAP_LITTLEROOT_TOWN",
+      "offset": 2,
+      "direction": "left"
+    }
+  ],
+  "object_events": [
+    {
+      "graphics_id": "OBJ_EVENT_GFX_MAXIE",
+      "x": 19,
+      "y": 11,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 3,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Shadyguy",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_RED",
+      "x": 30,
+      "y": 2,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "8",
+      "script": "firstbattletest",
+      "flag": "FLAG_UNUSED_0x023"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 29,
+      "y": 15,
+      "elevation": 0,
+      "dest_map": "MAP_OAKSLAB",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 28,
+      "y": 15,
+      "elevation": 0,
+      "dest_map": "MAP_OAKSLAB",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 17,
+      "y": 8,
+      "elevation": 0,
+      "dest_map": "MAP_REDS_HOUSE",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 28,
+      "y": 8,
+      "elevation": 0,
+      "dest_map": "MAP_BLUES_HOUSE",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 9,
+      "y": 18,
+      "elevation": 0,
+      "dest_map": "MAP_PALLET_DAYCARE",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 5,
+      "y": 18,
+      "elevation": 0,
+      "dest_map": "MAP_PALLET_DAYCARE",
+      "dest_warp_id": "2"
+    },
+    {
+      "x": 17,
+      "y": 16,
+      "elevation": 0,
+      "dest_map": "MAP_POKESUPERCENTER",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 8,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_STARTMAP",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 24,
+      "y": 2,
+      "elevation": 0,
+      "var": "VAR_UNUSED_0x8014",
+      "var_value": "0",
+      "script": "PalletTown_Trigger_BlockPath1"
+    },
+    {
+      "type": "trigger",
+      "x": 25,
+      "y": 2,
+      "elevation": 0,
+      "var": "VAR_UNUSED_0x8014",
+      "var_value": "0",
+      "script": "PalletTown_Trigger_BlockPath1"
+    },
+    {
+      "type": "trigger",
+      "x": 17,
+      "y": 16,
+      "elevation": 0,
+      "var": "VAR_UNUSED_0x8014",
+      "var_value": "0",
+      "script": "PalletTown_Trigger_BlockPath2"
+    }
+  ],
+  "bg_events": [
+    {
+      "type": "sign",
+      "x": 21,
+      "y": 10,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "PalletTown_EventScript_townsign"
+    }
+  ]
+}

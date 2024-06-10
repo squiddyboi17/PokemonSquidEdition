@@ -1,0 +1,23 @@
+mapscripts pokesupercenter2_MapScripts{
+
+}
+
+script Littleroot_Mart_Employee{
+    lock
+    faceplayer
+    message("What do you want?")
+    waitmessage
+    pokemart(Littleroot_Mart)
+    msgbox("Okay bye...")
+    release
+    end
+}
+
+mart Littleroot_Mart {
+	ITEM_POKE_BALL
+	ITEM_GREAT_BALL
+	ITEM_ANTIDOTE
+	ITEM_AWAKENING
+	ITEM_REPEL
+}
+

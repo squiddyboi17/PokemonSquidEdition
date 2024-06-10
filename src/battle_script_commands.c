@@ -1905,11 +1905,11 @@ static void Cmd_ppreduce(void)
 
 // The chance is 1/N for each stage.
 #if B_CRIT_CHANCE >= GEN_7
-    static const u8 sCriticalHitChance[] = {24, 8, 2, 1, 1};
+    static const u8 sCriticalHitOdds[] = {24, 8, 2, 1, 1};
 #elif B_CRIT_CHANCE == GEN_6
-    static const u8 sCriticalHitChance[] = {16, 8, 2, 1, 1};
+    static const u8 sCriticalHitOdds[] = {16, 8, 2, 1, 1};
 #else
-    static const u8 sCriticalHitChance[] = {16, 8, 4, 3, 2}; // Gens 2,3,4,5
+    static const u8 sCriticalHitOdds[] = {16, 8, 4, 3, 2}; // Gens 2,3,4,5
 #endif // B_CRIT_CHANCE
 
 #define BENEFITS_FROM_LEEK(battler, holdEffect)((holdEffect == HOLD_EFFECT_LEEK) && (GET_BASE_SPECIES_ID(gBattleMons[battler].species) == SPECIES_FARFETCHD || gBattleMons[battler].species == SPECIES_SIRFETCHD))
@@ -1917,13 +1917,12 @@ s32 CalcCritChanceStageArgs(u32 battlerAtk, u32 battlerDef, u32 move, bool32 rec
 {
     s32 critChance = 0;
 
-    if (gSideStatuses[battlerDef] & SIDE_STATUS_LUCKY_CHANT
-        || abilityDef == ABILITY_BATTLE_ARMOR || abilityDef == ABILITY_SHELL_ARMOR)
+    if (gSideStatuses[battlerDef] & SIDE_STATUS_LUCKY_CHANT)
     {
         critChance = -1;
     }
     else if (gStatuses3[battlerAtk] & STATUS3_LASER_FOCUS
-        || gMovesInfo[gCurrentMove].alwaysCriticalHit
+        || gMovesInfo[move].alwaysCriticalHit
         || (abilityAtk == ABILITY_MERCILESS && gBattleMons[battlerDef].status1 & STATUS1_PSN_ANY))
     {
         critChance = -2;
@@ -1932,7 +1931,7 @@ s32 CalcCritChanceStageArgs(u32 battlerAtk, u32 battlerDef, u32 move, bool32 rec
     {
         critChance  = 2 * ((gBattleMons[battlerAtk].status2 & STATUS2_FOCUS_ENERGY) != 0)
                     + 1 * ((gBattleMons[battlerAtk].status2 & STATUS2_DRAGON_CHEER) != 0)
-                    + gMovesInfo[gCurrentMove].criticalHitStage
+                    + gMovesInfo[move].criticalHitStage
                     + (holdEffectAtk == HOLD_EFFECT_SCOPE_LENS)
                     + 2 * (holdEffectAtk == HOLD_EFFECT_LUCKY_PUNCH && gBattleMons[battlerAtk].species == SPECIES_CHANSEY)
                     + 2 * BENEFITS_FROM_LEEK(battlerAtk, holdEffectAtk)
@@ -1940,12 +1939,21 @@ s32 CalcCritChanceStageArgs(u32 battlerAtk, u32 battlerDef, u32 move, bool32 rec
                     + (abilityAtk == ABILITY_SUPER_LUCK)
                     + gBattleStruct->bonusCritStages[gBattlerAttacker];
 
-        // Record ability only if move had at least +3 chance to get a crit
-        if (critChance >= 3 && recordAbility && (abilityDef == ABILITY_BATTLE_ARMOR || abilityDef == ABILITY_SHELL_ARMOR))
-            RecordAbilityBattle(battlerDef, abilityDef);
+        if (critChance >= ARRAY_COUNT(sCriticalHitOdds))
+            critChance = ARRAY_COUNT(sCriticalHitOdds) - 1;
+    }
 
-        if (critChance >= ARRAY_COUNT(sCriticalHitChance))
-            critChance = ARRAY_COUNT(sCriticalHitChance) - 1;
+    if (critChance != -1 && (abilityDef == ABILITY_BATTLE_ARMOR || abilityDef == ABILITY_SHELL_ARMOR))
+    {
+        // Record ability only if move had 100% chance to get a crit
+        if (recordAbility)
+        {
+            if (critChance == -2)
+                RecordAbilityBattle(battlerDef, abilityDef);
+            else if (sCriticalHitOdds[critChance] == 1)
+                RecordAbilityBattle(battlerDef, abilityDef);
+        }
+        critChance = -1;
     }
 
     return critChance;
@@ -1960,12 +1968,12 @@ s32 CalcCritChanceStage(u32 battlerAtk, u32 battlerDef, u32 move, bool32 recordA
 }
 #undef BENEFITS_FROM_LEEK
 
-s32 GetCritHitChance(s32 critChanceIndex)
+s32 GetCritHitOdds(s32 critChanceIndex)
 {
     if (critChanceIndex < 0)
         return -1;
     else
-        return sCriticalHitChance[critChanceIndex];
+        return sCriticalHitOdds[critChanceIndex];
 }
 
 static void Cmd_critcalc(void)
@@ -1983,7 +1991,7 @@ static void Cmd_critcalc(void)
     else if (critChance == -2)
         gIsCriticalHit = TRUE;
     else
-        gIsCriticalHit = RandomWeighted(RNG_CRITICAL_HIT, sCriticalHitChance[critChance] - 1, 1);
+        gIsCriticalHit = RandomWeighted(RNG_CRITICAL_HIT, sCriticalHitOdds[critChance] - 1, 1);
 
     // Counter for EVO_CRITICAL_HITS.
     partySlot = gBattlerPartyIndexes[gBattlerAttacker];
@@ -3350,7 +3358,10 @@ void SetMoveEffect(bool32 primary, bool32 certain)
             case MOVE_EFFECT_SP_DEF_MINUS_1:
             case MOVE_EFFECT_ACC_MINUS_1:
             case MOVE_EFFECT_EVS_MINUS_1:
-                flags = affectsUser;
+                if (affectsUser == MOVE_EFFECT_AFFECTS_USER)
+                    flags = MOVE_EFFECT_AFFECTS_USER | MOVE_EFFECT_CERTAIN;
+                else
+                    flags = 0;
                 if (mirrorArmorReflected)
                     flags |= (STAT_CHANGE_ALLOW_PTR * !affectsUser);
                 else
@@ -3400,7 +3411,10 @@ void SetMoveEffect(bool32 primary, bool32 certain)
             case MOVE_EFFECT_SP_DEF_MINUS_2:
             case MOVE_EFFECT_ACC_MINUS_2:
             case MOVE_EFFECT_EVS_MINUS_2:
-                flags = affectsUser;
+                if (affectsUser == MOVE_EFFECT_AFFECTS_USER)
+                    flags = MOVE_EFFECT_AFFECTS_USER | MOVE_EFFECT_CERTAIN;
+                else
+                    flags = 0;
                 if (mirrorArmorReflected && !affectsUser)
                     flags |= STAT_CHANGE_ALLOW_PTR;
                 if (ChangeStatBuffs(SET_STAT_BUFF_VALUE(2) | STAT_BUFF_NEGATIVE,

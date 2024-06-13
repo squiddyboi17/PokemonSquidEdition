@@ -1,0 +1,18 @@
+mapscripts ViridianPokemonCenterF1_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: ViridianPokemonCenterF1_OnTransition
+    MAP_SCRIPT_ON_RESUME: CableClub_OnResume
+}
+
+ script ViridianPokemonCenterF1_OnTransition {
+    setrespawn(HEAL_LOCATION_VIRIDIAN_CITY)
+}
+
+script Viridianpokecenternurse {
+    setvar(VAR_0x800B, 1)
+    call(Common_EventScript_PkmnCenterNurse)
+    waitmessage
+    waitbuttonpress
+    release
+    end
+}
+

@@ -1,0 +1,135 @@
+mapscripts Route22_MapScripts {
+
+}
+
+
+
+script Startgameoutside_trigger_blockpath1{
+    lockall
+    msgbox("I should see why I was sent here")
+    applymovement (OBJ_EVENT_ID_PLAYER, StopOutsidePlayerStart1)
+    waitmovement(0)
+    releaseall
+}
+
+script Startgameoutside_trigger_blockpath2{
+    lockall
+    msgbox("I should see why I was sent here")
+    applymovement (OBJ_EVENT_ID_PLAYER, StopOutsidePlayerStart2)
+    waitmovement(0)
+    releaseall
+}
+
+script Startgameoutside_trigger_blockpath3{
+    lockall
+    msgbox("I should see why I was sent here")
+    applymovement (OBJ_EVENT_ID_PLAYER, StopOutsidePlayerStart3)
+    waitmovement(0)
+    releaseall
+}
+
+movement StopOutsidePlayerStart1{
+    walk_up
+}
+
+movement StopOutsidePlayerStart2{
+    walk_right
+}
+
+movement StopOutsidePlayerStart3{
+    walk_left
+}
+
+script Shadyguy{
+    lock
+    faceplayer
+    msgbox("...You a narc?", MSGBOX_YESNO)
+    if(var(VAR_RESULT) == NO){
+        message("Good... lets make this quick")
+        waitmessage
+        pokemart(strangemanmart)
+        msgbox("Aye, pleasure doin business")
+        release
+        end
+    }
+    else{
+    msgbox("Then beat it.", MSGBOX_NPC)
+    }
+}
+
+mart strangemanmart {
+	ITEM_MASTER_BALL
+	ITEM_MEGA_RING
+	ITEM_RARE_CANDY
+	ITEM_MACH_BIKE
+	ITEM_ACRO_BIKE
+}
+
+script singlebattletest1{
+    trainerbattle_single(TRAINER_Route22_1,singlebattleintro1,singlebattleoutro1)
+    msgbox(singlebattleidle1, MSGBOX_AUTOCLOSE)
+    end
+}
+
+script singlebattletest2{
+    trainerbattle_single(TRAINER_Route22_2,singlebattleintro1,singlebattleoutro1)
+    msgbox(singlebattleidle2, MSGBOX_AUTOCLOSE)
+    end
+}
+
+script singlebattletest3{
+    trainerbattle_single(TRAINER_Route22_3,singlebattleintro1,singlebattleoutro1)
+    msgbox(singlebattleidle3, MSGBOX_AUTOCLOSE)
+    end
+}
+
+script singlebattletest4{
+    trainerbattle_single(TRAINER_Route22_4,singlebattleintro1,singlebattleoutro1)
+    msgbox(singlebattleidle4, MSGBOX_AUTOCLOSE)
+    end
+}
+
+text singlebattleintro1{
+    "Single Battle Intro!"
+}
+
+text singlebattleoutro1{
+    "Single Battle Outro!"
+}
+text singlebattleidle1{
+    "Single Battle Idle Message"
+}
+
+text singlebattleintro2{
+    "Single Battle Intro!"
+}
+
+text singlebattleoutro2{
+    "Single Battle Outro!"
+}
+text singlebattleidle2{
+    "Single Battle Idle Message"
+}
+
+text singlebattleintro3{
+    "Single Battle Intro!"
+}
+
+text singlebattleoutro3{
+    "Single Battle Outro!"
+}
+text singlebattleidle3{
+    "Single Battle Idle Message"
+}
+
+text singlebattleintro4{
+    "Single Battle Intro!"
+}
+
+text singlebattleoutro4{
+    "Single Battle Outro!"
+}
+text singlebattleidle4{
+    "Single Battle Idle Message"
+}
+

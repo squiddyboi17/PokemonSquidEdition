@@ -1,0 +1,156 @@
+mapscripts PokemonLeagueHQ_MapScripts {
+
+}
+
+script Elite4_trigger_blockpath{
+    lockall
+    msgbox("GUARD: I'm afraid I cant let you enter.")
+    applymovement (OBJ_EVENT_ID_PLAYER, StopPlayerElite4)
+    msgbox("GUARD: Thats too bad...")
+    waitmovement(0)
+    releaseall
+}
+
+movement StopPlayerElite4{
+    walk_down
+}
+
+script Startgame_trigger_blockpath1{
+    lockall
+    msgbox("Receptionist: Welcome!")
+    applymovement (OBJ_EVENT_ID_PLAYER, StopPlayerStart1)
+    waitmovement(0)
+    setrespawn(HEAL_LOCATION_ROUTE22)
+    releaseall
+}
+
+movement StopPlayerStart1{
+    walk_up
+}
+
+script Startgame_trigger_blockpath2{
+    lockall
+    msgbox("Hey... Where are you going?..")
+    applymovement (OBJ_EVENT_ID_PLAYER, StopPlayerStart2)
+    waitmovement(0)
+    releaseall
+}
+
+movement StopPlayerStart2{
+    walk_up
+}
+
+script HqGuardDialogue{
+    lockall
+    msgbox(format("I used to be an adventurer like you, until I took a Thunderbolt to the knee..."))
+    releaseall
+}
+
+script HQpokecenter_trigger_blockpath{
+    lockall
+    msgbox("I didn't bring any Pokemon to heal...")
+    applymovement (OBJ_EVENT_ID_PLAYER, StopPlayerHQpokecenter)
+    waitmovement(0)
+    releaseall
+}
+
+movement StopPlayerHQpokecenter{
+    walk_right
+}
+
+script HQpokecenter_trigger_blockpath2{
+    lockall
+    msgbox("Why are you like this?")
+    applymovement (OBJ_EVENT_ID_PLAYER, StopPlayerHQpokecenter2)
+    waitmovement(0)
+    releaseall
+}
+
+movement StopPlayerHQpokecenter2{
+    walk_right
+}
+
+
+
+
+
+
+script activate_startgame_sequence{
+    lock
+    applymovement(OBJ_EVENT_ID_PLAYER, meetreceptionist)
+    waitmovement(0)
+    msgbox(startgamereceptionistdialogue)
+    waitmessage
+    closemessage
+    applymovement(1,receptionistlook1)
+    waitmovement(0)
+    msgbox(startgamereceptionistdialogue2)
+    waitmessage
+    closemessage
+    applymovement (1,receptionistlook2)
+    waitmovement(0)
+    msgbox(startgamereceptionistdialogue3)
+    waitmessage
+    closemessage
+    msgbox(startjuliedialogue1)
+    waitmessage
+    closemessage
+    applymovement(4, startgamecoworkermove)
+    applymovement(OBJ_EVENT_ID_PLAYER, followcoworker)
+    waitmovement(0)
+    msgbox (startjuliedialogue2)
+    setvar(indigoplatue_STATE, 1)
+    release
+}
+
+movement meetreceptionist{
+    face_up
+} 
+
+movement receptionistlook1{
+    face_right
+}
+
+movement receptionistlook2{
+    face_down
+}
+
+movement startgamecoworkermove{
+    walk_right * 10
+    walk_up * 1
+    face_down
+}
+
+movement followcoworker{
+    walk_right *2
+    walk_up *2
+    walk_right * 9
+    walk_up
+    face_up
+}
+
+
+
+text startgamereceptionistdialogue{
+    "Receptionist: Here to just look around or\n"
+    "Do you have an appointment?.\p"
+    "{PLAYER}... {PLAYER}... OH!...\n"
+    "My boss needs to see you right away..."
+}
+
+text startgamereceptionistdialogue2{
+"Julie, this is them...\n"
+}
+
+text startgamereceptionistdialogue3{
+    "...If you follow my coworker,\l"
+    "she can bring you to the boss's office.\n"
+}
+
+text startjuliedialogue1{
+    "Julie: Right this way "
+}
+
+text startjuliedialogue2{
+    "Julie: You can go right on in. "
+}

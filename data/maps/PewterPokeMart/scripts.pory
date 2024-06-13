@@ -1,0 +1,41 @@
+mapscripts PewterPokeMart_MapScripts{
+
+} 
+
+script Pewter_Mart_Employee1{
+    lock
+    faceplayer
+    message("How may I serve you?")
+    waitmessage
+    pokemart(Pewter_Mart1)
+    msgbox("Have a good day")
+    release
+    end
+}
+
+mart Pewter_Mart1{
+	ITEM_POKE_BALL
+	ITEM_GREAT_BALL
+	ITEM_ANTIDOTE
+	ITEM_AWAKENING
+	ITEM_REPEL
+}
+
+script Pewter_Mart_Employee2{
+    lock
+    faceplayer
+    message("What are you buyin?")
+    waitmessage
+    pokemart(Pewter_Mart2)
+    msgbox("Have a good one")
+    release
+    end
+}
+
+mart Pewter_Mart2{
+	ITEM_TM11
+	ITEM_TM12
+	ITEM_TM13
+	ITEM_TM14
+	ITEM_TM15
+}

@@ -247,7 +247,7 @@ oakslab_EventScript_PokeballThree_10:
 
 oakslab_EventScript_PokeballThree_11:
 # 98 "data/maps/oakslab/scripts.pory"
-	call oakslab_EventScript_CHARIZARD
+	call oakslab_EventScript_CHARMANDER
 	goto oakslab_EventScript_PokeballThree_1
 
 
@@ -261,9 +261,9 @@ oakslab_EventScript_Mudkip::
 # 113 "data/maps/oakslab/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq oakslab_EventScript_Mudkip_1
-# 141 "data/maps/oakslab/scripts.pory"
+# 139 "data/maps/oakslab/scripts.pory"
 	hidemonpic
-# 142 "data/maps/oakslab/scripts.pory"
+# 140 "data/maps/oakslab/scripts.pory"
 	msgbox oakslab_NotChosen
 	return
 
@@ -273,12 +273,12 @@ oakslab_EventScript_Mudkip_1:
 # 115 "data/maps/oakslab/scripts.pory"
 	compare VAR_RESULT, MON_GIVEN_TO_PARTY
 	goto_if_eq oakslab_EventScript_Mudkip_4
-# 125 "data/maps/oakslab/scripts.pory"
+# 124 "data/maps/oakslab/scripts.pory"
 	compare VAR_RESULT, MON_GIVEN_TO_PC
 	goto_if_eq oakslab_EventScript_Mudkip_5
-# 136 "data/maps/oakslab/scripts.pory"
+# 134 "data/maps/oakslab/scripts.pory"
 	hidemonpic
-# 137 "data/maps/oakslab/scripts.pory"
+# 135 "data/maps/oakslab/scripts.pory"
 	msgbox oakslab_EventScript_Mudkip_Text_2
 	return
 
@@ -290,287 +290,286 @@ oakslab_EventScript_Mudkip_4:
 # 118 "data/maps/oakslab/scripts.pory"
 	msgbox oakslab_EventScript_Mudkip_Text_1
 # 119 "data/maps/oakslab/scripts.pory"
-	setflag FLAG_SYS_POKEMON_GET
-# 120 "data/maps/oakslab/scripts.pory"
 	setvar VAR_UNUSED_0x8014, 1
-# 121 "data/maps/oakslab/scripts.pory"
+# 120 "data/maps/oakslab/scripts.pory"
 	removeobject 1
-# 122 "data/maps/oakslab/scripts.pory"
+# 121 "data/maps/oakslab/scripts.pory"
 	setflag starterball1
-# 123 "data/maps/oakslab/scripts.pory"
+# 122 "data/maps/oakslab/scripts.pory"
 	call NicknamePartyMon
 	return
 
 oakslab_EventScript_Mudkip_5:
-# 126 "data/maps/oakslab/scripts.pory"
+# 125 "data/maps/oakslab/scripts.pory"
 	playfanfare MUS_OBTAIN_ITEM
-# 127 "data/maps/oakslab/scripts.pory"
+# 126 "data/maps/oakslab/scripts.pory"
 	waitfanfare
-# 128 "data/maps/oakslab/scripts.pory"
+# 127 "data/maps/oakslab/scripts.pory"
 	msgbox oakslab_EventScript_Mudkip_Text_1
-# 129 "data/maps/oakslab/scripts.pory"
-	setflag FLAG_SYS_POKEMON_GET
-# 130 "data/maps/oakslab/scripts.pory"
+# 128 "data/maps/oakslab/scripts.pory"
 	setvar VAR_UNUSED_0x8014, 1
-# 131 "data/maps/oakslab/scripts.pory"
+# 129 "data/maps/oakslab/scripts.pory"
 	removeobject 1
-# 132 "data/maps/oakslab/scripts.pory"
+# 130 "data/maps/oakslab/scripts.pory"
 	setflag starterball1
-# 133 "data/maps/oakslab/scripts.pory"
+# 131 "data/maps/oakslab/scripts.pory"
 	call NicknameBoxMon
 	return
 
 
 oakslab_EventScript_Totodile::
-# 148 "data/maps/oakslab/scripts.pory"
+# 146 "data/maps/oakslab/scripts.pory"
 	showmonpic SPECIES_TOTODILE, 10, 3
-# 149 "data/maps/oakslab/scripts.pory"
+# 147 "data/maps/oakslab/scripts.pory"
 	playmoncry SPECIES_TOTODILE, CRY_MODE_NORMAL
-# 150 "data/maps/oakslab/scripts.pory"
+# 148 "data/maps/oakslab/scripts.pory"
 	msgbox oakslab_EventScript_Totodile_Text_0, MSGBOX_YESNO
-# 151 "data/maps/oakslab/scripts.pory"
+# 149 "data/maps/oakslab/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq oakslab_EventScript_Totodile_1
-# 179 "data/maps/oakslab/scripts.pory"
+# 175 "data/maps/oakslab/scripts.pory"
 	hidemonpic
-# 180 "data/maps/oakslab/scripts.pory"
+# 176 "data/maps/oakslab/scripts.pory"
 	msgbox oakslab_NotChosen
 	return
 
 oakslab_EventScript_Totodile_1:
-# 152 "data/maps/oakslab/scripts.pory"
+# 150 "data/maps/oakslab/scripts.pory"
 	givemon SPECIES_TOTODILE, 10, ITEM_MYSTIC_WATER
-# 153 "data/maps/oakslab/scripts.pory"
+# 151 "data/maps/oakslab/scripts.pory"
 	compare VAR_RESULT, MON_GIVEN_TO_PARTY
 	goto_if_eq oakslab_EventScript_Totodile_4
-# 163 "data/maps/oakslab/scripts.pory"
+# 160 "data/maps/oakslab/scripts.pory"
 	compare VAR_RESULT, MON_GIVEN_TO_PC
 	goto_if_eq oakslab_EventScript_Totodile_5
-# 174 "data/maps/oakslab/scripts.pory"
+# 170 "data/maps/oakslab/scripts.pory"
 	hidemonpic
-# 175 "data/maps/oakslab/scripts.pory"
+# 171 "data/maps/oakslab/scripts.pory"
 	msgbox oakslab_EventScript_Mudkip_Text_2
 	return
 
 oakslab_EventScript_Totodile_4:
-# 154 "data/maps/oakslab/scripts.pory"
+# 152 "data/maps/oakslab/scripts.pory"
 	playfanfare MUS_OBTAIN_ITEM
-# 155 "data/maps/oakslab/scripts.pory"
+# 153 "data/maps/oakslab/scripts.pory"
 	waitfanfare
-# 156 "data/maps/oakslab/scripts.pory"
+# 154 "data/maps/oakslab/scripts.pory"
 	msgbox oakslab_EventScript_Totodile_Text_1
-# 157 "data/maps/oakslab/scripts.pory"
-	setflag FLAG_SYS_POKEMON_GET
-# 158 "data/maps/oakslab/scripts.pory"
+# 155 "data/maps/oakslab/scripts.pory"
 	setvar VAR_UNUSED_0x8014, 1
-# 159 "data/maps/oakslab/scripts.pory"
+# 156 "data/maps/oakslab/scripts.pory"
 	removeobject 1
-# 160 "data/maps/oakslab/scripts.pory"
+# 157 "data/maps/oakslab/scripts.pory"
 	setflag starterball1
-# 161 "data/maps/oakslab/scripts.pory"
+# 158 "data/maps/oakslab/scripts.pory"
 	call NicknamePartyMon
 	return
 
 oakslab_EventScript_Totodile_5:
-# 164 "data/maps/oakslab/scripts.pory"
+# 161 "data/maps/oakslab/scripts.pory"
 	playfanfare MUS_OBTAIN_ITEM
-# 165 "data/maps/oakslab/scripts.pory"
+# 162 "data/maps/oakslab/scripts.pory"
 	waitfanfare
-# 166 "data/maps/oakslab/scripts.pory"
+# 163 "data/maps/oakslab/scripts.pory"
 	msgbox oakslab_EventScript_Totodile_Text_1
-# 167 "data/maps/oakslab/scripts.pory"
-	setflag FLAG_SYS_POKEMON_GET
-# 168 "data/maps/oakslab/scripts.pory"
+# 164 "data/maps/oakslab/scripts.pory"
 	setvar VAR_UNUSED_0x8014, 1
-# 169 "data/maps/oakslab/scripts.pory"
+# 165 "data/maps/oakslab/scripts.pory"
 	removeobject 1
-# 170 "data/maps/oakslab/scripts.pory"
+# 166 "data/maps/oakslab/scripts.pory"
 	setflag starterball1
-# 171 "data/maps/oakslab/scripts.pory"
+# 167 "data/maps/oakslab/scripts.pory"
 	call NicknameBoxMon
 	return
 
 
 oakslab_EventScript_Squirtle::
-# 186 "data/maps/oakslab/scripts.pory"
+# 182 "data/maps/oakslab/scripts.pory"
 	showmonpic SPECIES_SQUIRTLE, 10, 3
-# 187 "data/maps/oakslab/scripts.pory"
+# 183 "data/maps/oakslab/scripts.pory"
 	playmoncry SPECIES_SQUIRTLE, CRY_MODE_NORMAL
-# 188 "data/maps/oakslab/scripts.pory"
+# 184 "data/maps/oakslab/scripts.pory"
 	msgbox oakslab_EventScript_Squirtle_Text_0, MSGBOX_YESNO
-# 189 "data/maps/oakslab/scripts.pory"
+# 185 "data/maps/oakslab/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq oakslab_EventScript_Squirtle_1
-# 217 "data/maps/oakslab/scripts.pory"
+# 211 "data/maps/oakslab/scripts.pory"
 	hidemonpic
-# 218 "data/maps/oakslab/scripts.pory"
+# 212 "data/maps/oakslab/scripts.pory"
 	msgbox oakslab_NotChosen
 	return
 
 oakslab_EventScript_Squirtle_1:
-# 190 "data/maps/oakslab/scripts.pory"
+# 186 "data/maps/oakslab/scripts.pory"
 	givemon SPECIES_SQUIRTLE, 10, ITEM_MYSTIC_WATER
-# 191 "data/maps/oakslab/scripts.pory"
+# 187 "data/maps/oakslab/scripts.pory"
 	compare VAR_RESULT, MON_GIVEN_TO_PARTY
 	goto_if_eq oakslab_EventScript_Squirtle_4
-# 201 "data/maps/oakslab/scripts.pory"
+# 196 "data/maps/oakslab/scripts.pory"
 	compare VAR_RESULT, MON_GIVEN_TO_PC
 	goto_if_eq oakslab_EventScript_Squirtle_5
-# 212 "data/maps/oakslab/scripts.pory"
+# 206 "data/maps/oakslab/scripts.pory"
 	hidemonpic
-# 213 "data/maps/oakslab/scripts.pory"
+# 207 "data/maps/oakslab/scripts.pory"
 	msgbox oakslab_EventScript_Mudkip_Text_2
 	return
 
 oakslab_EventScript_Squirtle_4:
-# 192 "data/maps/oakslab/scripts.pory"
+# 188 "data/maps/oakslab/scripts.pory"
 	playfanfare MUS_OBTAIN_ITEM
-# 193 "data/maps/oakslab/scripts.pory"
+# 189 "data/maps/oakslab/scripts.pory"
 	waitfanfare
-# 194 "data/maps/oakslab/scripts.pory"
+# 190 "data/maps/oakslab/scripts.pory"
 	msgbox oakslab_EventScript_Squirtle_Text_1
-# 195 "data/maps/oakslab/scripts.pory"
-	setflag FLAG_SYS_POKEMON_GET
-# 196 "data/maps/oakslab/scripts.pory"
+# 191 "data/maps/oakslab/scripts.pory"
 	setvar VAR_UNUSED_0x8014, 1
-# 197 "data/maps/oakslab/scripts.pory"
+# 192 "data/maps/oakslab/scripts.pory"
 	removeobject 1
-# 198 "data/maps/oakslab/scripts.pory"
+# 193 "data/maps/oakslab/scripts.pory"
 	setflag starterball1
-# 199 "data/maps/oakslab/scripts.pory"
+# 194 "data/maps/oakslab/scripts.pory"
 	call NicknamePartyMon
 	return
 
 oakslab_EventScript_Squirtle_5:
-# 202 "data/maps/oakslab/scripts.pory"
+# 197 "data/maps/oakslab/scripts.pory"
 	playfanfare MUS_OBTAIN_ITEM
-# 203 "data/maps/oakslab/scripts.pory"
+# 198 "data/maps/oakslab/scripts.pory"
 	waitfanfare
-# 204 "data/maps/oakslab/scripts.pory"
+# 199 "data/maps/oakslab/scripts.pory"
 	msgbox oakslab_EventScript_Squirtle_Text_1
-# 205 "data/maps/oakslab/scripts.pory"
-	setflag FLAG_SYS_POKEMON_GET
-# 206 "data/maps/oakslab/scripts.pory"
+# 200 "data/maps/oakslab/scripts.pory"
 	setvar VAR_UNUSED_0x8014, 1
-# 207 "data/maps/oakslab/scripts.pory"
+# 201 "data/maps/oakslab/scripts.pory"
 	removeobject 1
-# 208 "data/maps/oakslab/scripts.pory"
+# 202 "data/maps/oakslab/scripts.pory"
 	setflag starterball1
-# 209 "data/maps/oakslab/scripts.pory"
+# 203 "data/maps/oakslab/scripts.pory"
 	call NicknameBoxMon
 	return
 
 
 oakslab_EventScript_Treecko::
-# 224 "data/maps/oakslab/scripts.pory"
+# 218 "data/maps/oakslab/scripts.pory"
 	showmonpic SPECIES_TREECKO, 10, 3
-# 225 "data/maps/oakslab/scripts.pory"
+# 219 "data/maps/oakslab/scripts.pory"
 	playmoncry SPECIES_TREECKO, CRY_MODE_NORMAL
-# 226 "data/maps/oakslab/scripts.pory"
+# 220 "data/maps/oakslab/scripts.pory"
 	msgbox oakslab_EventScript_Treecko_Text_0, MSGBOX_YESNO
-# 227 "data/maps/oakslab/scripts.pory"
+# 221 "data/maps/oakslab/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq oakslab_EventScript_Treecko_1
-# 255 "data/maps/oakslab/scripts.pory"
+# 247 "data/maps/oakslab/scripts.pory"
 	hidemonpic
-# 256 "data/maps/oakslab/scripts.pory"
+# 248 "data/maps/oakslab/scripts.pory"
 	msgbox oakslab_NotChosen
 	return
 
 oakslab_EventScript_Treecko_1:
-# 228 "data/maps/oakslab/scripts.pory"
+# 222 "data/maps/oakslab/scripts.pory"
 	givemon SPECIES_TREECKO, 10, ITEM_MIRACLE_SEED
-# 229 "data/maps/oakslab/scripts.pory"
+# 223 "data/maps/oakslab/scripts.pory"
 	compare VAR_RESULT, MON_GIVEN_TO_PARTY
 	goto_if_eq oakslab_EventScript_Treecko_4
-# 239 "data/maps/oakslab/scripts.pory"
+# 232 "data/maps/oakslab/scripts.pory"
 	compare VAR_RESULT, MON_GIVEN_TO_PC
 	goto_if_eq oakslab_EventScript_Treecko_5
-# 250 "data/maps/oakslab/scripts.pory"
+# 242 "data/maps/oakslab/scripts.pory"
 	hidemonpic
-# 251 "data/maps/oakslab/scripts.pory"
+# 243 "data/maps/oakslab/scripts.pory"
 	msgbox oakslab_EventScript_Mudkip_Text_2
 	return
 
 oakslab_EventScript_Treecko_4:
-# 230 "data/maps/oakslab/scripts.pory"
+# 224 "data/maps/oakslab/scripts.pory"
 	playfanfare MUS_OBTAIN_ITEM
-# 231 "data/maps/oakslab/scripts.pory"
+# 225 "data/maps/oakslab/scripts.pory"
 	waitfanfare
-# 232 "data/maps/oakslab/scripts.pory"
+# 226 "data/maps/oakslab/scripts.pory"
 	msgbox oakslab_EventScript_Treecko_Text_1
-# 233 "data/maps/oakslab/scripts.pory"
-	setflag FLAG_SYS_POKEMON_GET
-# 234 "data/maps/oakslab/scripts.pory"
+# 227 "data/maps/oakslab/scripts.pory"
 	setvar VAR_UNUSED_0x8014, 1
-# 235 "data/maps/oakslab/scripts.pory"
+# 228 "data/maps/oakslab/scripts.pory"
 	removeobject 2
-# 236 "data/maps/oakslab/scripts.pory"
+# 229 "data/maps/oakslab/scripts.pory"
 	setflag starterball2
-# 237 "data/maps/oakslab/scripts.pory"
+# 230 "data/maps/oakslab/scripts.pory"
 	call NicknamePartyMon
 	return
 
 oakslab_EventScript_Treecko_5:
-# 240 "data/maps/oakslab/scripts.pory"
+# 233 "data/maps/oakslab/scripts.pory"
 	playfanfare MUS_OBTAIN_ITEM
-# 241 "data/maps/oakslab/scripts.pory"
+# 234 "data/maps/oakslab/scripts.pory"
 	waitfanfare
-# 242 "data/maps/oakslab/scripts.pory"
+# 235 "data/maps/oakslab/scripts.pory"
 	msgbox oakslab_EventScript_Treecko_Text_1
-# 243 "data/maps/oakslab/scripts.pory"
-	setflag FLAG_SYS_POKEMON_GET
-# 244 "data/maps/oakslab/scripts.pory"
+# 236 "data/maps/oakslab/scripts.pory"
 	setvar VAR_UNUSED_0x8014, 1
-# 245 "data/maps/oakslab/scripts.pory"
+# 237 "data/maps/oakslab/scripts.pory"
 	removeobject 2
-# 246 "data/maps/oakslab/scripts.pory"
+# 238 "data/maps/oakslab/scripts.pory"
 	setflag starterball2
-# 247 "data/maps/oakslab/scripts.pory"
+# 239 "data/maps/oakslab/scripts.pory"
 	call NicknameBoxMon
 	return
 
 
 oakslab_EventScript_Chikorita::
-# 262 "data/maps/oakslab/scripts.pory"
+# 254 "data/maps/oakslab/scripts.pory"
 	showmonpic SPECIES_CHIKORITA, 10, 3
-# 263 "data/maps/oakslab/scripts.pory"
+# 255 "data/maps/oakslab/scripts.pory"
 	playmoncry SPECIES_CHIKORITA, CRY_MODE_NORMAL
-# 264 "data/maps/oakslab/scripts.pory"
+# 256 "data/maps/oakslab/scripts.pory"
 	msgbox oakslab_EventScript_Chikorita_Text_0, MSGBOX_YESNO
-# 265 "data/maps/oakslab/scripts.pory"
+# 257 "data/maps/oakslab/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq oakslab_EventScript_Chikorita_1
-# 293 "data/maps/oakslab/scripts.pory"
+# 283 "data/maps/oakslab/scripts.pory"
 	hidemonpic
-# 294 "data/maps/oakslab/scripts.pory"
+# 284 "data/maps/oakslab/scripts.pory"
 	msgbox oakslab_NotChosen
 	return
 
 oakslab_EventScript_Chikorita_1:
-# 266 "data/maps/oakslab/scripts.pory"
+# 258 "data/maps/oakslab/scripts.pory"
 	givemon SPECIES_CHIKORITA, 10, ITEM_MIRACLE_SEED
-# 267 "data/maps/oakslab/scripts.pory"
+# 259 "data/maps/oakslab/scripts.pory"
 	compare VAR_RESULT, MON_GIVEN_TO_PARTY
 	goto_if_eq oakslab_EventScript_Chikorita_4
-# 277 "data/maps/oakslab/scripts.pory"
+# 268 "data/maps/oakslab/scripts.pory"
 	compare VAR_RESULT, MON_GIVEN_TO_PC
 	goto_if_eq oakslab_EventScript_Chikorita_5
-# 288 "data/maps/oakslab/scripts.pory"
+# 278 "data/maps/oakslab/scripts.pory"
 	hidemonpic
-# 289 "data/maps/oakslab/scripts.pory"
+# 279 "data/maps/oakslab/scripts.pory"
 	msgbox oakslab_EventScript_Mudkip_Text_2
 	return
 
 oakslab_EventScript_Chikorita_4:
-# 268 "data/maps/oakslab/scripts.pory"
+# 260 "data/maps/oakslab/scripts.pory"
 	playfanfare MUS_OBTAIN_ITEM
-# 269 "data/maps/oakslab/scripts.pory"
+# 261 "data/maps/oakslab/scripts.pory"
 	waitfanfare
-# 270 "data/maps/oakslab/scripts.pory"
+# 262 "data/maps/oakslab/scripts.pory"
 	msgbox oakslab_EventScript_Chikorita_Text_1
+# 263 "data/maps/oakslab/scripts.pory"
+	setvar VAR_UNUSED_0x8014, 1
+# 264 "data/maps/oakslab/scripts.pory"
+	removeobject 2
+# 265 "data/maps/oakslab/scripts.pory"
+	setflag starterball2
+# 266 "data/maps/oakslab/scripts.pory"
+	call NicknamePartyMon
+	return
+
+oakslab_EventScript_Chikorita_5:
+# 269 "data/maps/oakslab/scripts.pory"
+	playfanfare MUS_OBTAIN_ITEM
+# 270 "data/maps/oakslab/scripts.pory"
+	waitfanfare
 # 271 "data/maps/oakslab/scripts.pory"
-	setflag FLAG_SYS_POKEMON_GET
+	msgbox oakslab_EventScript_Chikorita_Text_1
 # 272 "data/maps/oakslab/scripts.pory"
 	setvar VAR_UNUSED_0x8014, 1
 # 273 "data/maps/oakslab/scripts.pory"
@@ -578,342 +577,307 @@ oakslab_EventScript_Chikorita_4:
 # 274 "data/maps/oakslab/scripts.pory"
 	setflag starterball2
 # 275 "data/maps/oakslab/scripts.pory"
-	call NicknamePartyMon
-	return
-
-oakslab_EventScript_Chikorita_5:
-# 278 "data/maps/oakslab/scripts.pory"
-	playfanfare MUS_OBTAIN_ITEM
-# 279 "data/maps/oakslab/scripts.pory"
-	waitfanfare
-# 280 "data/maps/oakslab/scripts.pory"
-	msgbox oakslab_EventScript_Chikorita_Text_1
-# 281 "data/maps/oakslab/scripts.pory"
-	setflag FLAG_SYS_POKEMON_GET
-# 282 "data/maps/oakslab/scripts.pory"
-	setvar VAR_UNUSED_0x8014, 1
-# 283 "data/maps/oakslab/scripts.pory"
-	removeobject 2
-# 284 "data/maps/oakslab/scripts.pory"
-	setflag starterball2
-# 285 "data/maps/oakslab/scripts.pory"
 	call NicknameBoxMon
 	return
 
 
 oakslab_EventScript_Bulbasaur::
-# 300 "data/maps/oakslab/scripts.pory"
+# 290 "data/maps/oakslab/scripts.pory"
 	showmonpic SPECIES_BULBASAUR, 10, 3
-# 301 "data/maps/oakslab/scripts.pory"
+# 291 "data/maps/oakslab/scripts.pory"
 	playmoncry SPECIES_BULBASAUR, CRY_MODE_NORMAL
-# 302 "data/maps/oakslab/scripts.pory"
+# 292 "data/maps/oakslab/scripts.pory"
 	msgbox oakslab_EventScript_Bulbasaur_Text_0, MSGBOX_YESNO
-# 303 "data/maps/oakslab/scripts.pory"
+# 293 "data/maps/oakslab/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq oakslab_EventScript_Bulbasaur_1
-# 331 "data/maps/oakslab/scripts.pory"
+# 319 "data/maps/oakslab/scripts.pory"
 	hidemonpic
-# 332 "data/maps/oakslab/scripts.pory"
+# 320 "data/maps/oakslab/scripts.pory"
 	msgbox oakslab_NotChosen
 	return
 
 oakslab_EventScript_Bulbasaur_1:
-# 304 "data/maps/oakslab/scripts.pory"
+# 294 "data/maps/oakslab/scripts.pory"
 	givemon SPECIES_BULBASAUR, 10, ITEM_MIRACLE_SEED
-# 305 "data/maps/oakslab/scripts.pory"
+# 295 "data/maps/oakslab/scripts.pory"
 	compare VAR_RESULT, MON_GIVEN_TO_PARTY
 	goto_if_eq oakslab_EventScript_Bulbasaur_4
-# 315 "data/maps/oakslab/scripts.pory"
+# 304 "data/maps/oakslab/scripts.pory"
 	compare VAR_RESULT, MON_GIVEN_TO_PC
 	goto_if_eq oakslab_EventScript_Bulbasaur_5
-# 326 "data/maps/oakslab/scripts.pory"
+# 314 "data/maps/oakslab/scripts.pory"
 	hidemonpic
-# 327 "data/maps/oakslab/scripts.pory"
+# 315 "data/maps/oakslab/scripts.pory"
 	msgbox oakslab_EventScript_Mudkip_Text_2
 	return
 
 oakslab_EventScript_Bulbasaur_4:
-# 306 "data/maps/oakslab/scripts.pory"
+# 296 "data/maps/oakslab/scripts.pory"
 	playfanfare MUS_OBTAIN_ITEM
-# 307 "data/maps/oakslab/scripts.pory"
+# 297 "data/maps/oakslab/scripts.pory"
 	waitfanfare
-# 308 "data/maps/oakslab/scripts.pory"
+# 298 "data/maps/oakslab/scripts.pory"
 	msgbox oakslab_EventScript_Bulbasaur_Text_1
-# 309 "data/maps/oakslab/scripts.pory"
-	setflag FLAG_SYS_POKEMON_GET
-# 310 "data/maps/oakslab/scripts.pory"
+# 299 "data/maps/oakslab/scripts.pory"
 	setvar VAR_UNUSED_0x8014, 1
-# 311 "data/maps/oakslab/scripts.pory"
+# 300 "data/maps/oakslab/scripts.pory"
 	removeobject 2
-# 312 "data/maps/oakslab/scripts.pory"
+# 301 "data/maps/oakslab/scripts.pory"
 	setflag starterball2
-# 313 "data/maps/oakslab/scripts.pory"
+# 302 "data/maps/oakslab/scripts.pory"
 	call NicknamePartyMon
 	return
 
 oakslab_EventScript_Bulbasaur_5:
-# 316 "data/maps/oakslab/scripts.pory"
+# 305 "data/maps/oakslab/scripts.pory"
 	playfanfare MUS_OBTAIN_ITEM
-# 317 "data/maps/oakslab/scripts.pory"
+# 306 "data/maps/oakslab/scripts.pory"
 	waitfanfare
-# 318 "data/maps/oakslab/scripts.pory"
+# 307 "data/maps/oakslab/scripts.pory"
 	msgbox oakslab_EventScript_Bulbasaur_Text_1
-# 319 "data/maps/oakslab/scripts.pory"
-	setflag FLAG_SYS_POKEMON_GET
-# 320 "data/maps/oakslab/scripts.pory"
+# 308 "data/maps/oakslab/scripts.pory"
 	setvar VAR_UNUSED_0x8014, 1
-# 321 "data/maps/oakslab/scripts.pory"
+# 309 "data/maps/oakslab/scripts.pory"
 	removeobject 2
-# 322 "data/maps/oakslab/scripts.pory"
+# 310 "data/maps/oakslab/scripts.pory"
 	setflag starterball2
-# 323 "data/maps/oakslab/scripts.pory"
+# 311 "data/maps/oakslab/scripts.pory"
 	call NicknameBoxMon
 	return
 
 
 oakslab_EventScript_Torchic::
-# 338 "data/maps/oakslab/scripts.pory"
+# 326 "data/maps/oakslab/scripts.pory"
 	showmonpic SPECIES_TORCHIC, 10, 3
-# 339 "data/maps/oakslab/scripts.pory"
+# 327 "data/maps/oakslab/scripts.pory"
 	playmoncry SPECIES_TORCHIC, CRY_MODE_NORMAL
-# 340 "data/maps/oakslab/scripts.pory"
+# 328 "data/maps/oakslab/scripts.pory"
 	msgbox oakslab_EventScript_Torchic_Text_0, MSGBOX_YESNO
-# 341 "data/maps/oakslab/scripts.pory"
+# 329 "data/maps/oakslab/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq oakslab_EventScript_Torchic_1
-# 369 "data/maps/oakslab/scripts.pory"
+# 355 "data/maps/oakslab/scripts.pory"
 	hidemonpic
-# 370 "data/maps/oakslab/scripts.pory"
+# 356 "data/maps/oakslab/scripts.pory"
 	msgbox oakslab_NotChosen
 	return
 
 oakslab_EventScript_Torchic_1:
-# 342 "data/maps/oakslab/scripts.pory"
+# 330 "data/maps/oakslab/scripts.pory"
 	givemon SPECIES_TORCHIC, 10, ITEM_CHARCOAL
-# 343 "data/maps/oakslab/scripts.pory"
+# 331 "data/maps/oakslab/scripts.pory"
 	compare VAR_RESULT, MON_GIVEN_TO_PARTY
 	goto_if_eq oakslab_EventScript_Torchic_4
-# 353 "data/maps/oakslab/scripts.pory"
+# 340 "data/maps/oakslab/scripts.pory"
 	compare VAR_RESULT, MON_GIVEN_TO_PC
 	goto_if_eq oakslab_EventScript_Torchic_5
-# 364 "data/maps/oakslab/scripts.pory"
+# 350 "data/maps/oakslab/scripts.pory"
 	hidemonpic
-# 365 "data/maps/oakslab/scripts.pory"
+# 351 "data/maps/oakslab/scripts.pory"
 	msgbox oakslab_EventScript_Mudkip_Text_2
 	return
 
 oakslab_EventScript_Torchic_4:
-# 344 "data/maps/oakslab/scripts.pory"
+# 332 "data/maps/oakslab/scripts.pory"
 	playfanfare MUS_OBTAIN_ITEM
-# 345 "data/maps/oakslab/scripts.pory"
+# 333 "data/maps/oakslab/scripts.pory"
 	waitfanfare
-# 346 "data/maps/oakslab/scripts.pory"
+# 334 "data/maps/oakslab/scripts.pory"
 	msgbox oakslab_EventScript_Torchic_Text_1
-# 347 "data/maps/oakslab/scripts.pory"
-	setflag FLAG_SYS_POKEMON_GET
-# 348 "data/maps/oakslab/scripts.pory"
+# 335 "data/maps/oakslab/scripts.pory"
 	setvar VAR_UNUSED_0x8014, 1
-# 349 "data/maps/oakslab/scripts.pory"
+# 336 "data/maps/oakslab/scripts.pory"
 	removeobject 3
-# 350 "data/maps/oakslab/scripts.pory"
+# 337 "data/maps/oakslab/scripts.pory"
 	setflag starterball3
-# 351 "data/maps/oakslab/scripts.pory"
+# 338 "data/maps/oakslab/scripts.pory"
 	call NicknamePartyMon
 	return
 
 oakslab_EventScript_Torchic_5:
-# 354 "data/maps/oakslab/scripts.pory"
+# 341 "data/maps/oakslab/scripts.pory"
 	playfanfare MUS_OBTAIN_ITEM
-# 355 "data/maps/oakslab/scripts.pory"
+# 342 "data/maps/oakslab/scripts.pory"
 	waitfanfare
-# 356 "data/maps/oakslab/scripts.pory"
+# 343 "data/maps/oakslab/scripts.pory"
 	msgbox oakslab_EventScript_Torchic_Text_1
-# 357 "data/maps/oakslab/scripts.pory"
-	setflag FLAG_SYS_POKEMON_GET
-# 358 "data/maps/oakslab/scripts.pory"
+# 344 "data/maps/oakslab/scripts.pory"
 	setvar VAR_UNUSED_0x8014, 1
-# 359 "data/maps/oakslab/scripts.pory"
+# 345 "data/maps/oakslab/scripts.pory"
 	removeobject 3
-# 360 "data/maps/oakslab/scripts.pory"
+# 346 "data/maps/oakslab/scripts.pory"
 	setflag starterball3
-# 361 "data/maps/oakslab/scripts.pory"
+# 347 "data/maps/oakslab/scripts.pory"
 	call NicknameBoxMon
 	return
 
 
 oakslab_EventScript_Cyndaquil::
-# 376 "data/maps/oakslab/scripts.pory"
+# 362 "data/maps/oakslab/scripts.pory"
 	showmonpic SPECIES_CYNDAQUIL, 10, 3
-# 377 "data/maps/oakslab/scripts.pory"
+# 363 "data/maps/oakslab/scripts.pory"
 	playmoncry SPECIES_CYNDAQUIL, CRY_MODE_NORMAL
-# 378 "data/maps/oakslab/scripts.pory"
+# 364 "data/maps/oakslab/scripts.pory"
 	msgbox oakslab_EventScript_Cyndaquil_Text_0, MSGBOX_YESNO
-# 379 "data/maps/oakslab/scripts.pory"
+# 365 "data/maps/oakslab/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq oakslab_EventScript_Cyndaquil_1
-# 407 "data/maps/oakslab/scripts.pory"
+# 391 "data/maps/oakslab/scripts.pory"
 	hidemonpic
-# 408 "data/maps/oakslab/scripts.pory"
+# 392 "data/maps/oakslab/scripts.pory"
 	msgbox oakslab_NotChosen
 	return
 
 oakslab_EventScript_Cyndaquil_1:
-# 380 "data/maps/oakslab/scripts.pory"
+# 366 "data/maps/oakslab/scripts.pory"
 	givemon SPECIES_CYNDAQUIL, 10, ITEM_CHARCOAL
-# 381 "data/maps/oakslab/scripts.pory"
+# 367 "data/maps/oakslab/scripts.pory"
 	compare VAR_RESULT, MON_GIVEN_TO_PARTY
 	goto_if_eq oakslab_EventScript_Cyndaquil_4
-# 391 "data/maps/oakslab/scripts.pory"
+# 376 "data/maps/oakslab/scripts.pory"
 	compare VAR_RESULT, MON_GIVEN_TO_PC
 	goto_if_eq oakslab_EventScript_Cyndaquil_5
-# 402 "data/maps/oakslab/scripts.pory"
+# 386 "data/maps/oakslab/scripts.pory"
 	hidemonpic
-# 403 "data/maps/oakslab/scripts.pory"
+# 387 "data/maps/oakslab/scripts.pory"
 	msgbox oakslab_EventScript_Mudkip_Text_2
 	return
 
 oakslab_EventScript_Cyndaquil_4:
-# 382 "data/maps/oakslab/scripts.pory"
+# 368 "data/maps/oakslab/scripts.pory"
 	playfanfare MUS_OBTAIN_ITEM
-# 383 "data/maps/oakslab/scripts.pory"
+# 369 "data/maps/oakslab/scripts.pory"
 	waitfanfare
-# 384 "data/maps/oakslab/scripts.pory"
+# 370 "data/maps/oakslab/scripts.pory"
 	msgbox oakslab_EventScript_Cyndaquil_Text_1
-# 385 "data/maps/oakslab/scripts.pory"
-	setflag FLAG_SYS_POKEMON_GET
-# 386 "data/maps/oakslab/scripts.pory"
+# 371 "data/maps/oakslab/scripts.pory"
 	setvar VAR_UNUSED_0x8014, 1
-# 387 "data/maps/oakslab/scripts.pory"
+# 372 "data/maps/oakslab/scripts.pory"
 	removeobject 3
-# 388 "data/maps/oakslab/scripts.pory"
+# 373 "data/maps/oakslab/scripts.pory"
 	setflag starterball3
-# 389 "data/maps/oakslab/scripts.pory"
+# 374 "data/maps/oakslab/scripts.pory"
 	call NicknamePartyMon
 	return
 
 oakslab_EventScript_Cyndaquil_5:
-# 392 "data/maps/oakslab/scripts.pory"
+# 377 "data/maps/oakslab/scripts.pory"
 	playfanfare MUS_OBTAIN_ITEM
-# 393 "data/maps/oakslab/scripts.pory"
+# 378 "data/maps/oakslab/scripts.pory"
 	waitfanfare
-# 394 "data/maps/oakslab/scripts.pory"
+# 379 "data/maps/oakslab/scripts.pory"
 	msgbox oakslab_EventScript_Cyndaquil_Text_1
-# 395 "data/maps/oakslab/scripts.pory"
-	setflag FLAG_SYS_POKEMON_GET
-# 396 "data/maps/oakslab/scripts.pory"
+# 380 "data/maps/oakslab/scripts.pory"
 	setvar VAR_UNUSED_0x8014, 1
-# 397 "data/maps/oakslab/scripts.pory"
+# 381 "data/maps/oakslab/scripts.pory"
 	removeobject 3
-# 398 "data/maps/oakslab/scripts.pory"
+# 382 "data/maps/oakslab/scripts.pory"
 	setflag starterball3
-# 399 "data/maps/oakslab/scripts.pory"
+# 383 "data/maps/oakslab/scripts.pory"
 	call NicknameBoxMon
 	return
 
 
-oakslab_EventScript_CHARIZARD::
-# 414 "data/maps/oakslab/scripts.pory"
-	showmonpic SPECIES_CHARIZARD, 10, 3
-# 415 "data/maps/oakslab/scripts.pory"
-	playmoncry SPECIES_CHARIZARD, CRY_MODE_NORMAL
-# 416 "data/maps/oakslab/scripts.pory"
-	msgbox oakslab_EventScript_CHARIZARD_Text_0, MSGBOX_YESNO
-# 417 "data/maps/oakslab/scripts.pory"
+oakslab_EventScript_CHARMANDER::
+# 398 "data/maps/oakslab/scripts.pory"
+	showmonpic SPECIES_CHARMANDER, 10, 3
+# 399 "data/maps/oakslab/scripts.pory"
+	playmoncry SPECIES_CHARMANDER, CRY_MODE_NORMAL
+# 400 "data/maps/oakslab/scripts.pory"
+	msgbox oakslab_EventScript_CHARMANDER_Text_0, MSGBOX_YESNO
+# 401 "data/maps/oakslab/scripts.pory"
 	compare VAR_RESULT, YES
-	goto_if_eq oakslab_EventScript_CHARIZARD_1
-# 445 "data/maps/oakslab/scripts.pory"
+	goto_if_eq oakslab_EventScript_CHARMANDER_1
+# 427 "data/maps/oakslab/scripts.pory"
 	hidemonpic
-# 446 "data/maps/oakslab/scripts.pory"
+# 428 "data/maps/oakslab/scripts.pory"
 	msgbox oakslab_NotChosen
 	return
 
-oakslab_EventScript_CHARIZARD_1:
-# 418 "data/maps/oakslab/scripts.pory"
-	givemon SPECIES_CHARIZARD, 50, ITEM_CHARIZARDITE_X
-# 419 "data/maps/oakslab/scripts.pory"
+oakslab_EventScript_CHARMANDER_1:
+# 402 "data/maps/oakslab/scripts.pory"
+	givemon SPECIES_CHARMANDER, 10, ITEM_CHARCOAL
+# 403 "data/maps/oakslab/scripts.pory"
 	compare VAR_RESULT, MON_GIVEN_TO_PARTY
-	goto_if_eq oakslab_EventScript_CHARIZARD_4
-# 429 "data/maps/oakslab/scripts.pory"
+	goto_if_eq oakslab_EventScript_CHARMANDER_4
+# 412 "data/maps/oakslab/scripts.pory"
 	compare VAR_RESULT, MON_GIVEN_TO_PC
-	goto_if_eq oakslab_EventScript_CHARIZARD_5
-# 440 "data/maps/oakslab/scripts.pory"
+	goto_if_eq oakslab_EventScript_CHARMANDER_5
+# 422 "data/maps/oakslab/scripts.pory"
 	hidemonpic
-# 441 "data/maps/oakslab/scripts.pory"
+# 423 "data/maps/oakslab/scripts.pory"
 	msgbox oakslab_EventScript_Mudkip_Text_2
 	return
 
-oakslab_EventScript_CHARIZARD_4:
-# 420 "data/maps/oakslab/scripts.pory"
+oakslab_EventScript_CHARMANDER_4:
+# 404 "data/maps/oakslab/scripts.pory"
 	playfanfare MUS_OBTAIN_ITEM
-# 421 "data/maps/oakslab/scripts.pory"
+# 405 "data/maps/oakslab/scripts.pory"
 	waitfanfare
-# 422 "data/maps/oakslab/scripts.pory"
-	msgbox oakslab_EventScript_CHARIZARD_Text_1
-# 423 "data/maps/oakslab/scripts.pory"
-	setflag FLAG_SYS_POKEMON_GET
-# 424 "data/maps/oakslab/scripts.pory"
+# 406 "data/maps/oakslab/scripts.pory"
+	msgbox oakslab_EventScript_CHARMANDER_Text_1
+# 407 "data/maps/oakslab/scripts.pory"
 	setvar VAR_UNUSED_0x8014, 1
-# 425 "data/maps/oakslab/scripts.pory"
+# 408 "data/maps/oakslab/scripts.pory"
 	removeobject 3
-# 426 "data/maps/oakslab/scripts.pory"
+# 409 "data/maps/oakslab/scripts.pory"
 	setflag starterball3
-# 427 "data/maps/oakslab/scripts.pory"
+# 410 "data/maps/oakslab/scripts.pory"
 	call NicknamePartyMon
 	return
 
-oakslab_EventScript_CHARIZARD_5:
-# 430 "data/maps/oakslab/scripts.pory"
+oakslab_EventScript_CHARMANDER_5:
+# 413 "data/maps/oakslab/scripts.pory"
 	playfanfare MUS_OBTAIN_ITEM
-# 431 "data/maps/oakslab/scripts.pory"
+# 414 "data/maps/oakslab/scripts.pory"
 	waitfanfare
-# 432 "data/maps/oakslab/scripts.pory"
-	msgbox oakslab_EventScript_CHARIZARD_Text_1
-# 433 "data/maps/oakslab/scripts.pory"
-	setflag FLAG_SYS_POKEMON_GET
-# 434 "data/maps/oakslab/scripts.pory"
+# 415 "data/maps/oakslab/scripts.pory"
+	msgbox oakslab_EventScript_CHARMANDER_Text_1
+# 416 "data/maps/oakslab/scripts.pory"
 	setvar VAR_UNUSED_0x8014, 1
-# 435 "data/maps/oakslab/scripts.pory"
+# 417 "data/maps/oakslab/scripts.pory"
 	removeobject 3
-# 436 "data/maps/oakslab/scripts.pory"
+# 418 "data/maps/oakslab/scripts.pory"
 	setflag starterball3
-# 437 "data/maps/oakslab/scripts.pory"
+# 419 "data/maps/oakslab/scripts.pory"
 	call NicknameBoxMon
 	return
 
 
 NicknamePartyMon::
-# 453 "data/maps/oakslab/scripts.pory"
+# 435 "data/maps/oakslab/scripts.pory"
 	msgbox NicknamePartyMon_Text_0, MSGBOX_YESNO
-# 454 "data/maps/oakslab/scripts.pory"
+# 436 "data/maps/oakslab/scripts.pory"
 	hidemonpic
-# 455 "data/maps/oakslab/scripts.pory"
+# 437 "data/maps/oakslab/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq NicknamePartyMon_1
 	return
 
 NicknamePartyMon_1:
-# 456 "data/maps/oakslab/scripts.pory"
+# 438 "data/maps/oakslab/scripts.pory"
 	call Common_EventScript_GetGiftMonPartySlot
-# 457 "data/maps/oakslab/scripts.pory"
+# 439 "data/maps/oakslab/scripts.pory"
 	call Common_EventScript_NameReceivedPartyMon
 	return
 
 
 NicknameBoxMon::
-# 464 "data/maps/oakslab/scripts.pory"
+# 446 "data/maps/oakslab/scripts.pory"
 	msgbox NicknamePartyMon_Text_0, MSGBOX_YESNO
-# 465 "data/maps/oakslab/scripts.pory"
+# 447 "data/maps/oakslab/scripts.pory"
 	hidemonpic
-# 466 "data/maps/oakslab/scripts.pory"
+# 448 "data/maps/oakslab/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq NicknameBoxMon_2
 NicknameBoxMon_1:
-# 469 "data/maps/oakslab/scripts.pory"
+# 451 "data/maps/oakslab/scripts.pory"
 	msgbox NicknameBoxMon_Text_0
 	return
 
 NicknameBoxMon_2:
-# 467 "data/maps/oakslab/scripts.pory"
+# 449 "data/maps/oakslab/scripts.pory"
 	call Common_EventScript_NameReceivedBoxMon
 	goto NicknameBoxMon_1
 
@@ -943,81 +907,81 @@ oakslab_EventScript_Mudkip_Text_1:
 	.string "Recieved Mudkip$"
 
 oakslab_EventScript_Mudkip_Text_2:
-# 137 "data/maps/oakslab/scripts.pory"
+# 135 "data/maps/oakslab/scripts.pory"
 	.string "No More Room$"
 
 oakslab_EventScript_Totodile_Text_0:
-# 150 "data/maps/oakslab/scripts.pory"
+# 148 "data/maps/oakslab/scripts.pory"
 	.string "Do you want to choose Totodile?$"
 
 oakslab_EventScript_Totodile_Text_1:
-# 156 "data/maps/oakslab/scripts.pory"
+# 154 "data/maps/oakslab/scripts.pory"
 	.string "Recieved Totodile$"
 
 oakslab_EventScript_Squirtle_Text_0:
-# 188 "data/maps/oakslab/scripts.pory"
+# 184 "data/maps/oakslab/scripts.pory"
 	.string "Do you want to choose Squirtle?$"
 
 oakslab_EventScript_Squirtle_Text_1:
-# 194 "data/maps/oakslab/scripts.pory"
+# 190 "data/maps/oakslab/scripts.pory"
 	.string "Recieved Squirtle$"
 
 oakslab_EventScript_Treecko_Text_0:
-# 226 "data/maps/oakslab/scripts.pory"
+# 220 "data/maps/oakslab/scripts.pory"
 	.string "Do you want to choose Treecko?$"
 
 oakslab_EventScript_Treecko_Text_1:
-# 232 "data/maps/oakslab/scripts.pory"
+# 226 "data/maps/oakslab/scripts.pory"
 	.string "Recieved Treecko$"
 
 oakslab_EventScript_Chikorita_Text_0:
-# 264 "data/maps/oakslab/scripts.pory"
+# 256 "data/maps/oakslab/scripts.pory"
 	.string "Do you want to choose Chikorita?$"
 
 oakslab_EventScript_Chikorita_Text_1:
-# 270 "data/maps/oakslab/scripts.pory"
+# 262 "data/maps/oakslab/scripts.pory"
 	.string "Recieved Chikorita$"
 
 oakslab_EventScript_Bulbasaur_Text_0:
-# 302 "data/maps/oakslab/scripts.pory"
+# 292 "data/maps/oakslab/scripts.pory"
 	.string "Do you want to choose Bulbasaur?$"
 
 oakslab_EventScript_Bulbasaur_Text_1:
-# 308 "data/maps/oakslab/scripts.pory"
+# 298 "data/maps/oakslab/scripts.pory"
 	.string "Recieved Bulbasaur$"
 
 oakslab_EventScript_Torchic_Text_0:
-# 340 "data/maps/oakslab/scripts.pory"
+# 328 "data/maps/oakslab/scripts.pory"
 	.string "Do you want to choose Torchic?$"
 
 oakslab_EventScript_Torchic_Text_1:
-# 346 "data/maps/oakslab/scripts.pory"
+# 334 "data/maps/oakslab/scripts.pory"
 	.string "Recieved Torchic$"
 
 oakslab_EventScript_Cyndaquil_Text_0:
-# 378 "data/maps/oakslab/scripts.pory"
+# 364 "data/maps/oakslab/scripts.pory"
 	.string "Do you want to choose Cyndaquil?$"
 
 oakslab_EventScript_Cyndaquil_Text_1:
-# 384 "data/maps/oakslab/scripts.pory"
+# 370 "data/maps/oakslab/scripts.pory"
 	.string "Recieved Cyndaquil$"
 
-oakslab_EventScript_CHARIZARD_Text_0:
-# 416 "data/maps/oakslab/scripts.pory"
-	.string "Do you want to choose CHARIZARD?$"
+oakslab_EventScript_CHARMANDER_Text_0:
+# 400 "data/maps/oakslab/scripts.pory"
+	.string "Do you want to choose CHARMANDER?$"
 
-oakslab_EventScript_CHARIZARD_Text_1:
-# 422 "data/maps/oakslab/scripts.pory"
-	.string "Recieved CHARIZARD$"
+oakslab_EventScript_CHARMANDER_Text_1:
+# 406 "data/maps/oakslab/scripts.pory"
+	.string "Recieved CHARMANDER$"
 
 NicknamePartyMon_Text_0:
-# 453 "data/maps/oakslab/scripts.pory"
+# 435 "data/maps/oakslab/scripts.pory"
 	.string "Give a nickname?$"
 
 NicknameBoxMon_Text_0:
-# 469 "data/maps/oakslab/scripts.pory"
+# 451 "data/maps/oakslab/scripts.pory"
 	.string "Transferred to PC$"
 
 oakslab_NotChosen::
-# 472 "data/maps/oakslab/scripts.pory"
+# 454 "data/maps/oakslab/scripts.pory"
 	.string "You did not choose that Pokemon$"

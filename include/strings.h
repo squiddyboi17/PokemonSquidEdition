@@ -3065,4 +3065,9 @@ extern const u8 gText_HoennStarter[];
 extern const u8 gText_JohtoStarter[];
 extern const u8 gText_KantoStarter[];
 
+extern const u8 gText_StarterSet1[];
+extern const u8 gText_StarterSet2[];
+extern const u8 gText_StarterSet3[];
+extern const u8 gText_StarterSet4[];
+
 #endif // GUARD_STRINGS_H

@@ -2,3 +2,24 @@ mapscripts Route1_MapScripts{
     
     }
 
+
+script doublebattletest{
+    trainerbattle_double(TRAINER_Route1_1,doublebattleintro,doublebattleoutro,notenoughpokemon)
+    msgbox(doublebattleidle, MSGBOX_AUTOCLOSE)
+    end
+}
+
+text doublebattleintro{
+    "Double Battle Intro!"
+}
+
+text doublebattleoutro{
+    "Double Battle Outro!"
+}
+text notenoughpokemon{
+    "Not enough Pokemon for a double battle"
+}
+
+text doublebattleidle{
+    "Double Battle Idle Message"
+}

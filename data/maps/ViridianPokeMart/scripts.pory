@@ -1,0 +1,41 @@
+mapscripts ViridianPokeMart_MapScripts{
+
+}
+
+script Viridian_Mart_Employee1{
+    lock
+    faceplayer
+    message("Would you like something?")
+    waitmessage
+    pokemart(Viridian_Mart1)
+    msgbox("Okay bye...")
+    release
+    end
+}
+
+mart Viridian_Mart1 {
+	ITEM_POKE_BALL
+	ITEM_GREAT_BALL
+	ITEM_ANTIDOTE
+	ITEM_AWAKENING
+	ITEM_REPEL
+}
+
+script Viridian_Mart_Employee2{
+    lock
+    faceplayer
+    message("What may I do for you?")
+    waitmessage
+    pokemart(Viridian_Mart2)
+    msgbox("Have a GREAT day!")
+    release
+    end
+}
+
+mart Viridian_Mart2 {
+	ITEM_TM06
+	ITEM_TM07
+	ITEM_TM08
+	ITEM_TM09
+	ITEM_TM10
+}

@@ -1853,3 +1853,8 @@ const u8 gText_PlantBerry[] = _("PLANT BERRY");
 const u8 gText_HoennStarter[] = _("HOENN");
 const u8 gText_JohtoStarter[] = _("JOHTO");
 const u8 gText_KantoStarter[] = _("KANTO");
+
+const u8 gText_StarterSet1[] = _("SET 1");
+const u8 gText_StarterSet2[] = _("SET 2");
+const u8 gText_StarterSet3[] = _("SET 3");
+const u8 gText_StarterSet4[] = _("SET 4");

@@ -3,87 +3,33 @@ mapscripts Startmap_MapScripts {
 }
 
 script Startmap_EventScript_BallDefault{
-    setvar(regionstarters, 0)
-}
- 
-script activate_choosestarter_sequence{
-    lock
-    applymovement(OBJ_EVENT_ID_PLAYER, MeetBirch)
-    waitmovement(0)
-    msgbox(BeginAdventureText)
-    waitmessage
-    closemessage
-    applymovement(6, ProfMove)
-    waitmovement(0)
-    setvar(indigoplatue_STATE, 1)
-    release
-}
- 
-script activate_choosestarter_sequence2{
-    lock
-    applymovement(OBJ_EVENT_ID_PLAYER, MeetBirch2)
-    waitmovement(0)
-    goto(activate_choosestarter_sequence)
-}
- 
-movement MeetBirch{
-    walk_up * 4
-    face_up
+    setvar(UnusualStarters, 0)
 } 
-movement MeetBirch2{
-    walk_right
-    face_up
-} 
-movement ProfMove{
-    walk_left * 5
-    face_down
-}
- 
- 
- 
-text BeginAdventureText{
-    "{COLOR RED}{SHADOW LIGHT_RED}Birch:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} Hello {PLAYER}, my name is Prof Birch\n"
-    "This is my lab.\p"
-    "Today is the day that you will be\n"
-    "receiving a Pokemon.\p"
-    "{COLOR GREEN}{SHADOW LIGHT_GREEN}Now Choose Wisely,\n"
-    "{COLOR BLUE}{SHADOW LIGHT_BLUE}If you would like to see more options\l"
-    "come and talk to me.\n"
-}
- 
- 
-script triggerstopleaving{
-	lockall
-	msgbox("You Need To Choose a Pokemon")
-	applymovement(OBJ_EVENT_ID_PLAYER, DoNotLeave)
-	waitmovement(0)
-	releaseall
-}
- 
-movement DoNotLeave{
-    walk_up
-}
- 
+
 script pkmnlgintro_EventScript_receptionist{
     if(!(flag(FLAG_SYS_POKEMON_GET))){
         lock
         faceplayer
-        message("Would you like to see more?")
-        multichoice(25, 5, MULTI_STARTER_CHOICE, 0)
+        message("Choose from a different selection?")
+        multichoice(25, 3, MULTI_STARTER_CHOICE_2, 0)
         closemessage
         if (var(VAR_RESULT) == 0){
             call(StarterFade)
-            setvar(regionstarters, 2)
+            setvar(UnusualStarters, 0)
         }
         elif (var(VAR_RESULT) == 1){
             call(StarterFade)
-            setvar(regionstarters, 1)
+            setvar(UnusualStarters, 1)
         }
         elif (var(VAR_RESULT) == 2){
             call(StarterFade)
-            setvar(regionstarters, 0)
+            setvar(UnusualStarters, 2)
         }
-        msgbox("Choose wisely...")
+        elif (var(VAR_RESULT) == 3){
+            call(StarterFade)
+            setvar(UnusualStarters, 3)
+        }
+        msgbox("Selection changed.")
         waitmessage
         release
     }
@@ -98,19 +44,24 @@ script Startmap_EventScript_PokeballOne{
     lockall
     setvar(VAR_TEMP_0, 1)
     if(!(flag(FLAG_SYS_POKEMON_GET))){
-        if(var(regionstarters) == 0){
-            bufferspeciesname(STR_VAR_1, SPECIES_MUDKIP)
-            setvar(STARTER_CHOICE, SPECIES_MUDKIP)
+        if(var(UnusualStarters) == 0){
+            bufferspeciesname(STR_VAR_1, SPECIES_PIKACHU)
+            setvar(STARTER_CHOICE, SPECIES_PIKACHU)
             call(Startmap_EventScript_GiveStarter)
         }
-        elif(var(regionstarters) == 1){
-            bufferspeciesname(STR_VAR_1, SPECIES_TOTODILE)
-            setvar(STARTER_CHOICE, SPECIES_TOTODILE)
+        elif(var(UnusualStarters) == 1){
+            bufferspeciesname(STR_VAR_1, SPECIES_VULPIX)
+            setvar(STARTER_CHOICE, SPECIES_VULPIX)
             call(Startmap_EventScript_GiveStarter)
         }
-        elif(var(regionstarters) == 2){
-            bufferspeciesname(STR_VAR_1, SPECIES_SQUIRTLE)
-            setvar(STARTER_CHOICE, SPECIES_SQUIRTLE)
+        elif(var(UnusualStarters) == 2){
+            bufferspeciesname(STR_VAR_1, SPECIES_CLEFAIRY)
+            setvar(STARTER_CHOICE, SPECIES_CLEFAIRY)
+            call(Startmap_EventScript_GiveStarter)
+        }
+        elif(var(UnusualStarters) == 3){
+            bufferspeciesname(STR_VAR_1, SPECIES_DRATINI)
+            setvar(STARTER_CHOICE, SPECIES_DRATINI)
             call(Startmap_EventScript_GiveStarter)
         }
     }
@@ -126,19 +77,24 @@ script Startmap_EventScript_PokeballTwo{
     lockall
     setvar(VAR_TEMP_0, 2)
     if(!(flag(FLAG_SYS_POKEMON_GET))){
-        if(var(regionstarters) == 0){
-            bufferspeciesname(STR_VAR_1, SPECIES_TREECKO)
-            setvar(STARTER_CHOICE, SPECIES_TREECKO)
+        if(var(UnusualStarters) == 0){
+            bufferspeciesname(STR_VAR_1, SPECIES_EEVEE)
+            setvar(STARTER_CHOICE, SPECIES_EEVEE)
             call(Startmap_EventScript_GiveStarter)
         }
-        elif(var(regionstarters) == 1){
-            bufferspeciesname(STR_VAR_1, SPECIES_CHIKORITA)
-            setvar(STARTER_CHOICE, SPECIES_CHIKORITA)
+        elif(var(UnusualStarters) == 1){
+            bufferspeciesname(STR_VAR_1, SPECIES_SHROOMISH)
+            setvar(STARTER_CHOICE, SPECIES_SHROOMISH)
             call(Startmap_EventScript_GiveStarter)
         }
-        elif(var(regionstarters) == 2){
-            bufferspeciesname(STR_VAR_1, SPECIES_BULBASAUR)
-            setvar(STARTER_CHOICE, SPECIES_BULBASAUR)
+        elif(var(UnusualStarters) == 2){
+            bufferspeciesname(STR_VAR_1, SPECIES_GASTLY)
+            setvar(STARTER_CHOICE, SPECIES_GASTLY)
+            call(Startmap_EventScript_GiveStarter)
+        }
+        elif(var(UnusualStarters) == 3){
+            bufferspeciesname(STR_VAR_1, SPECIES_BAGON)
+            setvar(STARTER_CHOICE, SPECIES_BAGON)
             call(Startmap_EventScript_GiveStarter)
         }
     }
@@ -154,19 +110,24 @@ script Startmap_EventScript_PokeballThree{
     lockall
     setvar(VAR_TEMP_0, 3)
     if(!(flag(FLAG_SYS_POKEMON_GET))){
-        if(var(regionstarters) == 0){
-            bufferspeciesname(STR_VAR_1, SPECIES_TORCHIC)
-            setvar(STARTER_CHOICE, SPECIES_TORCHIC)
+        if(var(UnusualStarters) == 0){
+            bufferspeciesname(STR_VAR_1, SPECIES_CUBONE)
+            setvar(STARTER_CHOICE, SPECIES_CUBONE)
             call(Startmap_EventScript_GiveStarter)
         }
-        elif(var(regionstarters) == 1){
-            bufferspeciesname(STR_VAR_1, SPECIES_CYNDAQUIL)
-            setvar(STARTER_CHOICE, SPECIES_CYNDAQUIL)
+        elif(var(UnusualStarters) == 1){
+            bufferspeciesname(STR_VAR_1, SPECIES_WOOPER)
+            setvar(STARTER_CHOICE, SPECIES_WOOPER)
             call(Startmap_EventScript_GiveStarter)
         }
-        elif(var(regionstarters) == 2){
-            bufferspeciesname(STR_VAR_1, SPECIES_CHARMANDER)
-            setvar(STARTER_CHOICE, SPECIES_CHARMANDER)
+        elif(var(UnusualStarters) == 2){
+            bufferspeciesname(STR_VAR_1, SPECIES_SCYTHER)
+            setvar(STARTER_CHOICE, SPECIES_SCYTHER)
+            call(Startmap_EventScript_GiveStarter)
+        }
+        elif(var(UnusualStarters) == 3){
+            bufferspeciesname(STR_VAR_1, SPECIES_BELDUM)
+            setvar(STARTER_CHOICE, SPECIES_BELDUM)
             call(Startmap_EventScript_GiveStarter)
         }
     }
@@ -218,7 +179,6 @@ script Startmap_EventScript_GiveStarter{
 script SetBallFlag{
     if (var(VAR_TEMP_0) == 1){
         setflag(STARTER_BALL_ONE)
-        return
     }
     if (var(VAR_TEMP_0) == 2){
         setflag(STARTER_BALL_TWO)

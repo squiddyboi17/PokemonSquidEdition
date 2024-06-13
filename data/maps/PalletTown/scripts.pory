@@ -3,59 +3,10 @@ mapscripts PalletTown_MapScripts{
    
 
 
-script Shadyguy{
-    lock
-    faceplayer
-    msgbox("...you a narc?", MSGBOX_YESNO)
-    if(var(VAR_RESULT) == NO){
-        message("Good... lets make this quick")
-        waitmessage
-        pokemart(strangemanmart)
-        msgbox("Pleasure doing business")
-        release
-        end
-    }
-    else{
-    msgbox("Then beat it.", MSGBOX_NPC)
-    }
-}
-
-mart strangemanmart {
-	ITEM_MASTER_BALL
-	ITEM_MEGA_RING
-	ITEM_RARE_CANDY
-	ITEM_MACH_BIKE
-	ITEM_ACRO_BIKE
-}
-
 script PalletTown_EventScript_townsign{
     lockall
     msgbox("Pallet Town")
     releaseall
-}
-
-script PalletTown_Trigger_BlockPath1{
-    lockall
-    msgbox("You don't have a Pokemon yet")
-    applymovement (OBJ_EVENT_ID_PLAYER, StopPlayer1)
-    waitmovement(0)
-    releaseall
-}
-
-script PalletTown_Trigger_BlockPath2{
-    lockall
-    msgbox("You need a Pokemon to heal it...")
-    applymovement (OBJ_EVENT_ID_PLAYER, StopPlayer2)
-    waitmovement(0)
-    releaseall
-}
-
-movement StopPlayer1{
-    walk_down
-}
-
-movement StopPlayer2{
-    walk_down
 }
 
 script firstbattlesetup{

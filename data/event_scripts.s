@@ -1109,3 +1109,29 @@ EventScript_VsSeekerChargingDone::
 
 	.include "data/maps/CeruleanCity/scripts.inc"
 
+
+	.include "data/maps/PokemonLeagueHQ/scripts.inc"
+
+	.include "data/maps/PokemonLeagueHQlab/scripts.inc"
+
+	.include "data/maps/PokemonLeagueHQPokecenter/scripts.inc"
+
+	.include "data/maps/ViridianPokemonCenterF1/scripts.inc"
+
+	.include "data/maps/LavenderTown/scripts.inc"
+
+	.include "data/maps/Pewterpokecenter/scripts.inc"
+
+	.include "data/maps/CeruleanPokemonCenter/scripts.inc"
+
+	.include "data/maps/LavenderTownPokemonCenter/scripts.inc"
+
+	.include "data/maps/ViridianPokeMart/scripts.inc"
+
+	.include "data/maps/PewterPokeMart/scripts.inc"
+
+	.include "data/maps/ViridianForest/scripts.inc"
+
+	.include "data/maps/ViridianCityGym/scripts.inc"
+
+	.include "data/maps/PewterCityGym/scripts.inc"

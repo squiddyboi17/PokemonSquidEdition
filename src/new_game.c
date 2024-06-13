@@ -126,7 +126,7 @@ static void ClearFrontierRecord(void)
 
 static void WarpToTruck(void)
 {
-    SetWarpDestination(MAP_GROUP(MAP_INSIDE_OF_TRUCK), MAP_NUM(MAP_INSIDE_OF_TRUCK), WARP_ID_NONE, -1, -1);
+    SetWarpDestination(MAP_GROUP(POKEMON_LEAGUE_HQ), MAP_NUM(POKEMON_LEAGUE_HQ), 0, -5, -5);
     WarpIntoMap();
 }
 

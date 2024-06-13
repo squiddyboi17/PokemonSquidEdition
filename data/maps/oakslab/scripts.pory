@@ -95,7 +95,7 @@ script oakslab_EventScript_PokeballThree{
             call(oakslab_EventScript_Cyndaquil)
         }
         elif(var(regionstarters) == 2){
-            call(oakslab_EventScript_CHARIZARD)
+            call(oakslab_EventScript_CHARMANDER)
         }
     }
     else{
@@ -116,7 +116,6 @@ script oakslab_EventScript_Mudkip{
             playfanfare(MUS_OBTAIN_ITEM)
             waitfanfare
             msgbox("Recieved Mudkip")
-            setflag(FLAG_SYS_POKEMON_GET)
             setvar(VAR_UNUSED_0x8014, 1)
             removeobject(1)
             setflag(starterball1)
@@ -126,7 +125,6 @@ script oakslab_EventScript_Mudkip{
             playfanfare(MUS_OBTAIN_ITEM)
             waitfanfare
             msgbox("Recieved Mudkip")
-            setflag(FLAG_SYS_POKEMON_GET)
             setvar(VAR_UNUSED_0x8014, 1)
             removeobject(1)
             setflag(starterball1)
@@ -154,7 +152,6 @@ script oakslab_EventScript_Totodile{
             playfanfare(MUS_OBTAIN_ITEM)
             waitfanfare
             msgbox("Recieved Totodile")
-            setflag(FLAG_SYS_POKEMON_GET)
             setvar(VAR_UNUSED_0x8014, 1)
             removeobject(1)
             setflag(starterball1)
@@ -164,7 +161,6 @@ script oakslab_EventScript_Totodile{
             playfanfare(MUS_OBTAIN_ITEM)
             waitfanfare
             msgbox("Recieved Totodile")
-            setflag(FLAG_SYS_POKEMON_GET)
             setvar(VAR_UNUSED_0x8014, 1)
             removeobject(1)
             setflag(starterball1)
@@ -192,7 +188,6 @@ script oakslab_EventScript_Squirtle{
             playfanfare(MUS_OBTAIN_ITEM)
             waitfanfare
             msgbox("Recieved Squirtle")
-            setflag(FLAG_SYS_POKEMON_GET)
             setvar(VAR_UNUSED_0x8014, 1)
             removeobject(1)
             setflag(starterball1)
@@ -202,7 +197,6 @@ script oakslab_EventScript_Squirtle{
             playfanfare(MUS_OBTAIN_ITEM)
             waitfanfare
             msgbox("Recieved Squirtle")
-            setflag(FLAG_SYS_POKEMON_GET)
             setvar(VAR_UNUSED_0x8014, 1)
             removeobject(1)
             setflag(starterball1)
@@ -230,7 +224,6 @@ script oakslab_EventScript_Treecko{
             playfanfare(MUS_OBTAIN_ITEM)
             waitfanfare
             msgbox("Recieved Treecko")
-            setflag(FLAG_SYS_POKEMON_GET)
             setvar(VAR_UNUSED_0x8014, 1)
             removeobject(2)
             setflag(starterball2)
@@ -240,7 +233,6 @@ script oakslab_EventScript_Treecko{
             playfanfare(MUS_OBTAIN_ITEM)
             waitfanfare
             msgbox("Recieved Treecko")
-            setflag(FLAG_SYS_POKEMON_GET)
             setvar(VAR_UNUSED_0x8014, 1)
             removeobject(2)
             setflag(starterball2)
@@ -268,7 +260,6 @@ script oakslab_EventScript_Chikorita{
             playfanfare(MUS_OBTAIN_ITEM)
             waitfanfare
             msgbox("Recieved Chikorita")
-            setflag(FLAG_SYS_POKEMON_GET)
             setvar(VAR_UNUSED_0x8014, 1)
             removeobject(2)
             setflag(starterball2)
@@ -278,7 +269,6 @@ script oakslab_EventScript_Chikorita{
             playfanfare(MUS_OBTAIN_ITEM)
             waitfanfare
             msgbox("Recieved Chikorita")
-            setflag(FLAG_SYS_POKEMON_GET)
             setvar(VAR_UNUSED_0x8014, 1)
             removeobject(2)
             setflag(starterball2)
@@ -306,7 +296,6 @@ script oakslab_EventScript_Bulbasaur{
             playfanfare(MUS_OBTAIN_ITEM)
             waitfanfare
             msgbox("Recieved Bulbasaur")
-            setflag(FLAG_SYS_POKEMON_GET)
             setvar(VAR_UNUSED_0x8014, 1)
             removeobject(2)
             setflag(starterball2)
@@ -316,7 +305,6 @@ script oakslab_EventScript_Bulbasaur{
             playfanfare(MUS_OBTAIN_ITEM)
             waitfanfare
             msgbox("Recieved Bulbasaur")
-            setflag(FLAG_SYS_POKEMON_GET)
             setvar(VAR_UNUSED_0x8014, 1)
             removeobject(2)
             setflag(starterball2)
@@ -344,7 +332,6 @@ script oakslab_EventScript_Torchic{
             playfanfare(MUS_OBTAIN_ITEM)
             waitfanfare
             msgbox("Recieved Torchic")
-            setflag(FLAG_SYS_POKEMON_GET)
             setvar(VAR_UNUSED_0x8014, 1)
             removeobject(3)
             setflag(starterball3)
@@ -354,7 +341,6 @@ script oakslab_EventScript_Torchic{
             playfanfare(MUS_OBTAIN_ITEM)
             waitfanfare
             msgbox("Recieved Torchic")
-            setflag(FLAG_SYS_POKEMON_GET)
             setvar(VAR_UNUSED_0x8014, 1)
             removeobject(3)
             setflag(starterball3)
@@ -382,7 +368,6 @@ script oakslab_EventScript_Cyndaquil{
             playfanfare(MUS_OBTAIN_ITEM)
             waitfanfare
             msgbox("Recieved Cyndaquil")
-            setflag(FLAG_SYS_POKEMON_GET)
             setvar(VAR_UNUSED_0x8014, 1)
             removeobject(3)
             setflag(starterball3)
@@ -392,7 +377,6 @@ script oakslab_EventScript_Cyndaquil{
             playfanfare(MUS_OBTAIN_ITEM)
             waitfanfare
             msgbox("Recieved Cyndaquil")
-            setflag(FLAG_SYS_POKEMON_GET)
             setvar(VAR_UNUSED_0x8014, 1)
             removeobject(3)
             setflag(starterball3)
@@ -410,17 +394,16 @@ script oakslab_EventScript_Cyndaquil{
  
 }
  
-script oakslab_EventScript_CHARIZARD{
-    showmonpic(SPECIES_CHARIZARD, 10,3)
-    playmoncry(SPECIES_CHARIZARD, CRY_MODE_NORMAL)
-    msgbox("Do you want to choose CHARIZARD?", MSGBOX_YESNO)
+script oakslab_EventScript_CHARMANDER{
+    showmonpic(SPECIES_CHARMANDER, 10,3)
+    playmoncry(SPECIES_CHARMANDER, CRY_MODE_NORMAL)
+    msgbox("Do you want to choose CHARMANDER?", MSGBOX_YESNO)
     if(var(VAR_RESULT) == YES){
-        givemon(SPECIES_CHARIZARD, 50, ITEM_CHARIZARDITE_X)
+        givemon(SPECIES_CHARMANDER, 10, ITEM_CHARCOAL)
         if(var(VAR_RESULT) == MON_GIVEN_TO_PARTY){
             playfanfare(MUS_OBTAIN_ITEM)
             waitfanfare
-            msgbox("Recieved CHARIZARD")
-            setflag(FLAG_SYS_POKEMON_GET)
+            msgbox("Recieved CHARMANDER")
             setvar(VAR_UNUSED_0x8014, 1)
             removeobject(3)
             setflag(starterball3)
@@ -429,8 +412,7 @@ script oakslab_EventScript_CHARIZARD{
         elif(var(VAR_RESULT) == MON_GIVEN_TO_PC){
             playfanfare(MUS_OBTAIN_ITEM)
             waitfanfare
-            msgbox("Recieved CHARIZARD")
-            setflag(FLAG_SYS_POKEMON_GET)
+            msgbox("Recieved CHARMANDER")
             setvar(VAR_UNUSED_0x8014, 1)
             removeobject(3)
             setflag(starterball3)

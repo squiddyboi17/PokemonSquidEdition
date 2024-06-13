@@ -4495,7 +4495,7 @@
       "id": "LAYOUT_POKESUPERCENTER2",
       "name": "pokesupercenter2_Layout",
       "width": 12,
-      "height": 8,
+      "height": 6,
       "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_Shop",
       "border_filepath": "data/layouts/pokesupercenter2/border.bin",
@@ -4590,6 +4590,136 @@
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/CeruleanCity/border.bin",
       "blockdata_filepath": "data/layouts/CeruleanCity/map.bin"
+    },
+    {
+      "id": "LAYOUT_POKEMON_LEAGUE_HQ",
+      "name": "PokemonLeagueHQ_Layout",
+      "width": 30,
+      "height": 20,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Contest",
+      "border_filepath": "data/layouts/PokemonLeagueHQ/border.bin",
+      "blockdata_filepath": "data/layouts/PokemonLeagueHQ/map.bin"
+    },
+    {
+      "id": "LAYOUT_POKEMON_LEAGUE_HQLAB",
+      "name": "PokemonLeagueHQlab_Layout",
+      "width": 16,
+      "height": 14,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Lab",
+      "border_filepath": "data/layouts/PokemonLeagueHQlab/border.bin",
+      "blockdata_filepath": "data/layouts/PokemonLeagueHQlab/map.bin"
+    },
+    {
+      "id": "LAYOUT_POKEMON_LEAGUE_HQPOKECENTER",
+      "name": "PokemonLeagueHQPokecenter_Layout",
+      "width": 11,
+      "height": 10,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonCenter",
+      "border_filepath": "data/layouts/PokemonLeagueHQPokecenter/border.bin",
+      "blockdata_filepath": "data/layouts/PokemonLeagueHQPokecenter/map.bin"
+    },
+    {
+      "id": "LAYOUT_VIRIDIAN_POKEMON_CENTER_F1",
+      "name": "ViridianPokemonCenterF1_Layout",
+      "width": 12,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonCenter",
+      "border_filepath": "data/layouts/ViridianPokemonCenterF1/border.bin",
+      "blockdata_filepath": "data/layouts/ViridianPokemonCenterF1/map.bin"
+    },
+    {
+      "id": "LAYOUT_LAVENDER_TOWN",
+      "name": "LavenderTown_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/LavenderTown/border.bin",
+      "blockdata_filepath": "data/layouts/LavenderTown/map.bin"
+    },
+    {
+      "id": "LAYOUT_PEWTERPOKECENTER",
+      "name": "Pewterpokecenter_Layout",
+      "width": 12,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonCenter",
+      "border_filepath": "data/layouts/Pewterpokecenter/border.bin",
+      "blockdata_filepath": "data/layouts/Pewterpokecenter/map.bin"
+    },
+    {
+      "id": "LAYOUT_CERULEAN_POKEMON_CENTER",
+      "name": "CeruleanPokemonCenter_Layout",
+      "width": 12,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonCenter",
+      "border_filepath": "data/layouts/CeruleanPokemonCenter/border.bin",
+      "blockdata_filepath": "data/layouts/CeruleanPokemonCenter/map.bin"
+    },
+    {
+      "id": "LAYOUT_LAVENDER_TOWN_POKEMON_CENTER",
+      "name": "LavenderTownPokemonCenter_Layout",
+      "width": 12,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonCenter",
+      "border_filepath": "data/layouts/LavenderTownPokemonCenter/border.bin",
+      "blockdata_filepath": "data/layouts/LavenderTownPokemonCenter/map.bin"
+    },
+    {
+      "id": "LAYOUT_VIRIDIAN_POKE_MART",
+      "name": "ViridianPokeMart_Layout",
+      "width": 12,
+      "height": 6,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Shop",
+      "border_filepath": "data/layouts/ViridianPokeMart/border.bin",
+      "blockdata_filepath": "data/layouts/ViridianPokeMart/map.bin"
+    },
+    {
+      "id": "LAYOUT_PEWTER_POKE_MART",
+      "name": "PewterPokeMart_Layout",
+      "width": 12,
+      "height": 6,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Shop",
+      "border_filepath": "data/layouts/PewterPokeMart/border.bin",
+      "blockdata_filepath": "data/layouts/PewterPokeMart/map.bin"
+    },
+    {
+      "id": "LAYOUT_VIRIDIAN_FOREST",
+      "name": "ViridianForest_Layout",
+      "width": 54,
+      "height": 72,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Mossdeep",
+      "border_filepath": "data/layouts/ViridianForest/border.bin",
+      "blockdata_filepath": "data/layouts/ViridianForest/map.bin"
+    },
+    {
+      "id": "LAYOUT_VIRIDIAN_CITY_GYM",
+      "name": "ViridianCityGym_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/ViridianCityGym/border.bin",
+      "blockdata_filepath": "data/layouts/ViridianCityGym/map.bin"
+    },
+    {
+      "id": "LAYOUT_PEWTER_CITY_GYM",
+      "name": "PewterCityGym_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/PewterCityGym/border.bin",
+      "blockdata_filepath": "data/layouts/PewterCityGym/map.bin"
     }
   ]
 }

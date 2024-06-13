@@ -5,42 +5,54 @@ static const struct TrainerMon sParty_Sawyer1[] = {
     }
 };
 
-static const struct TrainerMon sParty_GruntAquaHideout1[] = {
+static const struct TrainerMon sParty_TrainerRoute22_1[] = {
     {
-    .lvl = 32,
-    .species = SPECIES_POOCHYENA,
-    }
-};
-
-static const struct TrainerMon sParty_GruntAquaHideout2[] = {
-    {
-    .lvl = 31,
-    .species = SPECIES_ZUBAT,
+    .lvl = 6,
+    .species = SPECIES_ZIGZAGOON,
     },
     {
-    .lvl = 31,
-    .species = SPECIES_CARVANHA,
+    .lvl = 7,
+    .species = SPECIES_ELECTABUZZ,
     }
 };
 
-static const struct TrainerMon sParty_GruntAquaHideout3[] = {
+static const struct TrainerMon sParty_TrainerRoute22_2[] = {
     {
-    .lvl = 32,
-    .species = SPECIES_ZUBAT,
+    .lvl = 8,
+    .species = SPECIES_PIDGEY,
+    },
+    {
+    .lvl = 7,
+    .species = SPECIES_MAGMAR,
     }
 };
 
-static const struct TrainerMon sParty_GruntAquaHideout4[] = {
+static const struct TrainerMon sParty_TrainerRoute22_3[] = {
     {
-    .lvl = 32,
-    .species = SPECIES_CARVANHA,
+    .lvl = 10,
+    .species = SPECIES_LARVITAR,
     }
 };
 
-static const struct TrainerMon sParty_GruntSeafloorCavern1[] = {
+static const struct TrainerMon sParty_TrainerRoute22_4[] = {
     {
-    .lvl = 36,
-    .species = SPECIES_POOCHYENA,
+    .lvl = 8,
+    .species = SPECIES_MANKEY,
+    },
+    {
+    .lvl = 8,
+    .species = SPECIES_TAILLOW,
+    }
+};
+
+static const struct TrainerMon sParty_TrainerRoute1_1[] = {
+    {
+    .lvl = 10,
+    .species = SPECIES_BULBASAUR,
+    },
+    {
+    .lvl = 10,
+    .species = SPECIES_RATTATA,
     }
 };
 
@@ -242,14 +254,14 @@ static const struct TrainerMon sParty_GruntWeatherInst4[] = {
     }
 };
 
-static const struct TrainerMon sParty_GruntAquaHideout5[] = {
+static const struct TrainerMon sParty_TrainerRoute22_5[] = {
     {
     .lvl = 32,
     .species = SPECIES_CARVANHA,
     }
 };
 
-static const struct TrainerMon sParty_GruntAquaHideout6[] = {
+static const struct TrainerMon sParty_TrainerRoute22_6[] = {
     {
     .lvl = 32,
     .species = SPECIES_ZUBAT,
@@ -2195,7 +2207,7 @@ static const struct TrainerMon sParty_Kirk[] = {
     }
 };
 
-static const struct TrainerMon sParty_GruntAquaHideout7[] = {
+static const struct TrainerMon sParty_TrainerRoute22_7[] = {
     {
     .lvl = 31,
     .species = SPECIES_POOCHYENA,
@@ -2206,7 +2218,7 @@ static const struct TrainerMon sParty_GruntAquaHideout7[] = {
     }
 };
 
-static const struct TrainerMon sParty_GruntAquaHideout8[] = {
+static const struct TrainerMon sParty_TrainerRoute22_8[] = {
     {
     .lvl = 32,
     .species = SPECIES_CARVANHA,

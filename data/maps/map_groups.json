@@ -1,6 +1,15 @@
 {
   "group_order": [
-    "gMapGroup_TownsAndRoutes",
+    "gMapGroup_Towns_Kanto",
+    "gMapGroup_Routes_Kanto",
+    "gMapGroup_Indoor_Pokemon_League",
+    "gMapGroup_Indoor_Pallet_Town",
+    "gMapGroup_Indoor_Viridian_City",
+    "gMapGroup_Indoor_Pewter_City",
+    "gMapGroup_Indoor_Cerulean_City",
+    "gMapGroup_Indoor_Lavender_Town",
+    "gMapGroup_Towns_Hoenn",
+    "gMapGroup_Routes_Hoenn",
     "gMapGroup_IndoorLittleroot",
     "gMapGroup_IndoorOldale",
     "gMapGroup_IndoorDewford",
@@ -35,7 +44,54 @@
     "gMapGroup_IndoorRoute119",
     "gMapGroup_IndoorRoute124"
   ],
-  "gMapGroup_TownsAndRoutes": [
+  "gMapGroup_Towns_Kanto": [
+    "PalletTown",
+    "ViridianCity",
+    "PewterCity",
+    "CeruleanCity",
+    "LavenderTown"
+  ],
+  "gMapGroup_Routes_Kanto": [
+    "Route22",
+    "Route1",
+    "Route2",
+    "Route3",
+    "Route4"
+  ],
+  "gMapGroup_Indoor_Pokemon_League": [
+    "PokemonLeagueHQ",
+    "Startmap",
+    "PokemonLeagueHQPokecenter",
+    "PokemonLeagueReceptionGate",
+    "PokemonLeagueHQlab"
+  ],
+  "gMapGroup_Indoor_Pallet_Town": [
+    "RedsHouse",
+    "BluesHouse",
+    "PalletDaycare",
+    "oakslab",
+    "pokesupercenter",
+    "pokesupercenter2",
+    "pallettownhouse1"
+  ],
+  "gMapGroup_Indoor_Viridian_City": [
+    "ViridianPokemonCenterF1",
+    "ViridianPokeMart",
+    "ViridianForest",
+    "ViridianCityGym"
+  ],
+  "gMapGroup_Indoor_Pewter_City": [
+    "Pewterpokecenter",
+    "PewterPokeMart",
+    "PewterCityGym"
+  ],
+  "gMapGroup_Indoor_Cerulean_City": [
+    "CeruleanPokemonCenter"
+  ],
+  "gMapGroup_Indoor_Lavender_Town": [
+    "LavenderTownPokemonCenter"
+  ],
+  "gMapGroup_Towns_Hoenn": [
     "PetalburgCity",
     "SlateportCity",
     "MauvilleCity",
@@ -51,7 +107,9 @@
     "LavaridgeTown",
     "FallarborTown",
     "VerdanturfTown",
-    "PacifidlogTown",
+    "PacifidlogTown"
+  ],
+  "gMapGroup_Routes_Hoenn": [
     "Route101",
     "Route102",
     "Route103",
@@ -92,32 +150,14 @@
     "Underwater_Route128",
     "Underwater_Route129",
     "Underwater_Route105",
-    "Underwater_Route125",
-    "PalletTown",
-    "Route1",
-    "ViridianCity",
-    "Startmap",
-    "PokemonLeagueReceptionGate",
-    "Route22",
-    "Route2",
-    "PewterCity",
-    "Route3",
-    "Route4",
-    "CeruleanCity"
+    "Underwater_Route125"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",
     "LittlerootTown_BrendansHouse_2F",
     "LittlerootTown_MaysHouse_1F",
     "LittlerootTown_MaysHouse_2F",
-    "LittlerootTown_ProfessorBirchsLab",
-    "RedsHouse",
-    "BluesHouse",
-    "PalletDaycare",
-    "oakslab",
-    "pokesupercenter",
-    "pokesupercenter2",
-    "pallettownhouse1"
+    "LittlerootTown_ProfessorBirchsLab"
   ],
   "gMapGroup_IndoorOldale": [
     "OldaleTown_House1",

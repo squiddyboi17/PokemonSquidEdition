@@ -269,7 +269,7 @@ SINGLE_BATTLE_TEST("Clear Body doesn't prevent Spectral Thief from resetting pos
         ANIMATION(ANIM_TYPE_MOVE, MOVE_AGILITY, opponent);
         MESSAGE("Wobbuffet used Celebrate!");
         MESSAGE("Foe Metang used Celebrate!");
-        MESSAGE("Wobbuffet used SpectrlThief!");
+        MESSAGE("Wobbuffet used Spectral Thief!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SPECTRAL_THIEF, player);
         NOT ABILITY_POPUP(opponent, ABILITY_CLEAR_BODY);
         MESSAGE("Wobbuffet used Celebrate!");

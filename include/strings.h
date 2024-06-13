@@ -3069,5 +3069,8 @@ extern const u8 gText_StarterSet1[];
 extern const u8 gText_StarterSet2[];
 extern const u8 gText_StarterSet3[];
 extern const u8 gText_StarterSet4[];
+// Map name pop-up
+extern const u8 gText_AM[];
+extern const u8 gText_PM[];
 
 #endif // GUARD_STRINGS_H

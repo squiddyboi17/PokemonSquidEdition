@@ -22,6 +22,11 @@
       "map": "MAP_PEWTER_CITY",
       "offset": -12,
       "direction": "up"
+    },
+    {
+      "map": "MAP_ROUTE16",
+      "offset": 37,
+      "direction": "right"
     }
   ],
   "object_events": [
@@ -30,14 +35,14 @@
   "warp_events": [
     {
       "x": 5,
-      "y": 51,
+      "y": 43,
       "elevation": 0,
       "dest_map": "MAP_VIRIDIAN_FOREST",
       "dest_warp_id": "1"
     },
     {
       "x": 6,
-      "y": 51,
+      "y": 44,
       "elevation": 0,
       "dest_map": "MAP_VIRIDIAN_FOREST",
       "dest_warp_id": "2"

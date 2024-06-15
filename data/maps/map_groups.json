@@ -49,14 +49,24 @@
     "ViridianCity",
     "PewterCity",
     "CeruleanCity",
-    "LavenderTown"
+    "LavenderTown",
+    "MtMoon",
+    "SaffronCity",
+    "CeladonCity",
+    "VermillionCity"
   ],
   "gMapGroup_Routes_Kanto": [
     "Route22",
     "Route1",
     "Route2",
     "Route3",
-    "Route4"
+    "Route4",
+    "Route5",
+    "Route6",
+    "Route7",
+    "Route16",
+    "Route11",
+    "Route12"
   ],
   "gMapGroup_Indoor_Pokemon_League": [
     "PokemonLeagueHQ",

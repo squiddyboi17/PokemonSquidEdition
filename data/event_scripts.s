@@ -1137,3 +1137,23 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/ViridianCityGym/scripts.inc"
 
 	.include "data/maps/PewterCityGym/scripts.inc"
+
+	.include "data/maps/MtMoon/scripts.inc"
+
+	.include "data/maps/Route5/scripts.inc"
+
+	.include "data/maps/SaffronCity/scripts.inc"
+
+	.include "data/maps/CeladonCity/scripts.inc"
+
+	.include "data/maps/Route6/scripts.inc"
+
+	.include "data/maps/Route7/scripts.inc"
+
+	.include "data/maps/Route16/scripts.inc"
+
+	.include "data/maps/VermillionCity/scripts.inc"
+
+	.include "data/maps/Route11/scripts.inc"
+
+	.include "data/maps/Route12/scripts.inc"

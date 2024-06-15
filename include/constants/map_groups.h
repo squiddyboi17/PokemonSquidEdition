@@ -6,11 +6,15 @@
 //
 
 // gMapGroup_Towns_Kanto
-#define MAP_PALLET_TOWN   (0 | (0 << 8))
-#define MAP_VIRIDIAN_CITY (1 | (0 << 8))
-#define MAP_PEWTER_CITY   (2 | (0 << 8))
-#define MAP_CERULEAN_CITY (3 | (0 << 8))
-#define MAP_LAVENDER_TOWN (4 | (0 << 8))
+#define MAP_PALLET_TOWN     (0 | (0 << 8))
+#define MAP_VIRIDIAN_CITY   (1 | (0 << 8))
+#define MAP_PEWTER_CITY     (2 | (0 << 8))
+#define MAP_CERULEAN_CITY   (3 | (0 << 8))
+#define MAP_LAVENDER_TOWN   (4 | (0 << 8))
+#define MAP_MT_MOON         (5 | (0 << 8))
+#define MAP_SAFFRON_CITY    (6 | (0 << 8))
+#define MAP_CELADON_CITY    (7 | (0 << 8))
+#define MAP_VERMILLION_CITY (8 | (0 << 8))
 
 // gMapGroup_Routes_Kanto
 #define MAP_ROUTE22 (0 | (1 << 8))
@@ -18,6 +22,12 @@
 #define MAP_ROUTE2  (2 | (1 << 8))
 #define MAP_ROUTE3  (3 | (1 << 8))
 #define MAP_ROUTE4  (4 | (1 << 8))
+#define MAP_ROUTE5  (5 | (1 << 8))
+#define MAP_ROUTE6  (6 | (1 << 8))
+#define MAP_ROUTE7  (7 | (1 << 8))
+#define MAP_ROUTE16 (8 | (1 << 8))
+#define MAP_ROUTE11 (9 | (1 << 8))
+#define MAP_ROUTE12 (10 | (1 << 8))
 
 // gMapGroup_Indoor_Pokemon_League
 #define MAP_POKEMON_LEAGUE_HQ             (0 | (2 << 8))

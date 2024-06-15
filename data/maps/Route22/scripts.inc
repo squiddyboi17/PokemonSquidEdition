@@ -107,7 +107,7 @@ strangemanmart:
 
 singlebattletest1::
 # 69 "data/maps/Route22/scripts.pory"
-	trainerbattle_single TRAINER_Route22_1, singlebattleintro1, singlebattleoutro1
+	trainerbattle_single TRAINER_GRUNT_AQUA_HIDEOUT_1, singlebattleintro1, singlebattleoutro1
 # 70 "data/maps/Route22/scripts.pory"
 	msgbox singlebattleidle1, MSGBOX_AUTOCLOSE
 	end
@@ -115,7 +115,7 @@ singlebattletest1::
 
 singlebattletest2::
 # 75 "data/maps/Route22/scripts.pory"
-	trainerbattle_single TRAINER_Route22_2, singlebattleintro1, singlebattleoutro1
+	trainerbattle_single TRAINER_GRUNT_AQUA_HIDEOUT_2, singlebattleintro1, singlebattleoutro1
 # 76 "data/maps/Route22/scripts.pory"
 	msgbox singlebattleidle2, MSGBOX_AUTOCLOSE
 	end
@@ -123,7 +123,7 @@ singlebattletest2::
 
 singlebattletest3::
 # 81 "data/maps/Route22/scripts.pory"
-	trainerbattle_single TRAINER_Route22_3, singlebattleintro1, singlebattleoutro1
+	trainerbattle_single TRAINER_GRUNT_AQUA_HIDEOUT_3, singlebattleintro1, singlebattleoutro1
 # 82 "data/maps/Route22/scripts.pory"
 	msgbox singlebattleidle3, MSGBOX_AUTOCLOSE
 	end
@@ -131,7 +131,7 @@ singlebattletest3::
 
 singlebattletest4::
 # 87 "data/maps/Route22/scripts.pory"
-	trainerbattle_single TRAINER_Route22_4, singlebattleintro1, singlebattleoutro1
+	trainerbattle_single TRAINER_GRUNT_AQUA_HIDEOUT_4, singlebattleintro1, singlebattleoutro1
 # 88 "data/maps/Route22/scripts.pory"
 	msgbox singlebattleidle4, MSGBOX_AUTOCLOSE
 	end

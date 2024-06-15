@@ -4,7 +4,7 @@ mapscripts Route1_MapScripts{
 
 
 script doublebattletest{
-    trainerbattle_double(TRAINER_Route1_1,doublebattleintro,doublebattleoutro,notenoughpokemon)
+    trainerbattle_double(TRAINER_GRUNT_AQUA_HIDEOUT_5,doublebattleintro,doublebattleoutro,notenoughpokemon)
     msgbox(doublebattleidle, MSGBOX_AUTOCLOSE)
     end
 }

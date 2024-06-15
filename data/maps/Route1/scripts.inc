@@ -4,7 +4,7 @@ Route1_MapScripts::
 
 doublebattletest::
 # 7 "data/maps/Route1/scripts.pory"
-	trainerbattle_double TRAINER_Route1_1, doublebattleintro, doublebattleoutro, notenoughpokemon
+	trainerbattle_double TRAINER_GRUNT_AQUA_HIDEOUT_5, doublebattleintro, doublebattleoutro, notenoughpokemon
 # 8 "data/maps/Route1/scripts.pory"
 	msgbox doublebattleidle, MSGBOX_AUTOCLOSE
 	end

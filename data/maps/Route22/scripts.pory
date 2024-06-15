@@ -66,25 +66,25 @@ mart strangemanmart {
 }
 
 script singlebattletest1{
-    trainerbattle_single(TRAINER_Route22_1,singlebattleintro1,singlebattleoutro1)
+    trainerbattle_single(TRAINER_GRUNT_AQUA_HIDEOUT_1,singlebattleintro1,singlebattleoutro1)
     msgbox(singlebattleidle1, MSGBOX_AUTOCLOSE)
     end
 }
 
 script singlebattletest2{
-    trainerbattle_single(TRAINER_Route22_2,singlebattleintro1,singlebattleoutro1)
+    trainerbattle_single(TRAINER_GRUNT_AQUA_HIDEOUT_2,singlebattleintro1,singlebattleoutro1)
     msgbox(singlebattleidle2, MSGBOX_AUTOCLOSE)
     end
 }
 
 script singlebattletest3{
-    trainerbattle_single(TRAINER_Route22_3,singlebattleintro1,singlebattleoutro1)
+    trainerbattle_single(TRAINER_GRUNT_AQUA_HIDEOUT_3,singlebattleintro1,singlebattleoutro1)
     msgbox(singlebattleidle3, MSGBOX_AUTOCLOSE)
     end
 }
 
 script singlebattletest4{
-    trainerbattle_single(TRAINER_Route22_4,singlebattleintro1,singlebattleoutro1)
+    trainerbattle_single(TRAINER_GRUNT_AQUA_HIDEOUT_4,singlebattleintro1,singlebattleoutro1)
     msgbox(singlebattleidle4, MSGBOX_AUTOCLOSE)
     end
 }

@@ -274,7 +274,7 @@
 
 // gTileset_Lilycove
 #define METATILE_Lilycove_Door             0x246
-#define METATILE_Lilycove_Door_DeptStore   0x30C
+#define METATILE_Lilycove_Door_DeptStore   0x3FA
 #define METATILE_Lilycove_Door_SafariZone  0x32D
 #define METATILE_Lilycove_Door_Wooden      0x28E
 #define METATILE_Lilycove_Wailmer0         0x290
@@ -360,7 +360,7 @@
 // gTileset_Mossdeep
 #define METATILE_Mossdeep_Door              0x2A1
 #define METATILE_Mossdeep_Door_SpaceCenter  0x2ED
-#define METATILE_Mossdeep_LongGrass         0x3E3
+#define METATILE_Mossdeep_LongGrass         0x2B3
 #define METATILE_Mossdeep_TallGrass         0x3CE
 
 // gTileset_MossdeepGameCorner

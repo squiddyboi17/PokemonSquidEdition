@@ -53,7 +53,21 @@
     "MtMoon",
     "SaffronCity",
     "CeladonCity",
-    "VermillionCity"
+    "VermillionCity",
+    "FuchsiaCity",
+    "PowerPlant",
+    "Cinn",
+    "CinnabarIsland",
+    "ViridianGym",
+    "PewterGym",
+    "CeruleanGym",
+    "VermillionGym",
+    "CeladonGym",
+    "FuchsiaGym",
+    "SaffronGym",
+    "CinnabarGym",
+    "TESTGYM",
+    "Elite4TEST"
   ],
   "gMapGroup_Routes_Kanto": [
     "Route22",
@@ -66,7 +80,18 @@
     "Route7",
     "Route16",
     "Route11",
-    "Route12"
+    "Route12",
+    "Route13",
+    "Route14",
+    "Route15",
+    "Route18",
+    "Route10",
+    "Route10South",
+    "Route8",
+    "Route9",
+    "Route24",
+    "Route25",
+    "Route9North"
   ],
   "gMapGroup_Indoor_Pokemon_League": [
     "PokemonLeagueHQ",

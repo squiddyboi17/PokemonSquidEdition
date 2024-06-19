@@ -1157,3 +1157,53 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/Route11/scripts.inc"
 
 	.include "data/maps/Route12/scripts.inc"
+
+	.include "data/maps/Route13/scripts.inc"
+
+	.include "data/maps/Route14/scripts.inc"
+
+	.include "data/maps/Route15/scripts.inc"
+
+	.include "data/maps/FuchsiaCity/scripts.inc"
+
+	.include "data/maps/Route18/scripts.inc"
+
+	.include "data/maps/Route10/scripts.inc"
+
+	.include "data/maps/Route10South/scripts.inc"
+
+	.include "data/maps/Route8/scripts.inc"
+
+	.include "data/maps/Route9/scripts.inc"
+
+	.include "data/maps/PowerPlant/scripts.inc"
+
+	.include "data/maps/Route24/scripts.inc"
+
+	.include "data/maps/Route25/scripts.inc"
+
+	.include "data/maps/Route9North/scripts.inc"
+
+	.include "data/maps/Cinn/scripts.inc"
+
+	.include "data/maps/CinnabarIsland/scripts.inc"
+
+	.include "data/maps/ViridianGym/scripts.inc"
+
+	.include "data/maps/PewterGym/scripts.inc"
+
+	.include "data/maps/CeruleanGym/scripts.inc"
+
+	.include "data/maps/VermillionGym/scripts.inc"
+
+	.include "data/maps/CeladonGym/scripts.inc"
+
+	.include "data/maps/FuchsiaGym/scripts.inc"
+
+	.include "data/maps/SaffronGym/scripts.inc"
+
+	.include "data/maps/CinnabarGym/scripts.inc"
+
+	.include "data/maps/TESTGYM/scripts.inc"
+
+	.include "data/maps/Elite4TEST/scripts.inc"

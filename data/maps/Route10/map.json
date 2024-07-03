@@ -20,12 +20,12 @@
     },
     {
       "map": "MAP_POWER_PLANT",
-      "offset": 0,
+      "offset": -4,
       "direction": "down"
     },
     {
       "map": "MAP_ROUTE9NORTH",
-      "offset": -58,
+      "offset": -63,
       "direction": "up"
     }
   ],

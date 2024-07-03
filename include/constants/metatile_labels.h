@@ -237,7 +237,7 @@
 #define METATILE_General_SecretBase_TreeRight  0x027
 #define METATILE_General_SecretBase_VineLeft   0x036
 #define METATILE_General_SecretBase_VineRight  0x037
-#define METATILE_General_TallGrass             0x00D
+#define METATILE_General_TallGrass             0x000
 #define METATILE_General_TallGrass_TreeLeft    0x1C6
 #define METATILE_General_TallGrass_TreeRight   0x1C7
 #define METATILE_General_TallGrass_TreeUp      0x025
@@ -276,7 +276,7 @@
 #define METATILE_Lilycove_Door             0x246
 #define METATILE_Lilycove_Door_DeptStore   0x3FA
 #define METATILE_Lilycove_Door_SafariZone  0x32D
-#define METATILE_Lilycove_Door_Wooden      0x28E
+#define METATILE_Lilycove_Door_Wooden      0x3E6
 #define METATILE_Lilycove_Wailmer0         0x290
 #define METATILE_Lilycove_Wailmer0_Alt     0x298
 #define METATILE_Lilycove_Wailmer1         0x291

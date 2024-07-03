@@ -54,9 +54,9 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_BEAUTY",
-      "x": 17,
-      "y": 7,
+      "graphics_id": "OBJ_EVENT_GFX_BARD",
+      "x": 24,
+      "y": 6,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -83,7 +83,7 @@
       "dest_warp_id": "0"
     },
     {
-      "x": 26,
+      "x": 22,
       "y": 5,
       "elevation": 0,
       "dest_map": "MAP_STARTMAP",
@@ -94,6 +94,13 @@
       "y": 6,
       "elevation": 0,
       "dest_map": "MAP_POKEMON_LEAGUE_HQPOKECENTER",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 18,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_POKEMON_LEAGUE_HQHEAD_OFFICE",
       "dest_warp_id": "0"
     }
   ],
@@ -155,7 +162,7 @@
     {
       "type": "trigger",
       "x": 15,
-      "y": 11,
+      "y": 12,
       "elevation": 0,
       "var": "indigoplatue_STATE",
       "var_value": "0",
@@ -164,7 +171,7 @@
     {
       "type": "trigger",
       "x": 14,
-      "y": 11,
+      "y": 12,
       "elevation": 0,
       "var": "indigoplatue_STATE",
       "var_value": "0",

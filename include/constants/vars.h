@@ -134,19 +134,19 @@
 #define VAR_ROUTE119_STATE                               0x4072
 #define VAR_ROUTE120_STATE                               0x4073 // Unused Var
 #define VAR_ROUTE121_STATE                               0x4074
-#define VAR_ROUTE122_STATE                               0x4075 // Unused Var
-#define VAR_ROUTE123_STATE                               0x4076 // Unused Var
-#define VAR_ROUTE124_STATE                               0x4077 // Unused Var
-#define VAR_ROUTE125_STATE                               0x4078 // Unused Var
-#define VAR_ROUTE126_STATE                               0x4079 // Unused Var
-#define VAR_ROUTE127_STATE                               0x407A // Unused Var
+#define PewterGymState                               0x4075 // VAR_ROUTE122_STATE Unused Var
+#define ViridianGymState                               0x4076 // VAR_ROUTE123_STATE Unused Var
+#define CeruleanGymState                              0x4077 // VAR_ROUTE124_STATE Unused Var
+#define VermillionGymState                               0x4078 // VAR_ROUTE125_STATE Unused Var
+#define CeladonGymState                              0x4079 // VAR_ROUTE126_STATE Unused Var
+#define SaffronGymState                               0x407A // VAR_ROUTE127_STATE Unused Var
 #define VAR_ROUTE128_STATE                               0x407B
-#define VAR_ROUTE129_STATE                               0x407C // Unused Var
-#define VAR_ROUTE130_STATE                               0x407D // Unused Var
-#define VAR_ROUTE131_STATE                               0x407E // Unused Var
-#define VAR_ROUTE132_STATE                               0x407F // Unused Var
-#define VAR_ROUTE133_STATE                               0x4080 // Unused Var
-#define VAR_ROUTE134_STATE                               0x4081 // Unused Var
+#define FuchsiaGymState                              0x407C // VAR_ROUTE129_STATE Unused Var
+#define CinnabarGymState                               0x407D // VAR_ROUTE130_STATE Unused Var
+#define VAR_ROUTE131_STATE                               0x407E // VAR_ROUTE131_STATE Unused Var
+#define VAR_ROUTE132_STATE                               0x407F // VAR_ROUTE132_STATE Unused Var
+#define VAR_ROUTE133_STATE                               0x4080 // VAR_ROUTE133_STATE Unused Var
+#define VAR_ROUTE134_STATE                               0x4081 // VAR_ROUTE134_STATE Unused Var
 #define VAR_LITTLEROOT_HOUSES_STATE_MAY                  0x4082
 #define VAR_UNUSED_0x4083                                0x4083 // Unused Var
 #define VAR_BIRCH_LAB_STATE                              0x4084
@@ -265,11 +265,11 @@
 #define VAR_SCOTT_BF_CALL_STEP_COUNTER                   0x40F5
 #define VAR_RIVAL_RAYQUAZA_CALL_STEP_COUNTER             0x40F6
 #define VAR_UNUSED_0x40F7                                0x40F7 // Unused Var
-#define VAR_UNUSED_0x40F8                                0x40F8 // Unused Var
-#define VAR_UNUSED_0x40F9                                0x40F9 // Unused Var
-#define VAR_UNUSED_0x40FA                                0x40FA // Unused Var
-#define VAR_UNUSED_0x40FB                                0x40FB // Unused Var
-#define UnusualStarters                                0x40FC // XUnused Var
+#define TestGymState1                                    0x40F8 // Unused Var
+#define TestGymState2                                    0x40F9 // Unused Var
+#define TestGymState3                                    0x40FA // Unused Var
+#define GymBadgeScaling                                  0x40FB // xUnused Var
+#define UnusualStarters                                  0x40FC // XUnused Var
 #define Elite4state                                      0x40FD // xUnused Var
 #define STARTER_CHOICE                                   0x40FE // XUnused Var
 #define indigoplatue_STATE                               0x40FF // Xstart

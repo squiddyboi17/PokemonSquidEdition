@@ -15,12 +15,12 @@
   "connections": [
     {
       "map": "MAP_ROUTE6",
-      "offset": 12,
+      "offset": 3,
       "direction": "up"
     },
     {
       "map": "MAP_ROUTE11",
-      "offset": 10,
+      "offset": 9,
       "direction": "right"
     }
   ],
@@ -28,7 +28,20 @@
 
   ],
   "warp_events": [
-
+    {
+      "x": 14,
+      "y": 8,
+      "elevation": 0,
+      "dest_map": "MAP_VERMILLION_CITY",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 13,
+      "y": 25,
+      "elevation": 0,
+      "dest_map": "MAP_VERMILLION_GYM",
+      "dest_warp_id": "0"
+    }
   ],
   "coord_events": [
 

@@ -17,6 +17,11 @@
       "map": "MAP_VIRIDIAN_CITY",
       "offset": -9,
       "direction": "right"
+    },
+    {
+      "map": "MAP_TESTINGMAP",
+      "offset": -18,
+      "direction": "down"
     }
   ],
   "object_events": [

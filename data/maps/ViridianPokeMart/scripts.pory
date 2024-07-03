@@ -33,9 +33,18 @@ script Viridian_Mart_Employee2{
 }
 
 mart Viridian_Mart2 {
-	ITEM_TM06
+    ITEM_HM_CUT
+    ITEM_HM_FLY
+    ITEM_HM_SURF
+    ITEM_HM_STRENGTH
+    ITEM_HM_FLASH
+    ITEM_HM_ROCK_SMASH
+    ITEM_HM_WATERFALL
+    ITEM_HM_DIVE
+    ITEM_TM06
 	ITEM_TM07
 	ITEM_TM08
 	ITEM_TM09
 	ITEM_TM10
 }
+

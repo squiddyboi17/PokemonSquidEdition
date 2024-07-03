@@ -284,13 +284,13 @@ Startmap_EventScript_PokeballThree_8:
 
 
 Startmap_EventScript_GiveStarter::
-# 144 "data/maps/Startmap/scripts.pory"
+# 143 "data/maps/Startmap/scripts.pory"
 	showmonpic STARTER_CHOICE, 10, 3
-# 145 "data/maps/Startmap/scripts.pory"
+# 144 "data/maps/Startmap/scripts.pory"
 	playmoncry STARTER_CHOICE, CRY_MODE_NORMAL
-# 146 "data/maps/Startmap/scripts.pory"
+# 145 "data/maps/Startmap/scripts.pory"
 	msgbox Startmap_EventScript_GiveStarter_Text_0, MSGBOX_YESNO
-# 147 "data/maps/Startmap/scripts.pory"
+# 146 "data/maps/Startmap/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq Startmap_EventScript_GiveStarter_1
 # 172 "data/maps/Startmap/scripts.pory"
@@ -300,10 +300,12 @@ Startmap_EventScript_GiveStarter::
 	return
 
 Startmap_EventScript_GiveStarter_1:
-# 148 "data/maps/Startmap/scripts.pory"
+# 147 "data/maps/Startmap/scripts.pory"
 	setflag FLAG_SYS_POKEMON_GET
-# 149 "data/maps/Startmap/scripts.pory"
+# 148 "data/maps/Startmap/scripts.pory"
 	setvar indigoplatue_STATE, 2
+# 149 "data/maps/Startmap/scripts.pory"
+	setvar GymBadgeScaling, 0
 # 150 "data/maps/Startmap/scripts.pory"
 	givemon STARTER_CHOICE, 10, ITEM_EXP_SHARE
 # 151 "data/maps/Startmap/scripts.pory"
@@ -408,14 +410,14 @@ pkmnlgintro_EventScript_receptionist_Text_1:
 
 pkmnlgintro_EventScript_receptionist_Text_2:
 # 37 "data/maps/Startmap/scripts.pory"
-	.string "Take care of your Pokemon$"
+	.string "Selection Unchanged.$"
 
 Startmap_EventScript_PokeballOne_Text_0:
 # 69 "data/maps/Startmap/scripts.pory"
 	.string "Don't Take Another$"
 
 Startmap_EventScript_GiveStarter_Text_0:
-# 146 "data/maps/Startmap/scripts.pory"
+# 145 "data/maps/Startmap/scripts.pory"
 	.string "Do you want to choose {STR_VAR_1}?$"
 
 Startmap_EventScript_GiveStarter_Text_1:

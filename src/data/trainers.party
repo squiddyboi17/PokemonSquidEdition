@@ -20,136 +20,181 @@ Level: 21
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_AQUA_HIDEOUT_1 ===
-Name: GRUNT
-Class: Team Aqua
-Pic: Aqua Grunt M
+Name: Andrew
+Class: Leader
+Pic: Steven
 Gender: Male
-Music: Aqua
+Music: Male
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Poochyena
-Level: 10
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Bulbasaur
+Level: 15
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Poison Powder
+- Giga Drain
+- Leech Seed
+
+Gyarados
+Level: 15
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Aqua Tail
+- Dragon Rage
 
 === TRAINER_GRUNT_AQUA_HIDEOUT_2 ===
-Name: GRUNT
-Class: Team Aqua
-Pic: Aqua Grunt M
+Name: Andrew
+Class: Leader
+Pic: Steven
 Gender: Male
-Music: Aqua
+Music: Male
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Zubat
-Level: 10
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Ivysaur
+Level: 22
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Poison Powder
+- Giga Drain
+- Leech Seed
 
-Carvanha
-Level: 9
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Gyarados
+Level: 22
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Aqua Tail
+- Dragon Rage
 
 === TRAINER_GRUNT_AQUA_HIDEOUT_3 ===
-Name: GRUNT
-Class: Team Aqua
-Pic: Aqua Grunt M
+Name: Andrew
+Class: Leader
+Pic: Steven
 Gender: Male
-Music: Aqua
+Music: Male
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Zubat
-Level: 10
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Ivysaur
+Level: 28
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Poison Powder
+- Giga Drain
+- Leech Seed
+
+Gyarados
+Level: 28
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Aqua Tail
+- Dragon Rage
 
 === TRAINER_GRUNT_AQUA_HIDEOUT_4 ===
-Name: GRUNT
-Class: Team Aqua
-Pic: Aqua Grunt M
+Name: Andrew
+Class: Leader
+Pic: Steven
 Gender: Male
-Music: Aqua
+Music: Male
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Carvanha
-Level: 9
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Venusaur
+Level: 34
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Poison Powder
+- Giga Drain
+- Leech Seed
+
+Gyarados
+Level: 34
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Aqua Tail
+- Dragon Rage
 
 === TRAINER_GRUNT_SEAFLOOR_CAVERN_1 ===
-Name: GRUNT
-Class: Team Aqua
-Pic: Aqua Grunt M
+Name: Andrew
+Class: Leader
+Pic: Steven
 Gender: Male
-Music: Aqua
-Double Battle: Yes
+Music: Male
+Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Poochyena
-Level: 10
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Venusaur
+Level: 40
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Poison Powder
+- Giga Drain
+- Leech Seed
 
-Zubat
-Level: 10
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Gyarados
+Level: 40
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Aqua Tail
+- Dragon Rage
 
 === TRAINER_GRUNT_SEAFLOOR_CAVERN_2 ===
-Name: GRUNT
-Class: Team Aqua
-Pic: Aqua Grunt M
+Name: Andrew
+Class: Leader
+Pic: Steven
 Gender: Male
-Music: Aqua
+Music: Male
 Double Battle: No
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability
 
-Carvanha
-Level: 36
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Venusaur
+Level: 46
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Poison Powder
+- Giga Drain
+- Leech Seed
+
+Gyarados
+Level: 46
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Aqua Tail
+- Dragon Rage
 
 === TRAINER_GRUNT_SEAFLOOR_CAVERN_3 ===
-Name: GRUNT
-Class: Team Aqua
-Pic: Aqua Grunt M
+Name: Andrew
+Class: Leader
+Pic: Steven
 Gender: Male
-Music: Aqua
+Music: Male
 Double Battle: No
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability
 
-Zubat
-Level: 36
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Venusaur
+Level: 50
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Poison Powder
+- Giga Drain
+- Leech Seed
+
+Gyarados
+Level: 50
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Aqua Tail
+- Dragon Rage
 
 === TRAINER_GABRIELLE_1 ===
-Name: GABRIELLE
-Class: Pkmn Breeder
-Pic: Pokemon Breeder F
-Gender: Female
-Music: Female
+Name: Andrew
+Class: Leader
+Pic: Steven
+Gender: Male
+Music: Male
 Double Battle: No
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability
 
-Skitty
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Venusaur
+Level: 56
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Poison Powder
+- Giga Drain
+- Leech Seed
 
-Poochyena
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Gyarados
+Level: 56
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Aqua Tail
+- Dragon Rage
 
-Zigzagoon
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-Lotad
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-Seedot
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-Taillow
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_PETALBURG_WOODS ===
 Name: GRUNT
@@ -415,11 +460,15 @@ Class: Team Aqua
 Pic: Aqua Grunt F
 Gender: Female
 Music: Aqua
-Double Battle: No
+Double Battle: Yes
 AI: Check Bad Move
 
 Carvanha
-Level: 32
+Level: 10
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Zubat
+Level: 10
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_AQUA_HIDEOUT_6 ===
@@ -4723,33 +4772,28 @@ Class: Leader
 Pic: Leader Roxanne
 Gender: Female
 Music: Female
-Items: Potion / Potion
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Geodude
-Level: 12
+Cubone
+Level: 15
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Tackle
-- Defense Curl
-- Rock Throw
-- Rock Tomb
+- Bonemerang
 
-Geodude
-Level: 12
+Trapinch
+Level: 15
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Tackle
-- Defense Curl
-- Rock Throw
-- Rock Tomb
+-Sandstorm
 
-Nosepass @ Oran Berry
+Numel
+Level: 15
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Flamethrower
+- Earthquake
+
+Baltoy @ Oran Berry
 Level: 15
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Block
-- Harden
-- Tackle
-- Rock Tomb
 
 === TRAINER_BRAWLY_1 ===
 Name: BRAWLY
@@ -4757,12 +4801,11 @@ Class: Leader
 Pic: Leader Brawly
 Gender: Male
 Music: Male
-Items: Super Potion / Super Potion
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
 Machop
-Level: 16
+Level: 15
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Karate Chop
 - Low Kick
@@ -4770,15 +4813,20 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Bulk Up
 
 Meditite
-Level: 16
+Level: 15
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Focus Punch
 - Light Screen
 - Reflect
 - Bulk Up
 
+Heracross
+Level: 15
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Bulk Up
+
 Makuhita @ Sitrus Berry
-Level: 19
+Level: 15
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 - Arm Thrust
 - Vital Throw
@@ -4791,41 +4839,40 @@ Class: Leader
 Pic: Leader Wattson
 Gender: Male
 Music: Male
-Items: Super Potion / Super Potion
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Voltorb
-Level: 20
+Pikachu
+Level: 15
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Rollout
-- Spark
-- Self Destruct
-- Shock Wave
+- Volt Tackle
+- Thunder Wave
+- Agility
+- Surf
 
 Electrike
-Level: 20
+Level: 15
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 - Shock Wave
 - Leer
 - Quick Attack
 - Howl
 
-Magneton
-Level: 22
+Magnemite
+Level: 15
 IVs: 26 HP / 26 Atk / 26 Def / 26 SpA / 26 SpD / 26 Spe
 - Supersonic
 - Shock Wave
 - Thunder Wave
 - Sonic Boom
 
-Manectric @ Sitrus Berry
-Level: 24
+Raichu @ Sitrus Berry
+Level: 15
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 - Quick Attack
 - Thunder Wave
 - Shock Wave
-- Howl
+- Thunderbolt
 
 === TRAINER_FLANNERY_1 ===
 Name: FLANNERY
@@ -14088,12 +14135,11 @@ Class: Leader
 Pic: Leader Roxanne
 Gender: Female
 Music: Female
-Items: Full Restore / Full Restore / Full Restore
 Double Battle: Yes
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Golem
-Level: 32
+Geodude
+Level: 16
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Protect
 - Rollout
@@ -14101,7 +14147,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Explosion
 
 Kabuto @ Sitrus Berry
-Level: 35
+Level: 16
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Swords Dance
 - Ice Beam
@@ -14109,7 +14155,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Rock Slide
 
 Onix
-Level: 35
+Level: 16
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Iron Tail
 - Explosion
@@ -14117,7 +14163,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Rock Slide
 
 Nosepass @ Sitrus Berry
-Level: 37
+Level: 16
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Double Team
 - Explosion
@@ -14130,28 +14176,27 @@ Class: Leader
 Pic: Leader Roxanne
 Gender: Female
 Music: Female
-Items: Full Restore / Full Restore / Full Restore
-Double Battle: Yes
+Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
 Omanyte
-Level: 37
+Level: 15
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Protect
 - Ice Beam
 - Rock Slide
 - Surf
 
-Golem
-Level: 37
+Geodude
+Level: 15
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Protect
 - Rollout
 - Magnitude
 - Explosion
 
-Kabutops @ Sitrus Berry
-Level: 40
+Kabuto @ Sitrus Berry
+Level: 15
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Swords Dance
 - Ice Beam
@@ -14159,7 +14204,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Rock Slide
 
 Onix
-Level: 40
+Level: 15
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Iron Tail
 - Explosion
@@ -14167,7 +14212,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Rock Slide
 
 Nosepass @ Sitrus Berry
-Level: 42
+Level: 15
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Double Team
 - Explosion
@@ -14185,7 +14230,7 @@ Double Battle: Yes
 AI: Check Bad Move / Try To Faint / Check Viability
 
 Omastar
-Level: 42
+Level: 16
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Protect
 - Ice Beam
@@ -14193,7 +14238,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Surf
 
 Golem
-Level: 42
+Level: 16
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Protect
 - Rollout
@@ -14201,7 +14246,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Explosion
 
 Kabutops @ Sitrus Berry
-Level: 45
+Level: 16
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Swords Dance
 - Ice Beam
@@ -14209,7 +14254,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Rock Slide
 
 Onix
-Level: 45
+Level: 16
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Iron Tail
 - Explosion
@@ -14217,7 +14262,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Rock Slide
 
 Nosepass @ Sitrus Berry
-Level: 47
+Level: 16
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Double Team
 - Explosion
@@ -14288,12 +14333,11 @@ Class: Leader
 Pic: Leader Brawly
 Gender: Male
 Music: Male
-Items: Full Restore / Full Restore / Full Restore
-Double Battle: Yes
+Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Machamp @ Sitrus Berry
-Level: 33
+Makuhita @ Sitrus Berry
+Level: 16
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Karate Chop
 - Rock Slide
@@ -14301,28 +14345,25 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Bulk Up
 
 Meditite
-Level: 33
+Level: 16
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Psychic
 - Light Screen
 - Reflect
 - Focus Punch
 
-Hitmontop
-Level: 35
+Tyrogue
+Level: 16
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Pursuit
 - Counter
 - Protect
 - Triple Kick
 
-Hariyama @ Sitrus Berry
-Level: 37
+Heracross @ Sitrus Berry
+Level: 16
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Fake Out
-- Focus Punch
-- Belly Drum
-- Earthquake
+-Bulk Up
 
 === TRAINER_BRAWLY_3 ===
 Name: BRAWLY
@@ -14334,32 +14375,32 @@ Items: Full Restore / Full Restore / Full Restore
 Double Battle: Yes
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Machamp @ Sitrus Berry
-Level: 38
+Machop @ Sitrus Berry
+Level: 15
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Karate Chop
 - Rock Slide
 - Focus Punch
 - Bulk Up
 
-Medicham
-Level: 38
+Meditite
+Level: 15
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Psychic
 - Light Screen
 - Reflect
 - Focus Punch
 
-Hitmontop
-Level: 40
+Tyrogue
+Level: 15
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Pursuit
 - Counter
 - Protect
 - Triple Kick
 
-Hariyama @ Sitrus Berry
-Level: 42
+Makuhita @ Sitrus Berry
+Level: 15
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Fake Out
 - Focus Punch
@@ -14377,7 +14418,7 @@ Double Battle: Yes
 AI: Check Bad Move / Try To Faint / Check Viability
 
 Hitmonchan
-Level: 40
+Level: 16
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Sky Uppercut
 - Protect
@@ -14385,7 +14426,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Ice Punch
 
 Machamp @ Sitrus Berry
-Level: 43
+Level: 16
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Karate Chop
 - Rock Slide
@@ -14393,7 +14434,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Bulk Up
 
 Medicham
-Level: 43
+Level: 16
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Focus Punch
 - Light Screen
@@ -14401,7 +14442,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Psychic
 
 Hitmontop
-Level: 45
+Level: 16
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Pursuit
 - Counter
@@ -14409,7 +14450,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Triple Kick
 
 Hariyama @ Sitrus Berry
-Level: 47
+Level: 16
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Fake Out
 - Focus Punch
@@ -14480,36 +14521,35 @@ Class: Leader
 Pic: Leader Wattson
 Gender: Male
 Music: Male
-Items: Full Restore / Full Restore / Full Restore
 Double Battle: Yes
 AI: Check Bad Move / Try To Faint / Check Viability
 
 Mareep
-Level: 36
+Level: 16
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Thunder
 - Protect
 - Thunder Wave
 - Light Screen
 
-Electrode
-Level: 36
+Voltorb
+Level: 16
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Rollout
 - Thunder
 - Explosion
 - Rain Dance
 
-Magneton @ Sitrus Berry
-Level: 38
+Magnemite @ Sitrus Berry
+Level: 16
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Supersonic
 - Protect
 - Thunder
 - Rain Dance
 
-Manectric @ Sitrus Berry
-Level: 40
+Raichu @ Sitrus Berry
+Level: 16
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Bite
 - Thunder Wave
@@ -14522,12 +14562,11 @@ Class: Leader
 Pic: Leader Wattson
 Gender: Male
 Music: Male
-Items: Full Restore / Full Restore / Full Restore
 Double Battle: Yes
 AI: Check Bad Move / Try To Faint / Check Viability
 
 Pikachu
-Level: 39
+Level: 17
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Thunder
 - Slam
@@ -14535,31 +14574,31 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Shock Wave
 
 Flaaffy
-Level: 41
+Level: 17
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Thunder
 - Protect
 - Thunder Wave
 - Light Screen
 
-Electrode
-Level: 41
+Voltorb
+Level: 17
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Rollout
 - Thunder
 - Explosion
 - Rain Dance
 
-Magneton @ Sitrus Berry
-Level: 43
+Magnemite @ Sitrus Berry
+Level: 17
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Supersonic
 - Protect
 - Thunder
 - Rain Dance
 
-Manectric @ Sitrus Berry
-Level: 45
+Electrike @ Sitrus Berry
+Level: 17
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Bite
 - Thunder Wave

@@ -28,7 +28,27 @@
 
   ],
   "warp_events": [
-
+    {
+      "x": 52,
+      "y": 11,
+      "elevation": 0,
+      "dest_map": "MAP_CELADON_CITY",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 16,
+      "y": 29,
+      "elevation": 0,
+      "dest_map": "MAP_CELADON_GYM",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 17,
+      "y": 29,
+      "elevation": 0,
+      "dest_map": "MAP_CELADON_GYM",
+      "dest_warp_id": "2"
+    }
   ],
   "coord_events": [
 

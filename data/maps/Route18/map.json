@@ -15,8 +15,18 @@
   "connections": [
     {
       "map": "MAP_FUCHSIA_CITY",
-      "offset": -7,
+      "offset": -14,
       "direction": "right"
+    },
+    {
+      "map": "MAP_ROUTE17",
+      "offset": 0,
+      "direction": "up"
+    },
+    {
+      "map": "MAP_ROUTE20",
+      "offset": -56,
+      "direction": "down"
     }
   ],
   "object_events": [

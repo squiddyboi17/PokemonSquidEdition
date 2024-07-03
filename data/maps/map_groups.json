@@ -2,14 +2,23 @@
   "group_order": [
     "gMapGroup_Towns_Kanto",
     "gMapGroup_Routes_Kanto",
+    "gMapGroup_Kanto_Gyms",
+    "gMapGroup_GymLeader_PersonalQuarters",
     "gMapGroup_Indoor_Pokemon_League",
     "gMapGroup_Indoor_Pallet_Town",
     "gMapGroup_Indoor_Viridian_City",
     "gMapGroup_Indoor_Pewter_City",
+    "gMapGroup_Indoor_Mt_Moon",
     "gMapGroup_Indoor_Cerulean_City",
+    "gMapGroup_Indoor_Vermillion_City",
     "gMapGroup_Indoor_Lavender_Town",
+    "gMapGroup_Indoor_Celadon_City",
+    "gMapGroup_Indoor_Saffron_City",
+    "gMapGroup_Indoor_Fuchsia_City",
+    "gMapGroup_Indoor_Cinnabar_Island",
     "gMapGroup_Towns_Hoenn",
     "gMapGroup_Routes_Hoenn",
+    "gMapGroup_Hoenn_Gyms",
     "gMapGroup_IndoorLittleroot",
     "gMapGroup_IndoorOldale",
     "gMapGroup_IndoorDewford",
@@ -45,29 +54,21 @@
     "gMapGroup_IndoorRoute124"
   ],
   "gMapGroup_Towns_Kanto": [
+    "Template",
+    "TESTINGMAP",
     "PalletTown",
     "ViridianCity",
     "PewterCity",
-    "CeruleanCity",
-    "LavenderTown",
     "MtMoon",
-    "SaffronCity",
-    "CeladonCity",
-    "VermillionCity",
-    "FuchsiaCity",
+    "CeruleanCity",
     "PowerPlant",
-    "Cinn",
+    "SaffronCity",
+    "VermillionCity",
+    "LavenderTown",
+    "CeladonCity",
+    "FuchsiaCity",
     "CinnabarIsland",
-    "ViridianGym",
-    "PewterGym",
-    "CeruleanGym",
-    "VermillionGym",
-    "CeladonGym",
-    "FuchsiaGym",
-    "SaffronGym",
-    "CinnabarGym",
-    "TESTGYM",
-    "Elite4TEST"
+    "Cinn"
   ],
   "gMapGroup_Routes_Kanto": [
     "Route22",
@@ -78,27 +79,50 @@
     "Route5",
     "Route6",
     "Route7",
-    "Route16",
+    "Route8",
+    "Route9",
+    "Route9North",
+    "Route10",
+    "Route10South",
     "Route11",
     "Route12",
     "Route13",
     "Route14",
     "Route15",
+    "Route16",
     "Route18",
-    "Route10",
-    "Route10South",
-    "Route8",
-    "Route9",
     "Route24",
     "Route25",
-    "Route9North"
+    "Route19",
+    "Route20",
+    "Route17"
+  ],
+  "gMapGroup_Kanto_Gyms": [
+    "TESTGYM",
+    "Elite4TEST",
+    "ViridianGym",
+    "PewterGym",
+    "CeruleanGym",
+    "VermillionGym",
+    "CeladonGym",
+    "FuchsiaGym",
+    "SaffronGym",
+    "CinnabarGym"
+  ],
+  "gMapGroup_GymLeader_PersonalQuarters": [
+
   ],
   "gMapGroup_Indoor_Pokemon_League": [
     "PokemonLeagueHQ",
     "Startmap",
     "PokemonLeagueHQPokecenter",
     "PokemonLeagueReceptionGate",
-    "PokemonLeagueHQlab"
+    "PokemonLeagueHQlab",
+    "VictoryRoadF1",
+    "VictoryRoadF2",
+    "VictoryRoadF3",
+    "Indigo",
+    "PokemonLeagueHQHeadOffice"
   ],
   "gMapGroup_Indoor_Pallet_Town": [
     "RedsHouse",
@@ -120,11 +144,36 @@
     "PewterPokeMart",
     "PewterCityGym"
   ],
+  "gMapGroup_Indoor_Mt_Moon": [
+    "MtMoonPokeCenter",
+    "MtMoonMart"
+  ],
   "gMapGroup_Indoor_Cerulean_City": [
-    "CeruleanPokemonCenter"
+    "CeruleanPokemonCenter",
+    "CeruleanMart"
+  ],
+  "gMapGroup_Indoor_Vermillion_City": [
+    "VermillionPokeCenter",
+    "VermillionMart"
   ],
   "gMapGroup_Indoor_Lavender_Town": [
-    "LavenderTownPokemonCenter"
+    "LavenderTownPokemonCenter",
+    "LavenderMart"
+  ],
+  "gMapGroup_Indoor_Celadon_City": [
+    "CeladonPokeCenter"
+  ],
+  "gMapGroup_Indoor_Saffron_City": [
+    "SaffronPokeCenter",
+    "SaffronMart"
+  ],
+  "gMapGroup_Indoor_Fuchsia_City": [
+    "FuchsiaPokeCenter",
+    "FuchsiaMart"
+  ],
+  "gMapGroup_Indoor_Cinnabar_Island": [
+    "CinnabarPokeCenter",
+    "CinnabarMart"
   ],
   "gMapGroup_Towns_Hoenn": [
     "PetalburgCity",
@@ -187,6 +236,18 @@
     "Underwater_Route105",
     "Underwater_Route125"
   ],
+  "gMapGroup_Hoenn_Gyms": [
+    "DewfordTown_Gym",
+    "LavaridgeTown_Gym_1F",
+    "LavaridgeTown_Gym_B1F",
+    "PetalburgCity_Gym",
+    "MauvilleCity_Gym",
+    "RustboroCity_Gym",
+    "FortreeCity_Gym",
+    "MossdeepCity_Gym",
+    "SootopolisCity_Gym_1F",
+    "SootopolisCity_Gym_B1F"
+  ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",
     "LittlerootTown_BrendansHouse_2F",
@@ -205,14 +266,11 @@
     "DewfordTown_House1",
     "DewfordTown_PokemonCenter_1F",
     "DewfordTown_PokemonCenter_2F",
-    "DewfordTown_Gym",
     "DewfordTown_Hall",
     "DewfordTown_House2"
   ],
   "gMapGroup_IndoorLavaridge": [
     "LavaridgeTown_HerbShop",
-    "LavaridgeTown_Gym_1F",
-    "LavaridgeTown_Gym_B1F",
     "LavaridgeTown_House",
     "LavaridgeTown_Mart",
     "LavaridgeTown_PokemonCenter_1F",
@@ -250,7 +308,6 @@
   ],
   "gMapGroup_IndoorPetalburg": [
     "PetalburgCity_WallysHouse",
-    "PetalburgCity_Gym",
     "PetalburgCity_House1",
     "PetalburgCity_House2",
     "PetalburgCity_PokemonCenter_1F",
@@ -274,7 +331,6 @@
     "SlateportCity_Mart"
   ],
   "gMapGroup_IndoorMauville": [
-    "MauvilleCity_Gym",
     "MauvilleCity_BikeShop",
     "MauvilleCity_House1",
     "MauvilleCity_GameCorner",
@@ -287,7 +343,6 @@
     "RustboroCity_DevonCorp_1F",
     "RustboroCity_DevonCorp_2F",
     "RustboroCity_DevonCorp_3F",
-    "RustboroCity_Gym",
     "RustboroCity_PokemonSchool",
     "RustboroCity_PokemonCenter_1F",
     "RustboroCity_PokemonCenter_2F",
@@ -304,7 +359,6 @@
   ],
   "gMapGroup_IndoorFortree": [
     "FortreeCity_House1",
-    "FortreeCity_Gym",
     "FortreeCity_PokemonCenter_1F",
     "FortreeCity_PokemonCenter_2F",
     "FortreeCity_Mart",
@@ -340,7 +394,6 @@
     "LilycoveCity_DepartmentStoreElevator"
   ],
   "gMapGroup_IndoorMossdeep": [
-    "MossdeepCity_Gym",
     "MossdeepCity_House1",
     "MossdeepCity_House2",
     "MossdeepCity_PokemonCenter_1F",
@@ -355,8 +408,6 @@
     "MossdeepCity_GameCorner_B1F"
   ],
   "gMapGroup_IndoorSootopolis": [
-    "SootopolisCity_Gym_1F",
-    "SootopolisCity_Gym_B1F",
     "SootopolisCity_PokemonCenter_1F",
     "SootopolisCity_PokemonCenter_2F",
     "SootopolisCity_Mart",

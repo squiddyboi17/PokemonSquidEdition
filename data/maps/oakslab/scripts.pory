@@ -15,7 +15,7 @@ script oakslab_EventScript_oak{
         closemessage
         if (var(VAR_RESULT) == 0){
             call(StarterFade)
-            setvar(regionstarters, 2)
+            setvar(regionstarters, 0)
         }
         elif (var(VAR_RESULT) == 1){
             call(StarterFade)
@@ -23,7 +23,7 @@ script oakslab_EventScript_oak{
         }
         elif (var(VAR_RESULT) == 2){
             call(StarterFade)
-            setvar(regionstarters, 0)
+            setvar(regionstarters, 2)
         }
         end
         msgbox("Hurry up...")

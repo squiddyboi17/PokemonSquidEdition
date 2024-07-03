@@ -17,7 +17,20 @@
 
   ],
   "warp_events": [
-
+    {
+      "x": 20,
+      "y": 69,
+      "elevation": 0,
+      "dest_map": "MAP_CINNABAR_GYM",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 21,
+      "y": 69,
+      "elevation": 0,
+      "dest_map": "MAP_CINNABAR_GYM",
+      "dest_warp_id": "0"
+    }
   ],
   "coord_events": [
 

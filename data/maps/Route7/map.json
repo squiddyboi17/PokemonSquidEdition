@@ -20,7 +20,7 @@
     },
     {
       "map": "MAP_SAFFRON_CITY",
-      "offset": -7,
+      "offset": -14,
       "direction": "right"
     }
   ],
@@ -28,7 +28,13 @@
 
   ],
   "warp_events": [
-
+    {
+      "x": 7,
+      "y": 14,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE8",
+      "dest_warp_id": "0"
+    }
   ],
   "coord_events": [
 

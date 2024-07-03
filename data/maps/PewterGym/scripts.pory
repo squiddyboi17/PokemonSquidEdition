@@ -1,0 +1,140 @@
+mapscripts PewterGym_MapScripts {
+
+}
+
+script PewterGym_EventScript_LeaderBree {
+    if (var(PewterGymState) == 0){
+        if (var(GymBadgeScaling) == 0) {
+            trainerbattle_single(TRAINER_GRUNT_AQUA_HIDEOUT_1, LeaderBree_intro, LeaderBree_outro, PewterGym_EventScript_LeaderBree_defeat, music=FALSE)
+            msgbox (LeaderBree_idle, MSGBOX_DEFAULT)
+            release
+            end
+        }
+        elif (var(GymBadgeScaling) == 1){
+            trainerbattle_single(TRAINER_GRUNT_AQUA_HIDEOUT_2, LeaderBree_intro, LeaderBree_outro, PewterGym_EventScript_LeaderBree_defeat, music=FALSE)
+            msgbox (LeaderBree_idle, MSGBOX_DEFAULT)
+            release
+            end
+        }
+        elif (var(GymBadgeScaling) == 2){
+            trainerbattle_single(TRAINER_GRUNT_AQUA_HIDEOUT_3, LeaderBree_intro, LeaderBree_outro, PewterGym_EventScript_LeaderBree_defeat, music=FALSE)
+            msgbox (LeaderBree_idle, MSGBOX_DEFAULT)
+            release
+            end
+        }
+        elif (var(GymBadgeScaling) == 3){
+            trainerbattle_single(TRAINER_GRUNT_AQUA_HIDEOUT_4, LeaderBree_intro, LeaderBree_outro, PewterGym_EventScript_LeaderBree_defeat, music=FALSE)
+            msgbox (LeaderBree_idle, MSGBOX_DEFAULT)
+            release
+            end
+        }
+        elif (var(GymBadgeScaling) == 4){
+            trainerbattle_single(TRAINER_GRUNT_SEAFLOOR_CAVERN_1, LeaderBree_intro, LeaderBree_outro, PewterGym_EventScript_LeaderBree_defeat, music=FALSE)
+            msgbox (LeaderBree_idle, MSGBOX_DEFAULT)
+            release
+            end
+        }
+        elif (var(GymBadgeScaling) == 5){
+            trainerbattle_single(TRAINER_GRUNT_SEAFLOOR_CAVERN_2, LeaderBree_intro, LeaderBree_outro, PewterGym_EventScript_LeaderBree_defeat, music=FALSE)
+            msgbox (LeaderBree_idle, MSGBOX_DEFAULT)
+            release
+            end
+        }
+        elif (var(GymBadgeScaling) == 6){
+            trainerbattle_single(TRAINER_GRUNT_SEAFLOOR_CAVERN_3, LeaderBree_intro, LeaderBree_outro, PewterGym_EventScript_LeaderBree_defeat, music=FALSE)
+            msgbox (LeaderBree_idle, MSGBOX_DEFAULT)
+            release
+            end
+        }
+        elif (var(GymBadgeScaling) == 7){
+            trainerbattle_single(TRAINER_GABRIELLE_1, LeaderBree_intro, LeaderBree_outro, PewterGym_EventScript_LeaderBree_defeat, music=FALSE)
+            msgbox (LeaderBree_idle, MSGBOX_DEFAULT)
+            release
+            end
+        }
+    }
+    else {
+        msgbox(LeaderBree_idle, MSGBOX_DEFAULT)
+        release
+        end
+    }
+
+}
+
+
+
+script PewterGym_EventScript_LeaderBree_defeat {
+    playfanfare(MUS_OBTAIN_BADGE)
+    msgbox (receivedgroundbadge)
+    waitfanfare
+    waitmessage
+    msgbox (Groundbadgeinfo, MSGBOX_DEFAULT)
+    setflag (FLAG_BADGE02_GET)
+    addvar (GymBadgeScaling, 1)
+    setvar(PewterGymState, 1)
+    goto (PewterGym_EventScript_GiveReward)
+    end
+}
+script PewterGym_EventScript_GiveReward{
+    giveitem (ITEM_TM_EARTHQUAKE)
+	if (var(VAR_RESULT) == FALSE) {
+    goto(Common_EventScript_ShowBagIsFull)
+    }
+	msgbox (PewterGymExplainReward, MSGBOX_DEFAULT)
+	release
+	end
+}
+
+text PewterGymExplainReward{
+     "This is Giga drain.\p"
+     "It's super strong. I'm sure\n"
+     "you'll get ALOT of use out of it."
+
+}
+
+
+text LeaderBree_intro {
+	 "Hello, I'm Bree, the Pewter\n"
+	 "City Gym Leader.\p"
+	 "I became a GYM LEADER so that I might\n"
+     "apply what I learned at the POKéMON\l"
+     "TRAINER'S SCHOOL in battle.\p"
+     "Would you kindly demonstrate how you\n"
+     "battle, and with which POKéMON?$"
+
+}
+text LeaderBree_outro {
+    "Oh shoot..."
+}
+
+text LeaderBree_defeat{
+     "So…\n"
+	 "I lost…\p"
+	 "It seems that I still have much more\n"
+	 "to learn…\p"
+	 "I understand.\p"
+	 "The POKéMON LEAGUE's rules state\n"
+	 "that TRAINERS are to be given this\l"
+	 "if they defeat a GYM LEADER.\p"
+	 "Please accept the official POKéMON\n"
+	 "LEAGUE STONE BADGE.$"    
+}
+
+
+text receivedgroundbadge{
+ 	 "{PLAYER} received the BADGE\n"
+	 "from LeaderBree_.$"   
+}
+
+text Groundbadgeinfo {
+   	 "This badge doesnt really\n"
+     "do anything,\p"
+     "but it looks pretty cool."
+}
+
+text LeaderBree_idle{
+	 "Since you are so strong, you should\n"
+	 "challenge other GYM LEADERS.\p"
+	 "By battling many TRAINERS, you should\n"
+	  "learn many things.$"    
+}

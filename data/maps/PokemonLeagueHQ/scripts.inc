@@ -284,22 +284,23 @@ startgamereceptionistdialogue::
 # 134 "data/maps/PokemonLeagueHQ/scripts.pory"
 	.string "Receptionist: Here to just look around or\n"
 	.string "Do you have an appointment?.\p"
-	.string "{PLAYER}... {PLAYER}... OH!...\n"
-	.string "My boss needs to see you right away...$"
+	.string "Hmm...{PLAYER}... {PLAYER}...\n"
+	.string "OH!\p"
+	.string "My boss needs to see you right away.$"
 
 startgamereceptionistdialogue2::
-# 141 "data/maps/PokemonLeagueHQ/scripts.pory"
+# 142 "data/maps/PokemonLeagueHQ/scripts.pory"
 	.string "Julie, this is them...\n$"
 
 startgamereceptionistdialogue3::
-# 145 "data/maps/PokemonLeagueHQ/scripts.pory"
+# 146 "data/maps/PokemonLeagueHQ/scripts.pory"
 	.string "...If you follow my coworker,\l"
 	.string "she can bring you to the boss's office.\n$"
 
 startjuliedialogue1::
-# 150 "data/maps/PokemonLeagueHQ/scripts.pory"
+# 151 "data/maps/PokemonLeagueHQ/scripts.pory"
 	.string "Julie: Right this way $"
 
 startjuliedialogue2::
-# 154 "data/maps/PokemonLeagueHQ/scripts.pory"
+# 155 "data/maps/PokemonLeagueHQ/scripts.pory"
 	.string "Julie: You can go right on in. $"

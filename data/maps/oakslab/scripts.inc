@@ -64,7 +64,7 @@ oakslab_EventScript_oak_10:
 # 17 "data/maps/oakslab/scripts.pory"
 	call StarterFade
 # 18 "data/maps/oakslab/scripts.pory"
-	setvar regionstarters, 2
+	setvar regionstarters, 0
 	goto oakslab_EventScript_oak_9
 
 oakslab_EventScript_oak_11:
@@ -78,7 +78,7 @@ oakslab_EventScript_oak_12:
 # 25 "data/maps/oakslab/scripts.pory"
 	call StarterFade
 # 26 "data/maps/oakslab/scripts.pory"
-	setvar regionstarters, 0
+	setvar regionstarters, 2
 	goto oakslab_EventScript_oak_9
 
 

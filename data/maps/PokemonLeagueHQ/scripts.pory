@@ -134,8 +134,9 @@ movement followcoworker{
 text startgamereceptionistdialogue{
     "Receptionist: Here to just look around or\n"
     "Do you have an appointment?.\p"
-    "{PLAYER}... {PLAYER}... OH!...\n"
-    "My boss needs to see you right away..."
+    "Hmm...{PLAYER}... {PLAYER}...\n"
+    "OH!\p"
+    "My boss needs to see you right away."
 }
 
 text startgamereceptionistdialogue2{

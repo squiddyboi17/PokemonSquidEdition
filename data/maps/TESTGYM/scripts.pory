@@ -1,0 +1,370 @@
+mapscripts TESTGYM_MapScripts {
+
+}
+
+script TestGymFrontDesk{
+    if (var(TestGymState1) == 0){
+        lock
+        msgbox("Are you here to take the Gym Challenge?", MSGBOX_YESNO)
+        if(var(VAR_RESULT) == YES){
+            msgbox(format("Will you face the Leader with a Double Battle?"),MSGBOX_YESNO)
+                if (var(VAR_RESULT) == YES){
+                    setvar(TestGymState1, 1)
+                    msgbox("Okay, great. You may enter now.")
+                    release
+                    end
+                }
+                else{
+                    setvar(TestGymState1, 0) 
+                    msgbox(format("Okay, sounds good. You can go on ahead."))
+                    release
+                    end
+                }
+
+        }
+        else{
+            msgbox("Oh... Well have a good day then!")
+            release
+            end
+        }
+    }
+    elif (var(TestGymState1) == 2){
+        lock
+        msgbox("Ah! Back for a Rematch huh?", MSGBOX_YESNO)
+        if(var(VAR_RESULT) == YES){
+            msgbox("Face the Leader in a Double Battle?", MSGBOX_YESNO)
+            if (var(VAR_RESULT) == YES){
+                setvar(TestGymState1,4)
+                msgbox("Okay, great. You may enter now.")
+                release
+                end
+            }
+            else{
+                setvar(TestGymState1, 3)
+                msgbox("Okay, sounds good. you can go on ahead.")
+                release
+                end
+            }
+        }
+        else{
+            msgbox("Oh... Well have a good day then!")
+            release
+            end
+        }
+    }
+    else{
+        msgbox("Oh... Well good luck to you!")
+        release
+        end
+    }
+}
+
+
+script TESTGYM_EventScript_GymLeader1{
+    if (var(TestGymState1) == 0){
+        if (var(GymBadgeScaling) == 0) {
+            trainerbattle_single(TRAINER_ROXANNE_1, GymLeader1intro, GymLeader1outro, TESTGYM_EventScript_GymLeader1defeat, music=TRUE)
+            msgbox (GymLeader1idle, MSGBOX_DEFAULT)
+            release
+            end
+        }
+        elif (var(GymBadgeScaling) == 1){
+            trainerbattle_single(TRAINER_ROXANNE_1, GymLeader1intro, GymLeader1outro, TESTGYM_EventScript_GymLeader1defeat, music=TRUE)
+            msgbox (GymLeader1idle, MSGBOX_DEFAULT)
+            release
+            end
+        }
+        if (var(GymBadgeScaling) == 2) {
+            trainerbattle_single(TRAINER_ROXANNE_1, GymLeader1intro, GymLeader1outro, TESTGYM_EventScript_GymLeader1defeat, music=TRUE)
+            msgbox (GymLeader1idle, MSGBOX_DEFAULT)
+            release
+            end
+        }
+        elif (var(GymBadgeScaling) == 3){
+            trainerbattle_single(TRAINER_ROXANNE_1, GymLeader1intro, GymLeader1outro, TESTGYM_EventScript_GymLeader1defeat, music=TRUE)
+            msgbox (GymLeader1idle, MSGBOX_DEFAULT)
+            release
+            end
+        }
+        if (var(GymBadgeScaling) == 4) {
+            trainerbattle_single(TRAINER_ROXANNE_1, GymLeader1intro, GymLeader1outro, TESTGYM_EventScript_GymLeader1defeat, music=TRUE)
+            msgbox (GymLeader1idle, MSGBOX_DEFAULT)
+            release
+            end
+        }
+        elif (var(GymBadgeScaling) == 5){
+            trainerbattle_single(TRAINER_ROXANNE_1, GymLeader1intro, GymLeader1outro, TESTGYM_EventScript_GymLeader1defeat, music=TRUE)
+            msgbox (GymLeader1idle, MSGBOX_DEFAULT)
+            release
+            end
+        }
+        if (var(GymBadgeScaling) == 6) {
+            trainerbattle_single(TRAINER_ROXANNE_1, GymLeader1intro, GymLeader1outro, TESTGYM_EventScript_GymLeader1defeat, music=TRUE)
+            msgbox (GymLeader1idle, MSGBOX_DEFAULT)
+            release
+            end
+        }
+        elif (var(GymBadgeScaling) == 7){
+            trainerbattle_single(TRAINER_ROXANNE_1, GymLeader1intro, GymLeader1outro, TESTGYM_EventScript_GymLeader1defeat, music=TRUE)
+            msgbox (GymLeader1idle, MSGBOX_DEFAULT)
+            release
+            end
+        }    
+    }elif (var(TestGymState1)== 1){
+        if (var(GymBadgeScaling) == 0) {
+            trainerbattle_single(TRAINER_ROXANNE_2, GymLeader1intro, GymLeader1outro, TESTGYM_EventScript_GymLeader1defeat, music=TRUE)
+            msgbox (GymLeader1idle, MSGBOX_DEFAULT)
+            release
+            end
+        }
+        elif (var(GymBadgeScaling) == 1){
+            trainerbattle_single(TRAINER_ROXANNE_2, GymLeader1intro, GymLeader1outro, TESTGYM_EventScript_GymLeader1defeat, music=TRUE)
+            msgbox (GymLeader1idle, MSGBOX_DEFAULT)
+            release
+            end
+        }
+        if (var(GymBadgeScaling) == 2) {
+            trainerbattle_single(TRAINER_ROXANNE_2, GymLeader1intro, GymLeader1outro, TESTGYM_EventScript_GymLeader1defeat, music=TRUE)
+            msgbox (GymLeader1idle, MSGBOX_DEFAULT)
+            release
+            end
+        }
+        elif (var(GymBadgeScaling) == 3){
+            trainerbattle_single(TRAINER_ROXANNE_2, GymLeader1intro, GymLeader1outro, TESTGYM_EventScript_GymLeader1defeat, music=TRUE)
+            msgbox (GymLeader1idle, MSGBOX_DEFAULT)
+            release
+            end
+        }
+        if (var(GymBadgeScaling) == 4) {
+            trainerbattle_single(TRAINER_ROXANNE_2, GymLeader1intro, GymLeader1outro, TESTGYM_EventScript_GymLeader1defeat, music=TRUE)
+            msgbox (GymLeader1idle, MSGBOX_DEFAULT)
+            release
+            end
+        }
+        elif (var(GymBadgeScaling) == 5){
+            trainerbattle_single(TRAINER_ROXANNE_2, GymLeader1intro, GymLeader1outro, TESTGYM_EventScript_GymLeader1defeat, music=TRUE)
+            msgbox (GymLeader1idle, MSGBOX_DEFAULT)
+            release
+            end
+        }
+        if (var(GymBadgeScaling) == 6) {
+            trainerbattle_single(TRAINER_ROXANNE_2, GymLeader1intro, GymLeader1outro, TESTGYM_EventScript_GymLeader1defeat, music=TRUE)
+            msgbox (GymLeader1idle, MSGBOX_DEFAULT)
+            release
+            end
+        }
+        elif (var(GymBadgeScaling) == 7){
+            trainerbattle_single(TRAINER_ROXANNE_2, GymLeader1intro, GymLeader1outro, TESTGYM_EventScript_GymLeader1defeat, music=TRUE)
+            msgbox (GymLeader1idle, MSGBOX_DEFAULT)
+            release
+            end
+        } 
+    }
+    elif (var(TestGymState1) == 3){
+        if (var(GymBadgeScaling) == 0){
+            trainerbattle_single(TRAINER_ROXANNE_3, GymLeader1rematchintro, GymLeader1Rematachoutro, TESTGYM_EventScript_GymLeader1rematchdefeat, music=TRUE)
+            msgbox (GymLeaderrematch1idle, MSGBOX_DEFAULT)
+            release
+            end
+        }elif (var(GymBadgeScaling) == 1){
+            trainerbattle_single(TRAINER_ROXANNE_3, GymLeader1rematchintro, GymLeader1Rematachoutro, TESTGYM_EventScript_GymLeader1rematchdefeat, music=TRUE)
+            msgbox (GymLeaderrematch1idle, MSGBOX_DEFAULT)
+            release
+            end
+        }
+        if (var(GymBadgeScaling) == 2){
+            trainerbattle_single(TRAINER_ROXANNE_3, GymLeader1rematchintro, GymLeader1Rematachoutro, TESTGYM_EventScript_GymLeader1rematchdefeat, music=TRUE)
+            msgbox (GymLeaderrematch1idle, MSGBOX_DEFAULT)
+            release
+            end
+        }elif (var(GymBadgeScaling) == 3){
+            trainerbattle_single(TRAINER_ROXANNE_3, GymLeader1rematchintro, GymLeader1Rematachoutro, TESTGYM_EventScript_GymLeader1rematchdefeat, music=TRUE)
+            msgbox (GymLeaderrematch1idle, MSGBOX_DEFAULT)
+            release
+            end
+        }
+        if (var(GymBadgeScaling) == 4){
+            trainerbattle_single(TRAINER_ROXANNE_3, GymLeader1rematchintro, GymLeader1Rematachoutro, TESTGYM_EventScript_GymLeader1rematchdefeat, music=TRUE)
+            msgbox (GymLeaderrematch1idle, MSGBOX_DEFAULT)
+            release
+            end
+        }elif (var(GymBadgeScaling) == 5){
+            trainerbattle_single(TRAINER_ROXANNE_3, GymLeader1rematchintro, GymLeader1Rematachoutro, TESTGYM_EventScript_GymLeader1rematchdefeat, music=TRUE)
+            msgbox (GymLeaderrematch1idle, MSGBOX_DEFAULT)
+            release
+            end
+        }
+        if (var(GymBadgeScaling) == 6){
+            trainerbattle_single(TRAINER_ROXANNE_3, GymLeader1rematchintro, GymLeader1Rematachoutro, TESTGYM_EventScript_GymLeader1rematchdefeat, music=TRUE)
+            msgbox (GymLeaderrematch1idle, MSGBOX_DEFAULT)
+            release
+            end
+        }elif (var(GymBadgeScaling) == 7){
+            trainerbattle_single(TRAINER_ROXANNE_3, GymLeader1rematchintro, GymLeader1Rematachoutro, TESTGYM_EventScript_GymLeader1rematchdefeat, music=TRUE)
+            msgbox (GymLeaderrematch1idle, MSGBOX_DEFAULT)
+            release
+            end
+        }
+    }elif (var(TestGymState1) == 4){
+        if (var(GymBadgeScaling) == 0){
+            trainerbattle_single(TRAINER_ROXANNE_4, GymLeader1rematchintro, GymLeader1Rematachoutro, TESTGYM_EventScript_GymLeader1rematchdefeat, music=TRUE)
+            msgbox (GymLeaderrematch1idle, MSGBOX_DEFAULT)
+            release
+            end
+        }elif (var(GymBadgeScaling) == 1){
+            trainerbattle_single(TRAINER_ROXANNE_4, GymLeader1rematchintro, GymLeader1Rematachoutro, TESTGYM_EventScript_GymLeader1rematchdefeat, music=TRUE)
+            msgbox (GymLeaderrematch1idle, MSGBOX_DEFAULT)
+            release
+            end
+        }
+        if (var(GymBadgeScaling) == 2){
+            trainerbattle_single(TRAINER_ROXANNE_4, GymLeader1rematchintro, GymLeader1Rematachoutro, TESTGYM_EventScript_GymLeader1rematchdefeat, music=TRUE)
+            msgbox (GymLeaderrematch1idle, MSGBOX_DEFAULT)
+            release
+            end
+        }elif (var(GymBadgeScaling) == 3){
+            trainerbattle_single(TRAINER_ROXANNE_4, GymLeader1rematchintro, GymLeader1Rematachoutro, TESTGYM_EventScript_GymLeader1rematchdefeat, music=TRUE)
+            msgbox (GymLeaderrematch1idle, MSGBOX_DEFAULT)
+            release
+            end
+        }
+        if (var(GymBadgeScaling) == 4){
+            trainerbattle_single(TRAINER_ROXANNE_4, GymLeader1rematchintro, GymLeader1Rematachoutro, TESTGYM_EventScript_GymLeader1rematchdefeat, music=TRUE)
+            msgbox (GymLeaderrematch1idle, MSGBOX_DEFAULT)
+            release
+            end
+        }elif (var(GymBadgeScaling) == 5){
+            trainerbattle_single(TRAINER_ROXANNE_4, GymLeader1rematchintro, GymLeader1Rematachoutro, TESTGYM_EventScript_GymLeader1rematchdefeat, music=TRUE)
+            msgbox (GymLeaderrematch1idle, MSGBOX_DEFAULT)
+            release
+            end
+        }
+        if (var(GymBadgeScaling) == 6){
+            trainerbattle_single(TRAINER_ROXANNE_4, GymLeader1rematchintro, GymLeader1Rematachoutro, TESTGYM_EventScript_GymLeader1rematchdefeat, music=TRUE)
+            msgbox (GymLeaderrematch1idle, MSGBOX_DEFAULT)
+            release
+            end
+        }elif (var(GymBadgeScaling) == 7){
+            trainerbattle_single(TRAINER_ROXANNE_4, GymLeader1rematchintro, GymLeader1Rematachoutro, TESTGYM_EventScript_GymLeader1rematchdefeat, music=TRUE)
+            msgbox (GymLeaderrematch1idle, MSGBOX_DEFAULT)
+            release
+            end
+        }
+    }
+    else {
+        msgbox(GymLeader1idle, MSGBOX_DEFAULT)
+        release
+        end
+    }
+
+}
+
+script TESTGYM_EventScript_GymLeader1defeat{
+    playfanfare(MUS_OBTAIN_BADGE)
+    msgbox (receivedxbadge)
+    waitfanfare
+    waitmessage
+    msgbox (badge1info, MSGBOX_DEFAULT)
+    setflag (FLAG_BADGE01_GET)
+    addvar (GymBadgeScaling, 1)
+    setvar(TestGymState1, 2)
+    goto (TESTGYM_EventScript_GiveReward)
+    end
+}
+
+script TESTGYM_EventScript_GymLeader1rematchdefeat{
+    setvar(TestGymState1, 2)
+    goto (TESTGYM_EventScript_GiveReward2)
+    end
+}
+
+script TESTGYM_EventScript_GiveReward{
+    giveitem (ITEM_TM_DIG)
+	if (var(VAR_RESULT) == FALSE) {
+    goto(Common_EventScript_ShowBagIsFull)
+    }
+	msgbox (TESTGYMExplainReward, MSGBOX_DEFAULT)
+	release
+	end
+}
+
+script TESTGYM_EventScript_GiveReward2{
+    giveitem (ITEM_TM_EARTHQUAKE)
+	if (var(VAR_RESULT) == FALSE) {
+    goto(Common_EventScript_ShowBagIsFull)
+    }
+	msgbox (TESTGYMExplainReward2, MSGBOX_DEFAULT)
+	release
+	end
+}
+
+text GymLeader1intro {
+	 "Hello, I am GYM_LEADER, the _TOWNNAME_\n"
+	 "CITY GYM LEADER.\p"
+	 "I became a GYM LEADER so that I might\n"
+     "apply what I learned at the POKéMON\l"
+     "TRAINER'S SCHOOL in battle.\p"
+     "Would you kindly demonstrate how you\n"
+     "battle, and with which POKéMON?$"
+}
+
+text GymLeader1rematchintro {
+    "Hey, You're back! You here for a rematch?"
+    }
+
+text GymLeader1outro {
+    "Oh shoot..."
+}
+
+text GymLeader1Rematachoutro{
+    "Damn... not again"
+}
+
+text GymLeader1defeat{
+     "So…\n"
+	 "I lost…\p"
+	 "It seems that I still have much more\n"
+	 "to learn…\p"
+	 "I understand.\p"
+	 "The POKéMON LEAGUE's rules state\n"
+	 "that TRAINERS are to be given this\l"
+	 "if they defeat a GYM LEADER.\p"
+	 "Please accept the official POKéMON\n"
+	 "LEAGUE STONE BADGE.$"    
+}
+
+text GymLeader1idle{
+	 "Since you are so strong, you should\n"
+	 "challenge other GYM LEADERS.\p"
+	 "By battling many TRAINERS, you should\n"
+	  "learn many things.$"    
+}
+
+text GymLeaderrematch1idle{
+    "Ah I guess, I'll get you next time."
+}
+
+text TESTGYMExplainReward{
+     "This is Dig.\p"
+     "It's super strong. I'm sure\n"
+     "you'll get ALOT of use out of it."
+
+}
+
+text TESTGYMExplainReward2{
+    "This is Earthquake.\p"
+     "It's super strong. I'm sure\n"
+     "you'll get ALOT of use out of it."
+}
+
+text receivedxbadge{
+ 	 "{PLAYER} received the BADGE\n"
+	 "from GymLeader.$"   
+}
+
+text badge1info {
+   	 "This badge doesnt really\n"
+     "do anything,\p"
+     "but it looks pretty cool."
+}
+

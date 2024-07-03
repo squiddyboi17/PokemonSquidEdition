@@ -57,14 +57,30 @@ Viridian_Mart_Employee2::
 # 35 "data/maps/ViridianPokeMart/scripts.pory"
 Viridian_Mart2:
 # 36 "data/maps/ViridianPokeMart/scripts.pory"
-	.2byte ITEM_TM06
+	.2byte ITEM_HM_CUT
 # 37 "data/maps/ViridianPokeMart/scripts.pory"
-	.2byte ITEM_TM07
+	.2byte ITEM_HM_FLY
 # 38 "data/maps/ViridianPokeMart/scripts.pory"
-	.2byte ITEM_TM08
+	.2byte ITEM_HM_SURF
 # 39 "data/maps/ViridianPokeMart/scripts.pory"
-	.2byte ITEM_TM09
+	.2byte ITEM_HM_STRENGTH
 # 40 "data/maps/ViridianPokeMart/scripts.pory"
+	.2byte ITEM_HM_FLASH
+# 41 "data/maps/ViridianPokeMart/scripts.pory"
+	.2byte ITEM_HM_ROCK_SMASH
+# 42 "data/maps/ViridianPokeMart/scripts.pory"
+	.2byte ITEM_HM_WATERFALL
+# 43 "data/maps/ViridianPokeMart/scripts.pory"
+	.2byte ITEM_HM_DIVE
+# 44 "data/maps/ViridianPokeMart/scripts.pory"
+	.2byte ITEM_TM06
+# 45 "data/maps/ViridianPokeMart/scripts.pory"
+	.2byte ITEM_TM07
+# 46 "data/maps/ViridianPokeMart/scripts.pory"
+	.2byte ITEM_TM08
+# 47 "data/maps/ViridianPokeMart/scripts.pory"
+	.2byte ITEM_TM09
+# 48 "data/maps/ViridianPokeMart/scripts.pory"
 	.2byte ITEM_TM10
 	.2byte ITEM_NONE
 

@@ -39,6 +39,13 @@
       "elevation": 0,
       "dest_map": "MAP_VIRIDIAN_POKEMON_CENTER_F1",
       "dest_warp_id": "0"
+    },
+    {
+      "x": 36,
+      "y": 10,
+      "elevation": 0,
+      "dest_map": "MAP_VIRIDIAN_GYM",
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

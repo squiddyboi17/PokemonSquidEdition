@@ -15,22 +15,22 @@
   "connections": [
     {
       "map": "MAP_ROUTE6",
-      "offset": 9,
+      "offset": 12,
       "direction": "down"
     },
     {
       "map": "MAP_ROUTE5",
-      "offset": 0,
+      "offset": 4,
       "direction": "up"
     },
     {
       "map": "MAP_ROUTE7",
-      "offset": 7,
+      "offset": 14,
       "direction": "left"
     },
     {
       "map": "MAP_ROUTE8",
-      "offset": 10,
+      "offset": 14,
       "direction": "right"
     }
   ],
@@ -38,7 +38,20 @@
 
   ],
   "warp_events": [
-
+    {
+      "x": 13,
+      "y": 36,
+      "elevation": 0,
+      "dest_map": "MAP_SAFFRON_CITY",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 39,
+      "y": 8,
+      "elevation": 0,
+      "dest_map": "MAP_SAFFRON_GYM",
+      "dest_warp_id": "0"
+    }
   ],
   "coord_events": [
 

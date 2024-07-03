@@ -1,0 +1,140 @@
+mapscripts SaffronGym_MapScripts {
+
+}
+
+script SaffronGym_EventScript_LeaderBous {
+    if (var(SaffronGymState) == 0){
+        if (var(GymBadgeScaling) == 0) {
+            trainerbattle_single(TRAINER_GRUNT_AQUA_HIDEOUT_1, LeaderBous_intro, LeaderBous_outro, SaffronGym_EventScript_LeaderBous_defeat, music=FALSE)
+            msgbox (LeaderBous_idle, MSGBOX_DEFAULT)
+            release
+            end
+        }
+        elif (var(GymBadgeScaling) == 1){
+            trainerbattle_single(TRAINER_GRUNT_AQUA_HIDEOUT_2, LeaderBous_intro, LeaderBous_outro, SaffronGym_EventScript_LeaderBous_defeat, music=FALSE)
+            msgbox (LeaderBous_idle, MSGBOX_DEFAULT)
+            release
+            end
+        }
+        elif (var(GymBadgeScaling) == 2){
+            trainerbattle_single(TRAINER_GRUNT_AQUA_HIDEOUT_3, LeaderBous_intro, LeaderBous_outro, SaffronGym_EventScript_LeaderBous_defeat, music=FALSE)
+            msgbox (LeaderBous_idle, MSGBOX_DEFAULT)
+            release
+            end
+        }
+        elif (var(GymBadgeScaling) == 3){
+            trainerbattle_single(TRAINER_GRUNT_AQUA_HIDEOUT_4, LeaderBous_intro, LeaderBous_outro, SaffronGym_EventScript_LeaderBous_defeat, music=FALSE)
+            msgbox (LeaderBous_idle, MSGBOX_DEFAULT)
+            release
+            end
+        }
+        elif (var(GymBadgeScaling) == 4){
+            trainerbattle_single(TRAINER_GRUNT_SEAFLOOR_CAVERN_1, LeaderBous_intro, LeaderBous_outro, SaffronGym_EventScript_LeaderBous_defeat, music=FALSE)
+            msgbox (LeaderBous_idle, MSGBOX_DEFAULT)
+            release
+            end
+        }
+        elif (var(GymBadgeScaling) == 5){
+            trainerbattle_single(TRAINER_GRUNT_SEAFLOOR_CAVERN_2, LeaderBous_intro, LeaderBous_outro, SaffronGym_EventScript_LeaderBous_defeat, music=FALSE)
+            msgbox (LeaderBous_idle, MSGBOX_DEFAULT)
+            release
+            end
+        }
+        elif (var(GymBadgeScaling) == 6){
+            trainerbattle_single(TRAINER_GRUNT_SEAFLOOR_CAVERN_3, LeaderBous_intro, LeaderBous_outro, SaffronGym_EventScript_LeaderBous_defeat, music=FALSE)
+            msgbox (LeaderBous_idle, MSGBOX_DEFAULT)
+            release
+            end
+        }
+        elif (var(GymBadgeScaling) == 7){
+            trainerbattle_single(TRAINER_GABRIELLE_1, LeaderBous_intro, LeaderBous_outro, SaffronGym_EventScript_LeaderBous_defeat, music=FALSE)
+            msgbox (LeaderBous_idle, MSGBOX_DEFAULT)
+            release
+            end
+        }
+    }
+    else {
+        msgbox(LeaderBous_idle, MSGBOX_DEFAULT)
+        release
+        end
+    }
+
+}
+
+
+
+script SaffronGym_EventScript_LeaderBous_defeat {
+    playfanfare(MUS_OBTAIN_BADGE)
+    msgbox (receivedghostbadge)
+    waitfanfare
+    waitmessage
+    msgbox (ghostbadgeinfo, MSGBOX_DEFAULT)
+    setflag (FLAG_BADGE06_GET)
+    addvar (GymBadgeScaling, 1)
+    setvar(SaffronGymState, 1)
+    goto (SaffronGym_EventScript_GiveReward)
+    end
+}
+script SaffronGym_EventScript_GiveReward{
+    giveitem (ITEM_TM_SHADOW_BALL)
+	if (var(VAR_RESULT) == FALSE) {
+    goto(Common_EventScript_ShowBagIsFull)
+    }
+	msgbox (SaffronGymExplainReward, MSGBOX_DEFAULT)
+	release
+	end
+}
+
+text SaffronGymExplainReward{
+     "This is Shadow Ball.\p"
+     "It's super strong. I'm sure\n"
+     "you'll get ALOT of use out of it."
+
+}
+
+
+text LeaderBous_intro {
+	 "Hello, I'm Bous, the Saffron\n"
+	 "City Gym Leader.\p"
+	 "I became a GYM LEADER so that I might\n"
+     "apply what I learned at the POKéMON\l"
+     "TRAINER'S SCHOOL in battle.\p"
+     "Would you kindly demonstrate how you\n"
+     "battle, and with which POKéMON?$"
+
+}
+text LeaderBous_outro {
+    "Oh shoot..."
+}
+
+text LeaderBous_defeat{
+     "So…\n"
+	 "I lost…\p"
+	 "It seems that I still have much more\n"
+	 "to learn…\p"
+	 "I understand.\p"
+	 "The POKéMON LEAGUE's rules state\n"
+	 "that TRAINERS are to be given this\l"
+	 "if they defeat a GYM LEADER.\p"
+	 "Please accept the official POKéMON\n"
+	 "LEAGUE STONE BADGE.$"    
+}
+
+
+text receivedghostbadge{
+ 	 "{PLAYER} received the BADGE\n"
+	 "from LeaderBous_.$"   
+}
+
+text ghostbadgeinfo {
+   	 "This badge doesnt really\n"
+     "do anything,\p"
+     "but it looks pretty cool."
+}
+
+text LeaderBous_idle{
+	 "Since you are so strong, you should\n"
+	 "challenge other GYM LEADERS.\p"
+	 "By battling many TRAINERS, you should\n"
+	  "learn many things.$"    
+}

@@ -1207,3 +1207,49 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/TESTGYM/scripts.inc"
 
 	.include "data/maps/Elite4TEST/scripts.inc"
+
+	.include "data/maps/TESTINGMAP/scripts.inc"
+
+	.include "data/maps/Template/scripts.inc"
+
+	.include "data/maps/Route19/scripts.inc"
+
+	.include "data/maps/Route20/scripts.inc"
+
+	.include "data/maps/Route17/scripts.inc"
+
+	.include "data/maps/VictoryRoadF1/scripts.inc"
+
+	.include "data/maps/VictoryRoadF2/scripts.inc"
+
+	.include "data/maps/VictoryRoadF3/scripts.inc"
+
+	.include "data/maps/Indigo/scripts.inc"
+
+	.include "data/maps/MtMoonPokeCenter/scripts.inc"
+
+	.include "data/maps/MtMoonMart/scripts.inc"
+
+	.include "data/maps/CeruleanMart/scripts.inc"
+
+	.include "data/maps/VermillionPokeCenter/scripts.inc"
+
+	.include "data/maps/VermillionMart/scripts.inc"
+
+	.include "data/maps/LavenderMart/scripts.inc"
+
+	.include "data/maps/CeladonPokeCenter/scripts.inc"
+
+	.include "data/maps/SaffronPokeCenter/scripts.inc"
+
+	.include "data/maps/SaffronMart/scripts.inc"
+
+	.include "data/maps/FuchsiaPokeCenter/scripts.inc"
+
+	.include "data/maps/FuchsiaMart/scripts.inc"
+
+	.include "data/maps/CinnabarPokeCenter/scripts.inc"
+
+	.include "data/maps/CinnabarMart/scripts.inc"
+
+	.include "data/maps/PokemonLeagueHQHeadOffice/scripts.inc"

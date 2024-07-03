@@ -5,7 +5,7 @@
   "music": "MUS_RG_PEWTER",
   "region_map_section": "MAPSEC_PEWTER_CITY",
   "requires_flash": false,
-  "weather": "WEATHER_NONE",
+  "weather": "WEATHER_SUNNY",
   "map_type": "MAP_TYPE_TOWN",
   "allow_cycling": true,
   "allow_escaping": false,
@@ -20,7 +20,7 @@
     },
     {
       "map": "MAP_ROUTE3",
-      "offset": 10,
+      "offset": 15,
       "direction": "right"
     }
   ],
@@ -33,6 +33,13 @@
       "y": 25,
       "elevation": 0,
       "dest_map": "MAP_PEWTERPOKECENTER",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 15,
+      "y": 16,
+      "elevation": 0,
+      "dest_map": "MAP_PEWTER_GYM",
       "dest_warp_id": "0"
     }
   ],

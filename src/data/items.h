@@ -11756,7 +11756,7 @@ const struct Item gItemsInfo[] =
     [ITEM_HM_CUT] =
     {
         .name = _("HM01"),
-        .price = 0,
+        .price = 1,
         .description = COMPOUND_STRING(
             "Attacks the foe\n"
             "with sharp blades\n"
@@ -11771,7 +11771,7 @@ const struct Item gItemsInfo[] =
     [ITEM_HM_FLY] =
     {
         .name = _("HM02"),
-        .price = 0,
+        .price = 1,
         .description = COMPOUND_STRING(
             "Flies up on the\n"
             "first turn, then\n"
@@ -11786,7 +11786,7 @@ const struct Item gItemsInfo[] =
     [ITEM_HM_SURF] =
     {
         .name = _("HM03"),
-        .price = 0,
+        .price = 1,
         .description = COMPOUND_STRING(
             "Creates a huge\n"
             "wave, then crashes\n"
@@ -11801,7 +11801,7 @@ const struct Item gItemsInfo[] =
     [ITEM_HM_STRENGTH] =
     {
         .name = _("HM04"),
-        .price = 0,
+        .price = 1,
         .description = COMPOUND_STRING(
             "Builds enormous\n"
             "power, then slams\n"
@@ -11816,7 +11816,7 @@ const struct Item gItemsInfo[] =
     [ITEM_HM_FLASH] =
     {
         .name = _("HM05"),
-        .price = 0,
+        .price = 1,
         .description = COMPOUND_STRING(
             "Looses a powerful\n"
             "blast of light that\n"
@@ -11831,7 +11831,7 @@ const struct Item gItemsInfo[] =
     [ITEM_HM_ROCK_SMASH] =
     {
         .name = _("HM06"),
-        .price = 0,
+        .price = 1,
         .description = COMPOUND_STRING(
             "A rock-crushingly\n"
             "tough attack that\n"
@@ -11846,7 +11846,7 @@ const struct Item gItemsInfo[] =
     [ITEM_HM_WATERFALL] =
     {
         .name = _("HM07"),
-        .price = 0,
+        .price = 1,
         .description = COMPOUND_STRING(
             "Attacks the foe\n"
             "with enough power\n"
@@ -11861,7 +11861,7 @@ const struct Item gItemsInfo[] =
     [ITEM_HM_DIVE] =
     {
         .name = _("HM08"),
-        .price = 0,
+        .price = 1,
         .description = COMPOUND_STRING(
             "Dives underwater\n"
             "the 1st turn, then\n"
@@ -11895,7 +11895,7 @@ const struct Item gItemsInfo[] =
     [ITEM_SHINY_CHARM] =
     {
         .name = _("Shiny Charm"),
-        .price = 0,
+        .price = 5000,
         .importance = 1,
         .description = COMPOUND_STRING(
             "A charm that will\n"
@@ -11911,7 +11911,7 @@ const struct Item gItemsInfo[] =
     [ITEM_CATCHING_CHARM] =
     {
         .name = HANDLE_EXPANDED_ITEM_NAME("CatchngCharm", "Catching Charm"),
-        .price = 0,
+        .price = 5000,
         .importance = 1,
         .description = COMPOUND_STRING(
             "A charm that raises\n"
@@ -11927,7 +11927,7 @@ const struct Item gItemsInfo[] =
     [ITEM_EXP_CHARM] =
     {
         .name = _("Exp. Charm"),
-        .price = 0,
+        .price = 5000,
         .importance = 1,
         .description = COMPOUND_STRING(
             "A charm that raises\n"
@@ -12143,7 +12143,7 @@ const struct Item gItemsInfo[] =
     [ITEM_BICYCLE] =
     {
         .name = _("Bicycle"),
-        .price = 0,
+        .price = 1500,
         .description = COMPOUND_STRING(
             "A folding bicycle\n"
             "that is faster than\n"
@@ -12193,7 +12193,7 @@ const struct Item gItemsInfo[] =
     [ITEM_OLD_ROD] =
     {
         .name = _("Old Rod"),
-        .price = 0,
+        .price = 500,
         .description = COMPOUND_STRING(
             "Use by any body of\n"
             "water to fish for\n"
@@ -12210,7 +12210,7 @@ const struct Item gItemsInfo[] =
     [ITEM_GOOD_ROD] =
     {
         .name = _("Good Rod"),
-        .price = 0,
+        .price = 1000,
         .description = COMPOUND_STRING(
             "A decent fishing\n"
             "rod for catching\n"
@@ -12227,7 +12227,7 @@ const struct Item gItemsInfo[] =
     [ITEM_SUPER_ROD] =
     {
         .name = _("Super Rod"),
-        .price = 0,
+        .price = 1500,
         .description = COMPOUND_STRING(
             "The best fishing\n"
             "rod for catching\n"

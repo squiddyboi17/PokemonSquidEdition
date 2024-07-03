@@ -1,0 +1,140 @@
+mapscripts FuchsiaGym_MapScripts {
+
+}
+
+script FuchsiaGym_EventScript_LeaderAleks {
+    if (var(FuchsiaGymState) == 0){
+        if (var(GymBadgeScaling) == 0) {
+            trainerbattle_single(TRAINER_GRUNT_AQUA_HIDEOUT_1, LeaderAleks_intro, LeaderAleks_outro, FuchsiaGym_EventScript_LeaderAleks_defeat, music=FALSE)
+            msgbox (LeaderAleks_idle, MSGBOX_DEFAULT)
+            release
+            end
+        }
+        elif (var(GymBadgeScaling) == 1){
+            trainerbattle_single(TRAINER_GRUNT_AQUA_HIDEOUT_2, LeaderAleks_intro, LeaderAleks_outro, FuchsiaGym_EventScript_LeaderAleks_defeat, music=FALSE)
+            msgbox (LeaderAleks_idle, MSGBOX_DEFAULT)
+            release
+            end
+        }
+        elif (var(GymBadgeScaling) == 2){
+            trainerbattle_single(TRAINER_GRUNT_AQUA_HIDEOUT_3, LeaderAleks_intro, LeaderAleks_outro, FuchsiaGym_EventScript_LeaderAleks_defeat, music=FALSE)
+            msgbox (LeaderAleks_idle, MSGBOX_DEFAULT)
+            release
+            end
+        }
+        elif (var(GymBadgeScaling) == 3){
+            trainerbattle_single(TRAINER_GRUNT_AQUA_HIDEOUT_4, LeaderAleks_intro, LeaderAleks_outro, FuchsiaGym_EventScript_LeaderAleks_defeat, music=FALSE)
+            msgbox (LeaderAleks_idle, MSGBOX_DEFAULT)
+            release
+            end
+        }
+        elif (var(GymBadgeScaling) == 4){
+            trainerbattle_single(TRAINER_GRUNT_SEAFLOOR_CAVERN_1, LeaderAleks_intro, LeaderAleks_outro, FuchsiaGym_EventScript_LeaderAleks_defeat, music=FALSE)
+            msgbox (LeaderAleks_idle, MSGBOX_DEFAULT)
+            release
+            end
+        }
+        elif (var(GymBadgeScaling) == 5){
+            trainerbattle_single(TRAINER_GRUNT_SEAFLOOR_CAVERN_2, LeaderAleks_intro, LeaderAleks_outro, FuchsiaGym_EventScript_LeaderAleks_defeat, music=FALSE)
+            msgbox (LeaderAleks_idle, MSGBOX_DEFAULT)
+            release
+            end
+        }
+        elif (var(GymBadgeScaling) == 6){
+            trainerbattle_single(TRAINER_GRUNT_SEAFLOOR_CAVERN_3, LeaderAleks_intro, LeaderAleks_outro, FuchsiaGym_EventScript_LeaderAleks_defeat, music=FALSE)
+            msgbox (LeaderAleks_idle, MSGBOX_DEFAULT)
+            release
+            end
+        }
+        elif (var(GymBadgeScaling) == 7){
+            trainerbattle_single(TRAINER_GABRIELLE_1, LeaderAleks_intro, LeaderAleks_outro, FuchsiaGym_EventScript_LeaderAleks_defeat, music=FALSE)
+            msgbox (LeaderAleks_idle, MSGBOX_DEFAULT)
+            release
+            end
+        }
+    }
+    else {
+        msgbox(LeaderAleks_idle, MSGBOX_DEFAULT)
+        release
+        end
+    }
+
+}
+
+
+
+script FuchsiaGym_EventScript_LeaderAleks_defeat {
+    playfanfare(MUS_OBTAIN_BADGE)
+    msgbox (receiveddarkbadge)
+    waitfanfare
+    waitmessage
+    msgbox (darkbadgeinfo, MSGBOX_DEFAULT)
+    setflag (FLAG_BADGE07_GET)
+    addvar (GymBadgeScaling, 1)
+    setvar(FuchsiaGymState, 1)
+    goto (FuchsiaGym_EventScript_GiveReward)
+    end
+}
+script FuchsiaGym_EventScript_GiveReward{
+    giveitem (ITEM_TM_EARTHQUAKE)
+	if (var(VAR_RESULT) == FALSE) {
+    goto(Common_EventScript_ShowBagIsFull)
+    }
+	msgbox (FuchsiaGymExplainReward, MSGBOX_DEFAULT)
+	release
+	end
+}
+
+text FuchsiaGymExplainReward{
+     "This is Giga drain.\p"
+     "It's super strong. I'm sure\n"
+     "you'll get ALOT of use out of it."
+
+}
+
+
+text LeaderAleks_intro {
+	 "Hello, I'm Bree, the Pewter\n"
+	 "City Gym Leader.\p"
+	 "I became a GYM LEADER so that I might\n"
+     "apply what I learned at the POKéMON\l"
+     "TRAINER'S SCHOOL in battle.\p"
+     "Would you kindly demonstrate how you\n"
+     "battle, and with which POKéMON?$"
+
+}
+text LeaderAleks_outro {
+    "Oh shoot..."
+}
+
+text LeaderAleks_defeat{
+     "So…\n"
+	 "I lost…\p"
+	 "It seems that I still have much more\n"
+	 "to learn…\p"
+	 "I understand.\p"
+	 "The POKéMON LEAGUE's rules state\n"
+	 "that TRAINERS are to be given this\l"
+	 "if they defeat a GYM LEADER.\p"
+	 "Please accept the official POKéMON\n"
+	 "LEAGUE STONE BADGE.$"    
+}
+
+
+text receiveddarkbadge{
+ 	 "{PLAYER} received the BADGE\n"
+	 "from LeaderAleks_.$"   
+}
+
+text darkbadgeinfo {
+   	 "This badge doesnt really\n"
+     "do anything,\p"
+     "but it looks pretty cool."
+}
+
+text LeaderAleks_idle{
+	 "Since you are so strong, you should\n"
+	 "challenge other GYM LEADERS.\p"
+	 "By battling many TRAINERS, you should\n"
+	  "learn many things.$"    
+}

@@ -1,0 +1,140 @@
+mapscripts CinnabarGym_MapScripts {
+
+}
+
+script CinnabarGym_EventScript_LeaderNeenee {
+    if (var(CinnabarGymState) == 0){
+        if (var(GymBadgeScaling) == 0) {
+            trainerbattle_single(TRAINER_GRUNT_AQUA_HIDEOUT_1, LeaderNeenee_intro, LeaderNeenee_outro, CinnabarGym_EventScript_LeaderNeenee_defeat, music=FALSE)
+            msgbox (LeaderNeenee_idle, MSGBOX_DEFAULT)
+            release
+            end
+        }
+        elif (var(GymBadgeScaling) == 1){
+            trainerbattle_single(TRAINER_GRUNT_AQUA_HIDEOUT_2, LeaderNeenee_intro, LeaderNeenee_outro, CinnabarGym_EventScript_LeaderNeenee_defeat, music=FALSE)
+            msgbox (LeaderNeenee_idle, MSGBOX_DEFAULT)
+            release
+            end
+        }
+        elif (var(GymBadgeScaling) == 2){
+            trainerbattle_single(TRAINER_GRUNT_AQUA_HIDEOUT_3, LeaderNeenee_intro, LeaderNeenee_outro, CinnabarGym_EventScript_LeaderNeenee_defeat, music=FALSE)
+            msgbox (LeaderNeenee_idle, MSGBOX_DEFAULT)
+            release
+            end
+        }
+        elif (var(GymBadgeScaling) == 3){
+            trainerbattle_single(TRAINER_GRUNT_AQUA_HIDEOUT_4, LeaderNeenee_intro, LeaderNeenee_outro, CinnabarGym_EventScript_LeaderNeenee_defeat, music=FALSE)
+            msgbox (LeaderNeenee_idle, MSGBOX_DEFAULT)
+            release
+            end
+        }
+        elif (var(GymBadgeScaling) == 4){
+            trainerbattle_single(TRAINER_GRUNT_SEAFLOOR_CAVERN_1, LeaderNeenee_intro, LeaderNeenee_outro, CinnabarGym_EventScript_LeaderNeenee_defeat, music=FALSE)
+            msgbox (LeaderNeenee_idle, MSGBOX_DEFAULT)
+            release
+            end
+        }
+        elif (var(GymBadgeScaling) == 5){
+            trainerbattle_single(TRAINER_GRUNT_SEAFLOOR_CAVERN_2, LeaderNeenee_intro, LeaderNeenee_outro, CinnabarGym_EventScript_LeaderNeenee_defeat, music=FALSE)
+            msgbox (LeaderNeenee_idle, MSGBOX_DEFAULT)
+            release
+            end
+        }
+        elif (var(GymBadgeScaling) == 6){
+            trainerbattle_single(TRAINER_GRUNT_SEAFLOOR_CAVERN_3, LeaderNeenee_intro, LeaderNeenee_outro, CinnabarGym_EventScript_LeaderNeenee_defeat, music=FALSE)
+            msgbox (LeaderNeenee_idle, MSGBOX_DEFAULT)
+            release
+            end
+        }
+        elif (var(GymBadgeScaling) == 7){
+            trainerbattle_single(TRAINER_GABRIELLE_1, LeaderNeenee_intro, LeaderNeenee_outro, CinnabarGym_EventScript_LeaderNeenee_defeat, music=FALSE)
+            msgbox (LeaderNeenee_idle, MSGBOX_DEFAULT)
+            release
+            end
+        }
+    }
+    else {
+        msgbox(LeaderNeenee_idle, MSGBOX_DEFAULT)
+        release
+        end
+    }
+
+}
+
+
+
+script CinnabarGym_EventScript_LeaderNeenee_defeat {
+    playfanfare(MUS_OBTAIN_BADGE)
+    msgbox (receivedfirebadge)
+    waitfanfare
+    waitmessage
+    msgbox (firebadgeinfo, MSGBOX_DEFAULT)
+    setflag (FLAG_BADGE08_GET)
+    addvar (GymBadgeScaling, 1)
+    setvar(CinnabarGymState, 1)
+    goto (CinnabarGym_EventScript_GiveReward)
+    end
+}
+script CinnabarGym_EventScript_GiveReward{
+    giveitem (ITEM_TM_EARTHQUAKE)
+	if (var(VAR_RESULT) == FALSE) {
+    goto(Common_EventScript_ShowBagIsFull)
+    }
+	msgbox (CinnabarGymExplainReward, MSGBOX_DEFAULT)
+	release
+	end
+}
+
+text CinnabarGymExplainReward{
+     "This is Giga drain.\p"
+     "It's super strong. I'm sure\n"
+     "you'll get ALOT of use out of it."
+
+}
+
+
+text LeaderNeenee_intro {
+	 "Hello, I'm Bree, the Pewter\n"
+	 "City Gym Leader.\p"
+	 "I became a GYM LEADER so that I might\n"
+     "apply what I learned at the POKéMON\l"
+     "TRAINER'S SCHOOL in battle.\p"
+     "Would you kindly demonstrate how you\n"
+     "battle, and with which POKéMON?$"
+
+}
+text LeaderNeenee_outro {
+    "Oh shoot..."
+}
+
+text LeaderNeenee_defeat{
+     "So…\n"
+	 "I lost…\p"
+	 "It seems that I still have much more\n"
+	 "to learn…\p"
+	 "I understand.\p"
+	 "The POKéMON LEAGUE's rules state\n"
+	 "that TRAINERS are to be given this\l"
+	 "if they defeat a GYM LEADER.\p"
+	 "Please accept the official POKéMON\n"
+	 "LEAGUE STONE BADGE.$"    
+}
+
+
+text receivedfirebadge{
+ 	 "{PLAYER} received the BADGE\n"
+	 "from LeaderNeenee_.$"   
+}
+
+text firebadgeinfo {
+   	 "This badge doesnt really\n"
+     "do anything,\p"
+     "but it looks pretty cool."
+}
+
+text LeaderNeenee_idle{
+	 "Since you are so strong, you should\n"
+	 "challenge other GYM LEADERS.\p"
+	 "By battling many TRAINERS, you should\n"
+	  "learn many things.$"    
+}
